@@ -1,0 +1,112 @@
+// color
+$color-black: #505050;
+$color-white: #fff;
+$color-grey: #777;
+$color-main: #005291;
+$color-main-light: #0071bb;
+$color-main-dark: #005291;
+
+// font-family
+$font-sans: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+$font-serif: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+$font-en: 'Roboto Condensed', sans-serif;
+
+//bp min
+@custom-media --xs (min-width: 425px);
+@custom-media --sm (min-width: 554px);
+@custom-media --md (min-width: 768px);
+@custom-media --lg (min-width: 992px);
+@custom-media --xl (min-width: 1200px);
+
+//bp max
+@custom-media --xs_max (max-width: 424px);
+@custom-media --sm_max (max-width: 553px);
+@custom-media --md_max (max-width: 767px);
+@custom-media --lg_max (max-width: 991px);
+@custom-media --xl_max (max-width: 1199px);
+
+//fz
+@function get_vw($size, $viewport: 640) {
+  $rate: 100 / $viewport;
+
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz($font_size: 10) {
+  font-size: get_vw($font_size);
+
+  @media (--sm) {
+    font-size: $font_size - 2px;
+  }
+
+  @media (--md) {
+    font-size: $font_size * 1px;
+  }
+}
+
+//font-justify
+%justify {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+//hover
+%hover-effect_opacity {
+  transition: .4s ease;
+
+  &:hover {
+    opacity: .5;
+    transition: .4s ease;
+  }
+}
+
+//hover
+%transition {
+  transition: .24s ease;
+}
+
+//margin
+%m-section-title___margin {
+  margin: 40px 0 30px;
+  text-align: center;
+
+  @media (--md) {
+    margin: 80px 0 45px;
+  }
+
+  @media (--lg) {
+    margin: 100px 0 50px;
+  }
+}
+
+%m-block-title___margin {
+  margin-bottom: 10px;
+
+  @media (--md) {
+    margin-bottom: 20px;
+  }
+}
+
+%section___margin {
+  margin: 50px 0;
+
+  @media (--sm) {
+    margin: 80px 0;
+  }
+
+  @media (--md) {
+    margin: 100px 0;
+  }
+}
+
+%section___padding {
+  padding: 50px 0;
+
+  @media (--sm) {
+    padding: 80px 0;
+  }
+
+  @media (--md) {
+    padding: 100px 0;
+  }
+}

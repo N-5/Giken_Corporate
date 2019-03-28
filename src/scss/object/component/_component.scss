@@ -1,0 +1,122 @@
+.c-tablelist {
+  .c-tablelist__item {
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+    padding: 15px 0;
+
+    @media (--md) {
+      display: flex;
+      flex-flow: row wrap;  
+      padding: 25px 0 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      height: 1px;
+      width: 80px;
+      background: $color-main-dark;
+
+      @media (--md) {
+        width: 130px;
+      }
+    }
+
+    &:first-child {
+      border-top: 1px solid #dbdbdb;
+
+      @media (--md) {
+        padding-top: 25px;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    dt {
+      margin-bottom: 10px;
+      font-weight: bold;
+
+      @media (--md) {
+        width: 20%;
+        font-size: 13px;
+        margin-top: 2px;
+        margin-bottom: 0
+      }
+    }
+
+    dd {
+      @media (--md) {
+        width: 80%;
+        font-size: 13px;
+        line-height: (24/13);
+      }
+    }
+  }
+}
+
+.c-section-back {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+
+  &__inner {
+    a {
+      @extend %transition;
+
+      display: block;
+      padding: 30px 0;
+      color: $color-main;
+      font-family: $font-en;
+
+      @media (--md) {
+        padding: 50px 0;
+        font-size: 18px;
+      }
+
+      span {
+        position: relative;
+        font-weight: bold;
+
+        &::before {
+          @extend %transition;
+
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: -30px;
+          width: 7px;
+          height: 7px;
+          border-top: 2px solid $color-main;
+          border-left: 2px solid $color-main;
+          transform: rotate(-45deg);
+
+          @media (--md) {
+            width: 10px;
+            height: 10px;
+            top: 6px;
+          }
+        }
+      }
+
+      &:hover {
+        @media (--md) {
+          color: #fff;
+          opacity: 1;
+          background: $color-main;
+        }
+
+        span {
+          &::before {
+            border-color: #fff;
+            left: -30px;
+          }
+        }
+      }
+    }
+  }
+}
