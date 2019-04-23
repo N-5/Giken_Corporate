@@ -2,11 +2,11 @@
   .c-tablelist__item {
     border-bottom: 1px solid #dbdbdb;
     position: relative;
-    padding: 15px 0;
+    padding: 12px 0;
 
     @media (--md) {
       display: flex;
-      flex-flow: row wrap;  
+      flex-flow: row wrap;
       padding: 25px 0 20px;
     }
 
@@ -17,7 +17,7 @@
       left: 0;
       height: 1px;
       width: 80px;
-      background: $color-main-dark;
+      background: $color-main;
 
       @media (--md) {
         width: 130px;
@@ -38,18 +38,20 @@
     }
 
     dt {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       font-weight: bold;
 
       @media (--md) {
         width: 20%;
         font-size: 13px;
         margin-top: 2px;
-        margin-bottom: 0
+        margin-bottom: 0;
       }
     }
 
     dd {
+      font-size: 13px;
+
       @media (--md) {
         width: 80%;
         font-size: 13px;
@@ -60,9 +62,10 @@
 }
 
 .c-section-back {
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-light;
   text-align: center;
+  background-color: $color-white;
 
   &__inner {
     a {
@@ -116,6 +119,98 @@
             left: -30px;
           }
         }
+      }
+    }
+  }
+}
+
+.page-title {
+  .page-title__inner {
+    position: relative;
+    max-width: 1040px;
+    height: 156px;
+    width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+
+    @media (--sm) {
+      height: 275px;
+    }
+
+    @media (--md) {
+      height: 330px;
+    }
+
+    @media (--xl) {
+      height: 406px;
+    }
+
+    .page__heading {
+      position: absolute;
+      top: 50%;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 26px;
+      font-family: $font-en;
+      letter-spacing: .1em;
+      line-height: 1;
+      z-index: 3;
+      transform: translate(0, -50%);
+
+      @media (--md) {
+        top: 55%;
+        font-size: 60px;
+      }
+
+      @media (--lg) {
+        top: 180px;
+      }
+
+      @media (--xl) {
+        top: 220px;
+      }
+
+      span {
+        display: block;
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 10px;
+
+        @media (--sm) {
+          font-size: 13px;
+        }
+
+        @media (--md) {
+          margin-top: 15px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .page__backimage {
+      position: fixed;
+      top: 50px;
+      left: 50%;
+      width: 800px;
+      margin: 0 auto;
+      transform: translate(-50%, 0);
+
+      @media (--sm) {
+        height: 1000px;
+        width: 820px;
+      }
+
+      @media (--md) {
+        width: 1200px;
+      }
+
+      @media (--lg) {
+        width: 100%;
+        top: 77px;
+      }
+
+      img {
+        width: 100%;
       }
     }
   }

@@ -4,6 +4,7 @@
 	"author": "Nakai Masahito",
 	"license": "GPL-2.0-or-later",
 	"dependencies": {
+		"aos": "^2.3.4",
 		"argv": "^0.0.2",
 		"babel-eslint": "^8.2.2",
 		"babel-preset-env": "^1.6.1",

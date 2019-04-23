@@ -1,7 +1,7 @@
 footer {
   position: relative;
   padding: 40px 0 20px;
-  background: #f1f1f1;
+  background: $color-grey-light;
   z-index: 3;
 
   @media (--md) {

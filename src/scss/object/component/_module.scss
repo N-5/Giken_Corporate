@@ -94,16 +94,18 @@
       }
 
       &:hover {
-        span {
-          color: $color-white;
-        }
+        @media (--md) {
+          span {
+            color: $color-white;
+          }
 
-        &::before {
-          background: $color-main;
-        }
+          &::before {
+            background: $color-main;
+          }
 
-        &::after {
-          border-color: $color-white !important;
+          &::after {
+            border-color: $color-white !important;
+          }
         }
       }
     }
@@ -124,6 +126,41 @@
     a {
       background: $color-main-light;
       color: $color-white;
+    }
+  }
+
+  &__download {
+    a {
+      color: $color-main;
+      border: 1px solid $color-main;
+
+      &::before {
+        background: $color-main;
+      }
+
+      &::after {
+        content: none;
+      }
+
+      span {
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+          position: absolute;
+          margin-left: 10px;
+        }
+      }
+
+      &:hover {
+        @media (--md) {
+          color: $color-white;
+
+          &::after {
+            background: none;
+          }
+        }
+      }
     }
   }
 }
@@ -246,10 +283,10 @@
 .m-block-title {
   color: $color-main;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
 
   @media (--md) {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 

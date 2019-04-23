@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="<?php bloginfo('language'); ?>">
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,22 +9,41 @@
     <?php get_template_part('lib/favicons'); ?>
     <?php wp_head() ?>
   </head>
-  <body <?php body_class(); ?>>
+  <body <?php body_class( $class ); ?>>
     <div class="l-wrapper">
       <header id="header" class="header <?php if ( !is_home() && !is_front_page() ) : ?>header-bg<?php endif; ?>">
         <div class="header-inner">
+          <?php if ( is_home() || is_front_page() ) : ?>
+          <h1 class="header-logo">
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>"></a>
+          </h1>
+          <?php else : ?>
           <div class="header-logo">
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>"></a>
+          </div>
+          <?php endif; ?>
+          <div class="header-language">
+            <div class="header-language-list">
+              <div class="header-language-list__item is-active">
+                <a href="<?php echo home_url(); ?>">JP</a>
+              </div>／
+              <div class="header-language-list__item">
+                <a href="<?php echo home_url(); ?>/en/">EN</a>
+              </div>／
+              <div class="header-language-list__item">
+                <a href="<?php echo home_url(); ?>/zh/">CH</a>
+              </div>
+            </div>
           </div>
           <nav class="header-gnav">
             <ul class="header-gnav-list">
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/service/">SERVICE</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/vistion/">VISION</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/company/">COMPANY</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/recruit/">RECRUIT</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/csr/">CSR</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/news/">NEWS</a></li>
-              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/contact/">CONTACT</a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/service/"><span>SERVICE</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/vision/"><span>VISION</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/company/"><span>COMPANY</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/recruit/"><span>RECRUIT</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/csr/"><span>CSR</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/news/"><span>NEWS</span></a></li>
+              <li class="header-gnav-list__item"><a href="<?php echo home_url(); ?>/contact/"><span>CONTACT</span></a></li>
             </ul>
           </nav>
           <div class="header-humberger" data-menu-hamburger><span></span><span></span><span></span></div>

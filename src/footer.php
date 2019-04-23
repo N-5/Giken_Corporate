@@ -13,8 +13,8 @@
         <div class="sitemap-list sitemap-drower">
           <h3 class="heading" data-footer-drower>SERVICE</h3>
           <ul class="drower">
-            <li class="item"><a href="<?php echo home_url(); ?>/service/automobile/">自動車産業</a></li>
-            <li class="item"><a href="<?php echo home_url(); ?>/service/aluminum/">アルミ事業</a></li>
+            <li class="item"><a href="<?php echo home_url(); ?>/service/automotive">自動車産業</a></li>
+            <li class="item"><a href="<?php echo home_url(); ?>/service/aluminum">アルミ事業</a></li>
             <li class="item"><a href="<?php echo home_url(); ?>/service/industrial/">産業機械事業</a></li>
             <li class="item"><a href="<?php echo home_url(); ?>/service/partner/">パートナー</a></li>
           </ul>
@@ -57,5 +57,4 @@
 <?php wp_footer(); ?>
 
 </body>
-
 </html>

@@ -6,6 +6,15 @@ Template Name: recruit
 <?php get_header(); ?>
 
 <main id="recruit">
+  <section class="page-title">
+    <div class="page-title__inner">
+      <h1 class="page__heading">RECRUIT<span>採用情報</span></h1>
+      <div class="page__backimage">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-lower.jpg">
+      </div>
+    </div>
+  </section>
+
   <section class="recruit-lead">
     <div class="l-container">
       <h2 class="recruit-lead__heading">世界の流れを、<br>共につくる。</h2>
@@ -19,15 +28,7 @@ Template Name: recruit
     </div>
   </section>
 
-  <section class="recruit-entry">
-    <div class="recruit-entry__inner">
-      <h3 class="recruit-entry__heading">エントリーはこちらから</h3>
-      <div class="recruit-entry__btn">
-        <div class="m-link m-link__newgraduate"><a href="<?php echo home_url(); ?>/recruit/newgraduate/"><span>新卒採用</span></a></div>
-        <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/recruit/career/"><span>経験者採用</span></a></div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('lib/recruit-entry');?>
 
   <section class="recruit-philosophy">
     <div class="l-container">
@@ -62,15 +63,7 @@ Template Name: recruit
     </div>
   </section>
 
-  <section class="recruit-entry">
-    <div class="recruit-entry__inner">
-      <h3 class="recruit-entry__heading">エントリーはこちらから</h3>
-      <div class="recruit-entry__btn">
-        <div class="m-link m-link__newgraduate"><a href="<?php echo home_url(); ?>/recruit/newgraduate/"><span>新卒採用</span></a></div>
-        <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/recruit/career/"><span>経験者採用</span></a></div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('lib/recruit-entry');?>
 
   <section class="recruit-support">
     <div class="recruit-support__inner">
@@ -106,25 +99,8 @@ Template Name: recruit
     </div>
   </section>
 
-  <section class="recruit-voice">
-    <div class="recruit-voice__inner l-container">
-      <figure class="recruit-voice__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-voice__img.png" alt=""></figure>
-      <div class="recruit-voice__detail">
-        <h3 class="heading">技研の仕事を、もっと知る。</h3>
-        <p class="text">技研では、それぞれが個性的で活き活きしています。それは、皆が個人の能力を信じて自己成長するために努力し、仕事上のスキルの向上や信頼関係の構築を行っているからです。 それぞれの部門で力をしっかり発揮し、活躍する先輩社員たちです。 あなたの仕事への具体的なイメージをつかむ参考にしてください。</p>
-        <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/voice/"><span>先輩の声を見る</span></a></div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('lib/recruit-voice');?>
 
-  <section class="recruit-entry">
-    <div class="recruit-entry__inner">
-      <h3 class="recruit-entry__heading">エントリーはこちらから</h3>
-      <div class="recruit-entry__btn">
-        <div class="m-link m-link__newgraduate"><a href="<?php echo home_url(); ?>/recruit/newgraduate/"><span>新卒採用</span></a></div>
-        <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/recruit/career/"><span>経験者採用</span></a></div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('lib/recruit-entry');?>
 </main>
 <?php get_footer(); ?>

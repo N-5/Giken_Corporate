@@ -7,7 +7,7 @@ Template Name: voice
 
 <main id="voice">
   <section class="voice-top">
-    <div class="voice-top__inner js-animation">
+    <div class="voice-top__inner">
       <h1 class="voice-top__heading">REAL VOICE<span>先輩たちの「生」の声</span></h1>
       <p class="voice-top__text">
         技研では、それぞれが個性的で活き活きしています。<br>
@@ -21,7 +21,7 @@ Template Name: voice
   </section>
 
   <section class="voice-interview">
-    <div class="voice-interview-item js-animation">
+    <div class="voice-interview-item">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_01.jpg" alt=""></div>
         <div class="detail">
@@ -40,7 +40,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse js-animation">
+    <div class="voice-interview-item reverse">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_02.jpg" alt=""></div>
         <div class="detail">
@@ -59,7 +59,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item js-animation">
+    <div class="voice-interview-item">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_03.jpg" alt=""></div>
         <div class="detail">
@@ -78,7 +78,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse js-animation">
+    <div class="voice-interview-item reverse">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_04.jpg" alt=""></div>
         <div class="detail">
@@ -97,7 +97,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item js-animation">
+    <div class="voice-interview-item">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_05.jpg" alt=""></div>
         <div class="detail">
@@ -116,7 +116,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse js-animation">
+    <div class="voice-interview-item reverse">
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_06.jpg" alt=""></div>
         <div class="detail">
@@ -136,15 +136,7 @@ Template Name: voice
     </div>
   </section>
 
-  <section class="recruit-entry">
-    <div class="recruit-entry__inner">
-      <h3 class="recruit-entry__heading">エントリーはこちらから</h3>
-      <div class="recruit-entry__btn">
-        <div class="m-link m-link__newgraduate"><a href="<?php echo home_url(); ?>/recruit/newgraduate/"><span>新卒採用</span></a></div>
-        <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/recruit/career/"><span>経験者採用</span></a></div>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('lib/recruit-entry');?>
 
   <section class="c-section-back">
     <div class="c-section-back__inner">

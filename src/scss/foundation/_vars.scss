@@ -1,10 +1,10 @@
 // color
-$color-black: #505050;
+$color-black: #000;
 $color-white: #fff;
 $color-grey: #777;
+$color-grey-light: #f1f1f1;
 $color-main: #005291;
 $color-main-light: #0071bb;
-$color-main-dark: #005291;
 
 // font-family
 $font-sans: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
@@ -12,6 +12,7 @@ $font-serif: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝
 $font-en: 'Roboto Condensed', sans-serif;
 
 //bp min
+@custom-media --s (min-width: 340px);
 @custom-media --xs (min-width: 425px);
 @custom-media --sm (min-width: 554px);
 @custom-media --md (min-width: 768px);
@@ -19,6 +20,7 @@ $font-en: 'Roboto Condensed', sans-serif;
 @custom-media --xl (min-width: 1200px);
 
 //bp max
+@custom-media --s_max (max-width: 341px);
 @custom-media --xs_max (max-width: 424px);
 @custom-media --sm_max (max-width: 553px);
 @custom-media --md_max (max-width: 767px);
@@ -67,15 +69,10 @@ $font-en: 'Roboto Condensed', sans-serif;
 
 //margin
 %m-section-title___margin {
-  margin: 40px 0 30px;
-  text-align: center;
-
-  @media (--md) {
-    margin: 80px 0 45px;
-  }
+  margin-bottom: 30px;
 
   @media (--lg) {
-    margin: 100px 0 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -106,7 +103,7 @@ $font-en: 'Roboto Condensed', sans-serif;
     padding: 80px 0;
   }
 
-  @media (--md) {
+  @media (--lg) {
     padding: 100px 0;
   }
 }

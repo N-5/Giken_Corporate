@@ -57,6 +57,7 @@
 .recruit-entry {
   padding: 40px 0;
   text-align: center;
+  background: $color-white;
 
   @media (--md) {
     padding: 50px 0;
@@ -127,7 +128,7 @@
 .recruit-philosophy {
   position: relative;
   padding: 60px 0 140px;
-  background: linear-gradient(to right, $color-main, $color-main-dark);
+  background: linear-gradient(to right, $color-main-light, $color-main);
 
   @media (--sm) {
     padding: 90px 0 120px;
@@ -179,7 +180,7 @@
     }
 
     @media (--md) {
-      width: 400px;
+      width: 360px;
       bottom: -150px;
     }
 
@@ -192,14 +193,14 @@
 
 .recruit-person {
   padding: 130px 0 50px;
-  background: #f1f1f1;
+  background: $color-grey-light;
 
   @media (--sm) {
-    padding: 120px 0 50px;
+    padding: 160px 0 80px;
   }
 
-  @media (--md) {
-    padding: 150px 0;
+  @media (--lg) {
+    padding: 120px 0;
   }
 
   &__items {
@@ -226,7 +227,7 @@
 
       &:nth-child(1),
       &:nth-child(2) {
-        border-bottom: 2px solid #f1f1f1;
+        border-bottom: 2px solid $color-grey-light;
       }
     }
 
@@ -238,7 +239,7 @@
 
       &:nth-child(1),
       &:nth-child(2) {
-        border-right: 2px solid #f1f1f1;
+        border-right: 2px solid $color-grey-light;
       }
     }
 
@@ -311,15 +312,15 @@
 }
 
 .recruit-support {
-  padding: 40px 0;
-  background: #f1f1f1;
+  @extend %section___padding;
+
+  background: $color-grey-light;
 
   @media (--md) {
     max-width: 100%;
-    padding: 120px 0;
   }
 
-  &__inner {
+  .recruit-support__inner {
     @media (--sm) {
       max-width: 600px;
       margin: 0 auto;
@@ -331,22 +332,21 @@
     }
   }
 
-  &__top {
-    padding: 0 5%;
-
-    @media (--sm) {
-      padding: 0;
-    }
+  .recruit-support__top {
+    padding: 0 8%;
 
     @media (--md) {
       max-width: 1200px;
-      display: flex;
       margin: 0 auto;
       padding: 0;
     }
+
+    @media (--lg) {
+      display: flex;
+    }
   }
 
-  &__image {
+  .recruit-support__image {
     @media (--md_max) {
       position: relative;
       margin-bottom: 40px;
@@ -363,9 +363,14 @@
     }
   }
 
-  &__top-detail {
+  .recruit-support__top-detail {
     @media (--md) {
       width: 100%;
+      margin-top: -4%;
+    }
+
+    @media (--lg) {
+      margin: 0;
     }
 
     .heading {
@@ -412,7 +417,7 @@
     }
   }
 
-  &__under {
+  .recruit-support__under {
     @media (--sm) {
       width: 100%;
     }
@@ -491,19 +496,19 @@
 
 .recruit-voice {
   padding: 50px 0;
-  background: linear-gradient(to right, $color-main, $color-main-dark);
+  background: linear-gradient(to right, $color-main-light, $color-main);
 
   @media (--md) {
-    padding: 115px 0 110px;
+    padding: 115px 0 80px;
   }
 
   .recruit-voice__inner {
     @media (--sm) {
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto;
     }
 
-    @media (--md) {
+    @media (--lg) {
       display: flex;
       justify-content: space-between;
       max-width: 1120px;
@@ -515,16 +520,17 @@
     margin: 0 auto;
 
     @media (--sm) {
-      width: 42%;
+      width: 60%;
     }
 
-    @media (--md) {
+    @media (--lg) {
       margin: 0 auto 0 0;
+      width: 40%;
     }
   }
 
   .recruit-voice__detail {
-    @media (--md) {
+    @media (--lg) {
       width: 50%;
     }
 
@@ -532,10 +538,10 @@
       color: #fff;
       font-weight: normal;
       letter-spacing: .3em;
+      text-align: center;
 
       @media (--md_max) {
         margin-top: 20px;
-        text-align: center;
         font-size: 16px;
         letter-spacing: .2em;
       }
@@ -543,6 +549,10 @@
       @media (--md) {
         margin: 20px 0 40px;
         font-size: 26px;
+      }
+
+      @media (--lg) {
+        text-align: left;
       }
     }
 
@@ -568,14 +578,14 @@
         font-weight: normal;
       }
 
-      @media (--md_max) {
-        width: 70%;
-        margin: 30px auto 0;
-      }
-
       @media (--md) {
         margin-top: 40px;
         max-width: 330px;
+      }
+
+      @media (--lg_max) {
+        width: 70%;
+        margin: 30px auto 0;
       }
     }
   }
@@ -584,7 +594,7 @@
 //newgrade
 .newgrade__heading {
   margin-bottom: 15px;
-  color: $color-main-dark;
+  color: $color-main;
   font-weight: normal;
   font-size: 20px;
   letter-spacing: .2em;
@@ -649,7 +659,7 @@
 
   &__figure {
     padding: 8% 5%;
-    background: #f1f1f1;
+    background: $color-grey-light;
 
     @media (--md) {
       margin-top: 40px;
@@ -722,23 +732,25 @@
 }
 
 .newgrade-mynavi {
-  @media (--md_max) {
+  @media (--lg_max) {
     width: 90%;
     margin: 0 auto;
   }
 
   .l-container__small {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     border: 2px solid $color-main-light;
     text-align: center;
 
     @media (--md) {
-      padding: 70px 0;
+      padding-top: 70px;
+      padding-bottom: 70px;
       border: 4px solid $color-main-light;
     }
   }
 
-  &__lead {
+  .newgrade-mynavi__lead {
     @media (--md) {
       margin-bottom: 45px;
       font-size: 16px;
@@ -746,7 +758,7 @@
     }
   }
 
-  &__heading {
+  .newgrade-mynavi__heading {
     margin: 25px 0 20px;
     color: $color-main-light;
     font-weight: normal;
@@ -767,7 +779,7 @@
     }
   }
 
-  &__banner {
+  .newgrade-mynavi__banner {
     width: 60%;
     max-width: 390px;
     text-align: center;
@@ -812,6 +824,7 @@
   &-privacy {
     max-width: 870px;
     margin: 30px auto 0;
+    padding-bottom: 40px;
 
     @media (--md) {
       margin: 60px auto 0;
@@ -845,7 +858,7 @@
 
     a {
       display: inline-block;
-      color: $color-main-dark;
+      color: $color-main;
 
       &::after {
         content: '';
@@ -918,12 +931,12 @@
 
 .voice-interview {
   .l-container__large {
-    @media (--md) {
+    @media (--lg) {
       display: flex;
     }
 
     .image {
-      @media (--md_max) {
+      @media (--lg_max) {
         position: relative;
         width: 100%;
         right: 5%;
@@ -934,17 +947,17 @@
         }
       }
 
-      @media (--md) {
+      @media (--lg) {
         width: 50%;
       }
     }
 
     .detail {
-      @media (--md_max) {
+      @media (--lg_max) {
         margin-top: 30px;
       }
 
-      @media (--md) {
+      @media (--lg) {
         width: 40%;
         margin-left: 40px;
       }
@@ -952,7 +965,7 @@
       .belong {
         display: flex;
         align-items: flex-end;
-        color: $color-main-dark;
+        color: $color-main;
 
         @media (--lg) {
           margin-top: 4px;
@@ -963,7 +976,7 @@
           font-size: 36px;
           line-height: .7;
 
-          @media (--md) {
+          @media (--lg) {
             font-size: 60px;
           }
         }
@@ -972,7 +985,7 @@
           margin-left: 10px;
           line-height: 1;
 
-          @media (--md) {
+          @media (--lg) {
             margin-left: 20px;
             font-size: 17px;
           }
@@ -981,16 +994,16 @@
 
       .name {
         margin-top: 14px;
-        color: $color-main-dark;
+        color: $color-main;
 
-        @media (--md) {
+        @media (--lg) {
           margin-top: 14px;
         }
 
         &-jp {
           font-size: 16px;
 
-          @media (--md) {
+          @media (--lg) {
             font-size: 20px;
           }
         }
@@ -999,7 +1012,7 @@
           font-size: 10px;
           font-family: $font-en;
 
-          @media (--md) {
+          @media (--lg) {
             font-size: 12px;
           }
         }
@@ -1007,9 +1020,9 @@
 
       .join {
         font-size: 10px;
-        color: $color-main-dark;
+        color: $color-main;
 
-        @media (--md) {
+        @media (--lg) {
           font-size: 12px;
         }
       }
@@ -1017,12 +1030,12 @@
       &-heading {
         margin-top: 20px;
         font-weight: normal;
-        color: $color-main-dark;
+        color: $color-main;
         font-size: 16px;
         line-height: 1.8;
         letter-spacing: .3em;
 
-        @media (--md) {
+        @media (--lg) {
           margin-top: 35px;
           font-size: 25px;
           line-height: (45/25);
@@ -1034,7 +1047,7 @@
         font-size: 13px;
         line-height: 2;
 
-        @media (--md) {
+        @media (--lg) {
           margin-top: 20px;
           font-size: 13px;
           line-height: (24/13);
@@ -1045,9 +1058,9 @@
 
   .voice-interview-item {
     padding: 50px 0 40px;
-    background: #f1f1f1;
+    background: $color-grey-light;
 
-    @media (--md) {
+    @media (--lg) {
       padding: 85px 0 70px;
     }
 
@@ -1055,12 +1068,12 @@
       background: $color-white;
 
       .l-container__large {
-        @media (--md) {
+        @media (--lg) {
           flex-direction: row-reverse;
         }
 
         .image {
-          @media (--md_max) {
+          @media (--lg_max) {
             right: auto;
             left: 5%;
             text-align: right;
@@ -1070,7 +1083,7 @@
         .detail {
           margin: 40px auto 0;
 
-          @media (--md) {
+          @media (--lg) {
             margin: 0 40px 0 0;
           }
         }

@@ -3,7 +3,16 @@
 <main id="index">
   <section class="index-hero">
     <div class="l-container">
-      <h1 class="index-hero__heading">技術で世界の流れをつくる。</h1>
+      <p class="index-hero__heading">
+		  <?php
+		  $locale = get_locale();
+		  if ('en_US' == $locale  ) {
+			  echo 'dummy english copy';
+		  } else {
+			  echo '技術で世界の流れをつくる。';
+		  }
+		  ?>
+      </p>
       <div class="index-hero__catchcopy">MAKE<br>THE <br class="u-sm_max">WORLD <br class="u-sm_max">FROW<br>WITH<br>TECHNOLOGY</div>
       <div class="index-hero__inner">
         <p class="index-hero__lead">
@@ -15,7 +24,7 @@
         </p>
         <div class="index-hero__btn">
           <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/"><span>MORE OUR VISION</span></a></div>
-          <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/vision/concept/"><span>CONCEPT MOVIE</span></a></div>
+          <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
         </div>
       </div>
     </div>
@@ -49,7 +58,7 @@
         <h2 class="m-index-section__title"><span class="en">COMPANY</span><span class="jp">会社概要</span></h2>
         <p class="m-index-section__copy">ずっと安心して使い続けられる、<br>良質なものを世界へ。</p>
         <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
-        <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/compnay/"><span>MORE</span></a></div>
+        <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/company/"><span>MORE</span></a></div>
       </div>
     </div>
   </section>
@@ -57,19 +66,19 @@
   <section class="index-information">
     <div class="index-information__outer">
       <div class="index-information__recruit">
-        <div class="index-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/index-recruit__image.jpg"></div>
+        <div class="index-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/index-recruit__image.jpg" alt="採用情報"></div>
         <div class="index-information__inner">
           <h2 class="m-index-section__title"><span class="en">RECRUIT</span><span class="jp">採用情報</span></h2>
-          <p class="m-index-section__copy">世界と交わり、<br>次世代を担う。</p>
+          <h3 class="m-index-section__copy">世界と交わり、<br>次世代を担う。</h3>
           <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
           <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/recruit/"><span>MORE</span></a></div>
         </div>
       </div>
       <div class="index-information__csr">
-        <div class="index-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/index-csr__image.jpg"></div>
+        <div class="index-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/index-csr__image.jpg" alt="社会への取り組み"></div>
         <div class="index-information__inner">
           <h2 class="m-index-section__title"><span class="en">CSR</span><span class="jp">社会への取り組み</span></h2>
-          <p class="m-index-section__copy">社会と重なり、<br>大切な物を築く。</p>
+          <h3 class="m-index-section__copy">社会と重なり、<br>大切な物を築く。</h3>
           <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
           <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/csr/"><span>MORE</span></a></div>
         </div>

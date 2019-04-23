@@ -2,7 +2,6 @@
   margin-top: 50px;
   position: relative;
   z-index: 3;
-  overflow: hidden;
 
   @media (--lg) {
     margin-top: 77px;
@@ -11,6 +10,10 @@
   main {
     &.js-open {
       filter: blur(5px);
+
+      @media (--md) {
+        filter: blur(0);
+      }
     }
   }
 }

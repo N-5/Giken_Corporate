@@ -4,43 +4,26 @@
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
-//remove embed
-function crave_disable_embeds() {
+//remove
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'rest_output_link_wp_head');
+remove_action('wp_head', 'wp_oembed_add_discovery_links');
+remove_action('wp_head', 'wp_oembed_add_host_js');
 
-  // Remove the REST API endpoint.
-  remove_action( 'rest_api_init', 'wp_oembed_register_route' );
-  // Turn off oEmbed auto discovery.
-  add_filter( 'embed_oembed_discover', '__return_false' );
-  // Don't filter oEmbed results.
-  remove_filter( 'oembed_dataparse', 'wp_filter_oembed_result', 10 );
-  // Remove oEmbed discovery links.
-  remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
-  // Remove oEmbed-specific JavaScript from the front-end and back-end.
-  remove_action( 'wp_head', 'wp_oembed_add_host_js' );
-  add_filter( 'tiny_mce_plugins', 'crave_disable_embeds_tiny_mce_plugin' );
-  // Remove all embeds rewrite rules.
-  add_filter( 'rewrite_rules_array', 'crave_disable_embeds_rewrites' );
-  // Remove filter of the oEmbed result before any HTTP requests are made.
-  remove_filter( 'pre_oembed_result', 'wp_filter_pre_oembed_result', 10 );
+// remove emoji
+function disable_emoji()
+{
+  remove_action('wp_head', 'print_emoji_detection_script', 7);
+  remove_action('admin_print_scripts', 'print_emoji_detection_script');
+  remove_action('wp_print_styles', 'print_emoji_styles');
+  remove_action('admin_print_styles', 'print_emoji_styles');
+  remove_filter('the_content_feed', 'wp_staticize_emoji');
+  remove_filter('comment_text_rss', 'wp_staticize_emoji');
+  remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
 }
-add_action( 'init', 'crave_disable_embeds', 9999 );
-
-function crave_disable_embeds_tiny_mce_plugin($plugins) {
-  return array_diff($plugins, array('wpembed'));
-}
-
-function crave_disable_embeds_rewrites($rules) {
-  foreach($rules as $rule => $rewrite) {
-    if(false !== strpos($rewrite, 'embed=true')) {
-      unset($rules[$rule]);
-    }
-  }
-  return $rules;
-}
-
-// AIOSEO <link rel="prev/next">削除
-add_filter('aioseop_prev_link', '__return_empty_string' );
-add_filter('aioseop_next_link', '__return_empty_string' );
+add_action('init', 'disable_emoji');
 
 // include CSS, JS
 if (!is_admin()) {
@@ -137,14 +120,14 @@ function implement_custom_posts($value='') {
     "name" => "ニュース",
     "has_archive" => true,
   );
-  $blog = (object) array(
-    "slug" => "blog",
-    "name" => "ブログ",
+  $movie = (object) array(
+    "slug" => "movie",
+    "name" => "ムービー",
     "has_archive" => true,
   );
   $contents_array = [
     $news,
-    $blog
+    $movie
   ];
   foreach ($contents_array as $key => $value) {
     add_custom($value);
@@ -203,3 +186,34 @@ function my_title_fix($title, $sep, $seplocation){
   return $title;
 }
 add_filter('wp_title', 'my_title_fix', 10, 3);
+
+//body add page-name slug
+function pagename_class($classes = ''){
+  if (is_page()) {
+   $page = get_post();
+   $classes[] = $page->post_name;
+  }
+  return $classes;
+}
+add_filter('body_class', 'pagename_class');
+
+// bogo
+add_filter( 'bogo_localizable_post_types', 'add_bogo_localizable_post_types' );
+function add_bogo_localizable_post_types( $localizable ) {
+  $args = array(
+      'public'   => true,
+      '_builtin' => false
+  );
+  $custom_post_types = get_post_types( $args );
+  return array_merge( $localizable, $custom_post_types );
+}
+
+add_filter( 'bogo_use_flags', 'remove_bogo_lang_flags' );
+function remove_bogo_lang_flags() {
+  return false;
+}
+
+add_filter( 'bogo_language_switcher','replace_bogo_text');
+function replace_bogo_text($output){
+  return str_replace(' (United States)','',$output);
+}

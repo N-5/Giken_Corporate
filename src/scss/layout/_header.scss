@@ -2,7 +2,7 @@
   @extend %transition;
 
   position: fixed;
-  z-index: 4;
+  z-index: 10;
   width: 100%;
   top: 0;
   left: 0;
@@ -21,6 +21,7 @@
   }
 
   .header-inner {
+    position: relative;
     width: 100%;
     height: 50px;
     display: flex;
@@ -30,12 +31,58 @@
     transition: .24s ease all;
 
     @media (--lg) {
-      margin: 26px auto;
+      margin: 0 auto;
+      height: 100px;
       max-width: 1280px;
       padding: 0 20px 0 40px;
-      height: auto;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
+    }
+  }
+
+  .header-language {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    @media (--lg) {
+      position: absolute;
+      pointer-events: auto;
+      opacity: 1;
+      width: auto;
+      top: 20px;
+      bottom: auto;
+      right: 40px;
+      left: auto;
+    }
+  }
+
+  .header-language-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-language-list__item {
+    a {
+      font-family: $font-en;
+      font-weight: bold;
+      color: #adadad;
+
+      @media (--lg) {
+        &:hover {
+          color: $color-main;
+        }
+      }
+    }
+
+    &.is-active {
+      a {
+        color: $color-main;
+      }
     }
   }
 
@@ -56,12 +103,13 @@
     @media (--lg) {
       opacity: 1;
       pointer-events: auto;
+      margin-top: 30px;
     }
 
     .header-gnav-list {
       @media (--lg_max) {
         position: absolute;
-        top: 50%;
+        top: 44%;
         left: 50%;
         width: 100%;
         transform: translate(-50%, -50%);
@@ -69,14 +117,17 @@
 
       @media (--lg) {
         display: flex;
+        height: 100%;
       }
 
       .header-gnav-list__item {
+        position: relative;
+
         @media (--lg_max) {
           text-align: center;
         }
 
-        a {
+        > a {
           display: block;
           position: relative;
           color: $color-main;
@@ -89,27 +140,58 @@
           }
 
           @media (--lg) {
+            display: flex;
+            align-items: center;
+            height: 100%;
             padding: 0 20px;
             font-size: 16px;
 
-            &::after {
-              content: '';
-              position: absolute;
-              bottom: -2px;
-              left: 50%;
-              height: 3px;
-              width: 0;
-              transform: translate(-50%, 0);
-              background: $color-main;
-              transition: .24s ease all;
+            span {
+              position: relative;
+
+              &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                height: 3px;
+                width: 0;
+                transform: translate(-50%, 0);
+                background: $color-main;
+                transition: .24s ease all;
+              }
             }
 
             &:hover {
               opacity: 1;
 
-              &::after {
-                width: 60%;
+              span {
+                &::after {
+                  width: 100%;
+                }
               }
+            }
+          }
+        }
+      }
+
+      .header-gnav-list__drower {
+        position: absolute;
+        width: 100%;
+
+        @media (--md) {
+          background: $color-white;
+        }
+
+        ul {
+          li {
+            text-align: center;
+            font-weight: bold;
+            color: #ccc;
+
+            a {
+              display: block;
+              color: $color-main;
             }
           }
         }
@@ -166,6 +248,15 @@
         opacity: 1;
         pointer-events: auto;
       }
+
+      @media (--md) {
+        height: 100%;
+      }
+    }
+
+    .header-language {
+      opacity: 1;
+      pointer-events: auto;
     }
 
     .header-humberger {

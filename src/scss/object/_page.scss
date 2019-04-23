@@ -1,0 +1,188 @@
+.hoge {
+  @extend %section___padding;
+  @extend %section___margin;
+}
+
+#company {
+  .m-section-title {
+    @extend %m-section-title___margin;
+  }
+
+  .comapny-profile {
+    @extend %section___padding;
+
+    background-color: $color-white;
+  }
+
+  .company-location {
+    background-color: $color-white;
+  }
+
+  .comapny-history {
+    @extend %section___padding;
+
+    background-color: $color-white;
+  }
+
+  .company-award {
+    @extend %section___padding;
+
+    background-color: $color-white;
+  }
+}
+
+#news {
+  .news-archive {
+    @extend %section___padding;
+  }
+}
+
+#csr {
+  .csr-society {
+    @extend %section___padding;
+
+    background-color: $color-white;
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+
+  .csr-environment {
+    background-color: $color-white;
+    padding-bottom: 40px;
+
+    @media (--md) {
+      padding-bottom: 80px;
+    }
+
+    @media (--lg) {
+      padding-bottom: 100px;
+    }
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+}
+
+#service {
+  .service-information {
+    //box-shadow: 0 10px 20px -12px $color-black inset;
+  }
+
+  .service-group {
+    @extend %section___padding;
+
+    border-bottom: 1px solid #dfdfdf;
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+
+  .service-client {
+    @extend %section___padding;
+
+    background-color: $color-white;
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+}
+
+#automotive,
+#aluminum,
+#industrial {
+  .service-lead {
+    @extend %section___padding;
+
+    background-color: $color-white;
+  }
+
+  .service-case {
+    padding: 40px 0;
+    box-shadow: 0 10px 20px 0 $color-black;
+    background-color: $color-grey-light;
+
+    @media (--md) {
+      padding: 60px 0;
+    }
+
+    @media (--lg) {
+      padding: 70px 0;
+    }
+
+    .l-container {
+      padding: 0 4%;
+    }
+  }
+}
+
+#movie {
+  .movie-films {
+    background-color: $color-grey-light;
+  }
+}
+
+#newgrade,
+#career {
+  padding-top: 40px;
+
+  @media (--md) {
+    padding-top: 60px;
+  }
+
+  @media (--lg) {
+    padding-top: 100px;
+  }
+
+  .m-recruit-section__title {
+    margin-bottom: 30px;
+  }
+}
+
+#vision {
+  .vision-message {
+    @extend %section___padding;
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+
+  .vision-logo {
+    padding-bottom: 40px;
+
+    @media (--md) {
+      padding-bottom: 80px;
+    }
+
+    @media (--lg) {
+      padding-bottom: 100px;
+    }
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+}
+
+#contact {
+  .contact-call {
+    background-color: $color-white;
+  }
+
+  .contact-form {
+    background-color: $color-grey-light;
+  }
+}
+
+#sample {
+  .sample-block {
+    @extend %section___padding;
+
+    background-color: $color-grey;
+  }
+}
