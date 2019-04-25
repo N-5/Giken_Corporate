@@ -9,7 +9,7 @@
     <?php get_template_part('lib/favicons'); ?>
     <?php wp_head() ?>
   </head>
-  <body <?php body_class( $class ); ?>>
+  <body <?php body_class( $class ); ?> <?php $locale = get_post_meta( $post_id, '_locale', true ); ?>>
     <div class="l-wrapper">
       <header id="header" class="header <?php if ( !is_home() && !is_front_page() ) : ?>header-bg<?php endif; ?>">
         <div class="header-inner">
@@ -24,14 +24,16 @@
           <?php endif; ?>
           <div class="header-language">
             <div class="header-language-list">
-              <div class="header-language-list__item is-active">
-                <a href="<?php echo home_url(); ?>">JP</a>
-              </div>／
-              <div class="header-language-list__item">
-                <a href="<?php echo home_url(); ?>/en/">EN</a>
-              </div>／
-              <div class="header-language-list__item">
-                <a href="<?php echo home_url(); ?>/zh/">CH</a>
+              <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'ja') : echo 'is-active'; endif; ?>">
+                <a href="/">JP</a>
+              </div>
+              <div class="header-language-list__between">／</div>
+              <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'en_US') : echo 'is-active'; endif; ?>">
+                <a href="/en/">EN</a>
+              </div>
+              <div class="header-language-list__between">／</div>
+              <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'zh_CN') : echo 'is-active'; endif; ?>">
+                <a href="/zh/">CH</a>
               </div>
             </div>
           </div>

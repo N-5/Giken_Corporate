@@ -75,10 +75,10 @@
       </div>
     </div>
     <div class="l-container">
-      <div class="archive-news-yearly">
+      <div class="archive-blog-monthly">
         <h4 class="archive-blog-heading">ARCHIVE</h4>
         <ul>
-          <?php wp_get_archives('type=yearly&post_type=news'); ?>
+          <?php wp_get_archives('type=yearly'); ?>
         </ul>
       </div>
     </div>

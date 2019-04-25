@@ -15,14 +15,14 @@ Template Name: company
     </div>
   </section>
   
-  <section class="company-anchor">
+  <section class="page-navigation">
     <div class="l-container">
-      <div class="anchor-list">
-        <div class="anchor-list__item"><a href="#a1" data-anchor><span>会社概要</span></a></div>
-        <div class="anchor-list__item"><a href="#a2" data-anchor><span>所在地</span></a></div>
-        <div class="anchor-list__item"><a href="#a3" data-anchor><span>沿革</span></a></div>
-        <div class="anchor-list__item"><a href="#a4" data-anchor><span>特許</span></a></div>
-        <div class="anchor-list__item"><a href="#a5" data-anchor><span>受賞歴</span></a></div>
+      <div class="page-navigation-list company-navigation">
+        <div class="page-navigation-list__item"><a href="#a1" data-anchor><span>会社概要</span></a></div>
+        <div class="page-navigation-list__item"><a href="#a2" data-anchor><span>所在地</span></a></div>
+        <div class="page-navigation-list__item"><a href="#a3" data-anchor><span>沿革</span></a></div>
+        <div class="page-navigation-list__item"><a href="#a4" data-anchor><span>特許</span></a></div>
+        <div class="page-navigation-list__item"><a href="#a5" data-anchor><span>受賞歴</span></a></div>
       </div>
     </div>
   </section>

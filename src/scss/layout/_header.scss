@@ -86,6 +86,10 @@
     }
   }
 
+  .header-language-list__between {
+    margin: 0 4px;
+  }
+
   .header-gnav {
     @media (--lg_max) {
       position: fixed;

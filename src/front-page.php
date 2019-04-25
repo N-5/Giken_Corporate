@@ -4,14 +4,15 @@
   <section class="index-hero">
     <div class="l-container">
       <p class="index-hero__heading">
-		  <?php
-		  $locale = get_locale();
-		  if ('en_US' == $locale  ) {
-			  echo 'dummy english copy';
-		  } else {
-			  echo '技術で世界の流れをつくる。';
-		  }
-		  ?>
+        <?php $locale = get_locale();
+          if($locale == 'zh_CN') :
+            echo '中国ページです';
+          elseif($locale == 'en_US') :
+            echo '英語ページです';
+          else :
+            echo '技術で世界の流れをつくる。';
+          endif;
+		?>
       </p>
       <div class="index-hero__catchcopy">MAKE<br>THE <br class="u-sm_max">WORLD <br class="u-sm_max">FROW<br>WITH<br>TECHNOLOGY</div>
       <div class="index-hero__inner">

@@ -63,7 +63,7 @@
     padding: 50px 0;
   }
 
-  &__inner {
+  .recruit-entry__inner {
     @media (--sm) {
       max-width: 500px;
       margin: 0 auto;
@@ -77,7 +77,7 @@
     }
   }
 
-  &__heading {
+  .recruit-entry__heading {
     margin-bottom: 20px;
     font-size: 16px;
     color: $color-main;
@@ -94,7 +94,7 @@
     }
   }
 
-  &__btn {
+  .recruit-entry__btn {
     display: flex;
     padding: 0 5%;
 
@@ -138,7 +138,7 @@
     padding: 120px 0;
   }
 
-  &__concept {
+  .recruit-philosophy__concept {
     margin-top: 30px;
     color: $color-white;
     font-weight: normal;
@@ -153,7 +153,7 @@
     }
   }
 
-  &__text {
+  .recruit-philosophy__text {
     margin-top: 15px;
     color: $color-white;
     font-size: 12px;
@@ -166,7 +166,7 @@
     }
   }
 
-  &__img {
+  .recruit-philosophy__img {
     width: 58vw;
     position: absolute;
     bottom: -20%;
@@ -203,7 +203,7 @@
     padding: 120px 0;
   }
 
-  &__items {
+  .recruit-person__items {
     margin-top: 30px;
     background: $color-white;
 
@@ -251,7 +251,7 @@
         text-align: center;
       }
 
-      &__number {
+      .item-list__number {
         display: block;
         position: relative;
         margin-bottom: 10px;
@@ -936,14 +936,20 @@
     }
 
     .image {
+      font-size: 0;
+
       @media (--lg_max) {
         position: relative;
-        width: 100%;
-        right: 5%;
+        width: 110%;
+        right: 10%;
         margin: 0 auto;
 
         img {
-          max-width: 560px;
+          width: 100%;
+
+          @media (--md) {
+            max-width: 560px;
+          }
         }
       }
 
@@ -1064,6 +1070,10 @@
       padding: 85px 0 70px;
     }
 
+    &:last-child {
+      padding-bottom: 0;
+    }
+
     &.reverse {
       background: $color-white;
 
@@ -1075,7 +1085,7 @@
         .image {
           @media (--lg_max) {
             right: auto;
-            left: 5%;
+            left: 10%;
             text-align: right;
           }
         }

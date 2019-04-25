@@ -17,41 +17,27 @@ Template Name: movie
   
   <section class="movie-films">
     <div class="l-container">
+      調整中です
       <div class="movie-films-list">
+        <?php
+        $args = array(
+          'post_type' => 'movie',
+          'posts_per_page' => -1
+        );
+        $the_query = new WP_Query($args); if($the_query->have_posts()):
+        ?>
+        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
         <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="T4nOX00HhqA">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-thumbnail_1.jpg" alt="" id="T4nOX00HhqA" class="thumbnail">
+          <div class="movie-films-list__thumbnail" id="<?php the_field('movie-id'); ?>">
+            <img src="<?php the_field('movie-thumbnail'); ?>" alt="thumbnail" class="thumbnail">
           </div>
-          <div class="movie-films-list__title">コマーシャル</div>
+          <div class="movie-films-list__title"><?php the_title() ?></div>
         </div>
-
-        <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="T4nOX00HhqA">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-thumbnail_2.jpg" alt="" id="T4nOX00HhqA" class="thumbnail">
-          </div>
-          <div class="movie-films-list__title">コマーシャル</div>
-        </div>
-
-        <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="T4nOX00HhqA">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-thumbnail_3.jpg" alt="" id="T4nOX00HhqA" class="thumbnail">
-          </div>
-          <div class="movie-films-list__title">プロモーションムービー ver.1</div>
-        </div>
-
-        <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="T4nOX00HhqA">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-thumbnail_4.jpg" alt="" id="T4nOX00HhqA" class="thumbnail">
-          </div>
-          <div class="movie-films-list__title">プロモーションムービー ver.2</div>
-        </div>
-
-        <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="T4nOX00HhqA">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-thumbnail_5.jpg" alt="" id="T4nOX00HhqA" class="thumbnail">
-          </div>
-          <div class="movie-films-list__title">プロモーションムービーver.3</div>
-        </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php else: ?>
+        <p>動画が投稿されていません。</p>
+        <?php endif; ?>
       </div>
     </div>
   </section>

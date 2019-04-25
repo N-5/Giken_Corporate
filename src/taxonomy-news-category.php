@@ -12,7 +12,7 @@
   
   <section class="page-navigation">
     <div class="l-container">
-      <div class="page-navigation-list news-navigation">
+      <div class="page-navigation-list">
         <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/"><span>ALL</span></a></div>
         <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/news-category/event/"><span>EVENT</span></a></div>
         <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/news-category/topics/"><span>TOPICS</span></a></div>
@@ -50,8 +50,7 @@
        <?php endwhile; ?>
        <?php endif; ?>
       </div>
-
-      <div class="pagination">
+      <div class="c-pager">
         <?php global $wp_rewrite;
         $paginate_base = get_pagenum_link(1);
         if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
@@ -72,14 +71,6 @@
           'prev_text' => 'NEXT',
           'next_text' => 'PREV',
         )); ?>
-      </div>
-    </div>
-    <div class="l-container">
-      <div class="archive-news-yearly">
-        <h4 class="archive-blog-heading">ARCHIVE</h4>
-        <ul>
-          <?php wp_get_archives('type=yearly&post_type=news'); ?>
-        </ul>
       </div>
     </div>
   </section>
