@@ -1,25 +1,56 @@
 <?php get_header(); ?>
 
+<div class="loading" data-loading>
+	<img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>">
+</div>
+
 <main id="top">
+<<<<<<< HEAD
   <section class="top-hero">
     <div class="l-container">
       <p class="top-hero__heading">技術で世界の流れをつくる。</p>
       <div class="top-hero__catchcopy">MAKE<br>THE <br class="u-sm_max">WORLD <br class="u-sm_max">FROW<br>WITH<br>TECHNOLOGY</div>
+=======
+  <div class="top-hero">
+    <div class="l-container" data-animation-hero-move>
+      <p class="top-hero__heading" data-animation-hero-fade="1">
+        <?php $locale = get_locale();
+          if($locale == 'zh_CN') :
+            echo '中国ページです';
+          elseif($locale == 'en_US') :
+            echo '英語ページです';
+          else :
+            echo '技術で世界の流れをつくる。';
+          endif;
+				?>
+      </p>
+
+      <div class="top-hero__catchcopy">
+				<span class="top-hero__reveal" data-animation-reveal>MAKE</span><br>
+				<span class="top-hero__reveal" data-animation-reveal>THE</span><br class="u-sm_max">
+				<span class="top-hero__reveal" data-animation-reveal>WORLD</span><br class="u-sm_max">
+				<span class="top-hero__reveal" data-animation-reveal>FROW</span><br>
+				<span class="top-hero__reveal" data-animation-reveal>WITH</span><br>
+				<span class="top-hero__reveal" data-animation-reveal>TECHNOLOGY</span>
+			</div>
+
+>>>>>>> 786837f73a072784a850ea9b096fa4e1836db94a
       <div class="top-hero__inner">
-        <p class="top-hero__lead">
+        <p class="top-hero__lead" data-animation-hero-fade="2">
           自動化技術で、世界中のものづくりに流れをつくる。<br>
           それは世界を動かして、<br>
           きっと世の中にも新しい流れをつくる。<br>
           私たちの仕事は、「流れ」そのものを生み出すことだ。<br>
           技研は、世界を動かす流れの源になる。
-        </p>
-        <div class="top-hero__btn">
+				</p>
+
+        <div class="top-hero__btn" data-animation-hero-fade="3">
           <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/"><span>MORE OUR VISION</span></a></div>
           <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
         </div>
       </div>
     </div>
-  </section>
+	</div>
 
   <section class="top-service">
     <div class="l-container">
@@ -32,7 +63,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="top-company">
     <div class="l-container__large">
       <div class="top-company__award" data-inview>
@@ -53,8 +84,13 @@
       </div>
     </div>
   </section>
-  
+<<<<<<< HEAD
+
   <section class="top-information" data-inview>
+=======
+
+  <section class="top-information">
+>>>>>>> 786837f73a072784a850ea9b096fa4e1836db94a
     <div class="top-information__outer">
       <div class="top-information__recruit">
         <div class="top-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-recruit__image.jpg" alt="採用情報"></div>

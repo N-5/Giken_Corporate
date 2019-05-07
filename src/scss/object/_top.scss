@@ -1,3 +1,18 @@
+.loading {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/top/top-hero_bg.jpg') no-repeat center / cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading__logo {
+  width: 200px;
+}
+
 #top {
   .m-top-section__copy {
     margin-top: 25px;
@@ -15,12 +30,12 @@
   }
 
   .m-link {
-    margin-top: 20px;
     max-width: 240px;
+    margin-top: 20px;
 
     @media (--md) {
-      margin-top: 40px;
       max-width: 320px;
+      margin-top: 40px;
     }
   }
 }
@@ -33,17 +48,66 @@
   .l-container {
     position: relative;
     background: url('../img/top/top-hero_world.png') no-repeat center/contain;
+    background-position: 50% 30%;
     background-size: 230px;
-    background-position: calc(50% - -10px) calc(50% - 140px);
+    transition: background-position .3s;
 
     @media (--sm) {
       background-size: 420px;
-      background-position: calc(50% - -60px) calc(50% - 60px);
     }
 
     @media (--lg) {
       background-size: 510px;
-      background-position: calc(50% - -140px) calc(50% - 160px);
+    }
+
+    &.active {
+      background-position: calc(50% + 10px) calc(50% - 140px);
+
+      @media (--sm) {
+        background-position: calc(50% + 60px) calc(50% - 60px);
+      }
+
+      @media (--lg) {
+        background-position: calc(50% + 140px) calc(50% - 160px);
+      }
+    }
+
+    &.active-animation {
+      @keyframes bound {
+        0% {
+          background-position-y: calc(50% - 140px);
+        }
+
+        100% {
+          background-position-y: calc(50% - 160px);
+        }
+      }
+
+      animation: bound 3s ease infinite alternate;
+
+      @media (--sm) {
+        @keyframes bound {
+          0% {
+            background-position-y: calc(50% - 60px);
+          }
+
+          100% {
+            background-position-y: calc(50% - 90px);
+          }
+        }
+      }
+
+      @media (--lg) {
+        @keyframes bound {
+          0% {
+            background-position-y: calc(50% - 160px);
+          }
+
+          100% {
+            background-position-y: calc(50% - 190px);
+          }
+        }
+      }
     }
   }
 
@@ -51,11 +115,11 @@
     position: absolute;
     top: 10%;
     right: 7%;
-    color: $color-main;
-    writing-mode: vertical-rl;
-    font-weight: bold;
-    letter-spacing: .6em;
     font-size: 12px;
+    font-weight: bold;
+    color: $color-main;
+    letter-spacing: .6em;
+    writing-mode: vertical-rl;
 
     @media (--sm) {
       font-size: 14px;
@@ -69,11 +133,11 @@
 
   .top-hero__catchcopy {
     padding-top: 100px;
-    color: $color-main;
     font-family: $font-en;
-    font-weight: 700;
     font-size: 9vw;
+    font-weight: 700;
     line-height: 1.6;
+    color: $color-main;
 
     @media (--md) {
       padding-top: 140px;
@@ -87,9 +151,9 @@
 
   .top-hero__lead {
     margin-top: 6%;
-    color: $color-main;
     font-size: 3vw;
     line-height: 2.4em;
+    color: $color-main;
 
     @media (--s) {
       font-size: 11px;
@@ -111,9 +175,9 @@
 
     @media (--lg) {
       display: flex;
+      padding-bottom: 140px;
       justify-content: space-between;
       align-items: flex-end;
-      padding-bottom: 140px;
     }
   }
 
@@ -143,14 +207,60 @@
   }
 }
 
+[data-animation-reveal] {
+  @for $i from 1 through 5 {
+    &:nth-of-type(#{$i+1}) {
+      &::before {
+        transition-delay: .1s * $i;
+      }
+    }
+  }
+
+  position: relative;
+  opacity: 0;
+  transition: opacity .2s;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: $color-main;
+    content: "";
+    transition: transform .2s ease;
+    transform-origin: left;
+  }
+
+  &.fade {
+    opacity: 1;
+  }
+
+  &.active {
+    &::before {
+      transform: scale(0, 1);
+    }
+  }
+}
+
+[data-animation-hero-fade] {
+  opacity: 0;
+  transition: opacity .2s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
 .top-service {
   @extend %section___padding;
 
+  overflow: hidden;
   background-image: url('../img/top/top-service_sp.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
-  overflow: hidden;
+  background-size: cover;
 
   @media (--md) {
     background-image: url('../img/top/top-service_pc.jpg');
@@ -174,13 +284,13 @@
   }
 
   .top-service__img {
-    margin-top: 30px;
     width: 80%;
     max-width: 422px;
+    margin-top: 30px;
 
     @media (--sm) {
-      margin: 40px auto;
       width: 60%;
+      margin: 40px auto;
     }
 
     @media (--lg) {
@@ -206,14 +316,14 @@
 
   .top-company__image {
     position: relative;
-    width: 100vw;
     left: -8vw;
+    width: 100vw;
     font-size: 0;
 
     @media (--lg) {
       position: absolute;
-      width: 100%;
       left: 40px;
+      width: 100%;
     }
 
     img {
@@ -225,10 +335,10 @@
 
   .top-company__award {
     position: absolute;
+    z-index: 3;
     top: -35px;
     display: flex;
     align-items: flex-end;
-    z-index: 3;
 
     @media (--lg) {
       top: -80px;
@@ -244,9 +354,9 @@
     }
 
     .text {
-      color: $color-white;
-      font-size: 10px;
       margin-left: 10px;
+      font-size: 10px;
+      color: $color-white;
 
       @media (--lg) {
         font-size: 13px;
@@ -256,10 +366,10 @@
 
   .top-company__inner {
     position: relative;
+    z-index: 3;
     max-width: 520px;
     margin: -5% auto 0;
     padding: 0 0 50px 0;
-    z-index: 3;
 
     @media (--sm) {
       padding: 0 0 80px 0;
@@ -385,9 +495,9 @@
   border-bottom: 1px solid #dcdcdc;
 
   a {
+    position: relative;
     display: block;
     padding: 14px 0;
-    position: relative;
 
     @media (--lg) {
       padding: 20px 30px 20px 0;
@@ -396,16 +506,16 @@
     &::after {
       @extend %transition;
 
-      content: '';
-      opacity: 0;
-      height: 16px;
-      width: 16px;
-      border-top: 1px solid $color-main;
-      border-right: 1px solid $color-main;
-      transform: rotate(45deg) translate(-50%, 0);
       position: absolute;
       top: 50%;
       right: 3%;
+      width: 16px;
+      height: 16px;
+      border-top: 1px solid $color-main;
+      border-right: 1px solid $color-main;
+      content: '';
+      opacity: 0;
+      transform: rotate(45deg) translate(-50%, 0);
     }
 
     .title {
@@ -442,9 +552,9 @@
 
       .categogy {
         margin-bottom: 2px;
-        color: $color-main-light;
-        font-weight: bold;
         font-size: 14px;
+        font-weight: bold;
+        color: $color-main-light;
       }
     }
 
@@ -455,8 +565,8 @@
       }
 
       &::after {
-        opacity: 1;
         right: 0;
+        opacity: 1;
       }
     }
   }
