@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-	</div>
+	</section>
 
   <section class="top-service">
     <div class="l-container">
