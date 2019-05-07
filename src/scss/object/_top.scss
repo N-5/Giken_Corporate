@@ -102,6 +102,7 @@
 
     @media (--lg) {
       margin-top: 90px;
+      font-size: 15px;
     }
   }
 
@@ -389,7 +390,7 @@
     position: relative;
 
     @media (--lg) {
-      padding: 20px 0;
+      padding: 20px 30px 20px 0;
     }
 
     &::after {
@@ -412,6 +413,10 @@
 
       margin-top: 6px;
       font-size: 13px;
+
+      @media (--lg) {
+        font-size: 15px;
+      }
     }
 
     .detail {
@@ -429,6 +434,10 @@
       .time {
         margin-right: 20px;
         font-size: 13px;
+
+        @media (--lg) {
+          font-size: 14px;
+        }
       }
 
       .categogy {

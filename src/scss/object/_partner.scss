@@ -15,7 +15,7 @@
   &.partner-list__col2 {
     ul {
       @media (--md) {
-        width: 50%;
+        width: 48%;
       }
     }
   }
@@ -31,6 +31,7 @@
 
   @media (--lg) {
     line-height: 1.6;
+    font-size: 15px;
   }
 }
 

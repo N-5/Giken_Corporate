@@ -208,14 +208,34 @@ input[type="submit"] {
       width: 16px;
     }
   }
+
+  &:hover {
+    &::after {
+      border-color: $color-main;
+    }
+  }
 }
 
 .contact-form__back {
   margin: 0 0 10px 0;
 
+  @media (--md) {
+    margin: 0 20px 10px 0;
+  }
+
   input[type="submit"] {
     background-color: $color-grey;
     border-color: $color-grey;
+  }
+
+  &:hover {
+    input {
+      color: $color-grey !important;
+    }
+
+    &::after {
+      border-color: $color-grey;
+    }
   }
 }
 
@@ -255,7 +275,8 @@ input[type="submit"] {
 }
 
 .mw_wp_form_confirm {
-  .contact-form__privacy {
+  .contact-form__privacy,
+  .contact-form__confirm {
     display: none;
   }
 }

@@ -2,7 +2,7 @@
 .company-location {
   .c-tablelist__item {
     @media (--md) {
-      padding: 10px 0;
+      padding: 12px 0;
 
       &:first-child {
         padding-top: 10px;
@@ -35,28 +35,6 @@
         font-size: 12px;
       }
 
-      a {
-        position: relative;
-        padding-left: 20px;
-        color: $color-main;
-        font-family: $font-en;
-        text-decoration: underline;
-
-        @media (--md) {
-          margin-left: 12px;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          top: 2px;
-          left: 0;
-          height: 11px;
-          width: 15px;
-          background: url('../img/common/blank_blue.svg') no-repeat center/cover;
-        }
-      }
-
       &.phone {
         a {
           display: inline-block;
@@ -78,6 +56,10 @@
 
   @media (--md) {
     font-size: 15px;
+  }
+
+  @media (--lg) {
+    font-size: 16px;
   }
 }
 
@@ -119,4 +101,9 @@
   text-indent: -1em;
   font-size: 13px;
   line-height: (24/13);
+
+  @media (--lg) {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 }

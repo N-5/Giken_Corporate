@@ -47,6 +47,8 @@
 
 .movie-films-list__thumbnail {
   position: relative;
+  overflow: hidden;
+  background: $color-main;
   font-size: 0;
 
   @media (--lg) {
@@ -55,6 +57,8 @@
   }
 
   &::after {
+    @extend %transition;
+
     content: '';
     position: absolute;
     top: 50%;
@@ -66,7 +70,21 @@
   }
 
   img {
+    @extend %transition;
+
     width: 100%;
+  }
+
+  &:hover {
+    img {
+      opacity: .6;
+      transform: scale(1.03);
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &.is-active {

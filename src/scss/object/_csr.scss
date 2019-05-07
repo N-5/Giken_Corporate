@@ -31,20 +31,12 @@
   }
 }
 
-.csr-list__text {
-  font-size: 13px;
-  line-height: (40/22);
-
-  @media (--lg) {
-    font-size: 15px;
-  }
-}
-
 .csr-list__link {
   margin-top: 20px;
 
   a {
     display: flex;
+    cursor: pointer;
     align-items: center;
     color: $color-main;
     font-size: 13px;
@@ -55,7 +47,18 @@
     }
 
     span {
-      border-bottom: 1px solid $color-main;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        background: $color-main;
+        transition: .16s ease all;
+      }
     }
 
     i {
@@ -64,6 +67,15 @@
       font-family: $font-en;
       font-size: 10px;
       border: 1px solid $color-main;
+      transition: .16s ease all;
+    }
+
+    &:hover {
+      span {
+        &::after {
+          width: 0;
+        }
+      }
     }
   }
 }

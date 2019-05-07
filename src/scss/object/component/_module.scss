@@ -82,6 +82,40 @@
     }
   }
 
+  &__white {
+    border: 1px solid $color-white;
+
+    a {
+      background-color: $color-white;
+
+      &::before {
+        background: $color-main;
+      }
+
+      &::after {
+        border-color: $color-main;
+      }
+
+      span {
+        color: $color-main;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $color-white;
+
+      a {
+        &::after {
+          border-color: $color-white !important;
+        }
+
+        span {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
   &__blueborder {
     border: 1px solid $color-main;
     color: $color-main;
@@ -161,6 +195,45 @@
           }
         }
       }
+    }
+  }
+}
+
+.m-link__target {
+  position: relative;
+  margin-left: 20px;
+  color: $color-main;
+  font-family: $font-en;
+
+  @media (--md) {
+    margin-left: 25px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    height: 11px;
+    width: 15px;
+    background: url('../img/common/blank_blue.svg') no-repeat center/cover;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color-main;
+    transition: .16s ease all;
+  }
+
+  &:hover {
+    &::after {
+      width: 0;
+      transition: .16s ease all;
     }
   }
 }
