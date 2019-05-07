@@ -17,7 +17,6 @@ Template Name: movie
   
   <section class="movie-films">
     <div class="l-container">
-      調整中です
       <div class="movie-films-list">
         <?php
         $args = array(

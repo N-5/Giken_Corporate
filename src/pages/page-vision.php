@@ -13,9 +13,9 @@ Template Name: vision
         <h1 class="vision-hero__heading">
           <span class="en">FIRST CALL<br>COMPANY</span>
           <span class="jp">自動搬送機分野<br>世界一のブランドメーカー</span>
+          <div class="vision-hero-scroll"><div class="vision-hero-scroll__border"><span></span></div></div>
         </h1>
         <div class="vision-hero-goal">
-          <div class="vision-hero-scroll"><div class="vision-hero-scroll__border"></div></div>
           <h2 class="vision-hero-goal__fog">FOR <br class="u-md">OUR <br class="u-md">GOAL</h2>
           <div class="vision-hero-goal__detail">
             <h3 class="vision-hero-goal__heading">
@@ -26,7 +26,7 @@ Template Name: vision
               ダミー自動化技術で、世界中のものづくりに流れをつくる。それは世界を動かして、それは世界を動かして、きっと、世の中にも新しい流れをつくる。私たちの仕事は、「流れ」そのものを生み出すことだ。技研は、世界を動かす流れの源となる。ダミー自動化技術で、
             </p>
             <div class="vision-hero-goal__link">
-              <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/concept/"><span>CONCEPT MOVIE</span></a></div>
+              <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
             </div>
           </div>
         </div>
@@ -37,6 +37,8 @@ Template Name: vision
   <section class="vision-message">
     <div class="l-container">
       <h2 class="m-section-title">PRESIDENT MESSAGE<span>代表挨拶</span></h2>
+    </div>
+    <div class="l-container__small">
       <div class="vision-message__inner">
         <div class="vision-message__president"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-president.jpg" alt="向 一雄"></div>
         <div class="vision-message__comment">
@@ -58,8 +60,10 @@ Template Name: vision
   <section class="vision-logo">
     <div class="l-container">
       <h2 class="m-section-title">ORIGIN OF OUR LOGO<span>ロゴの由来</span></h2>
+    </div>
+    <div class="l-container__small">
       <div class="vision-logo__inner">
-        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-logo.jpg" alt="技研株式会社ロゴ"><span>商標 登録番号 3107527</span></div>
+        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="技研株式会社ロゴ"><span>商標 登録番号 3107527</span></div>
         <div class="vision-logo__comment">
           <p class="vision-logo__text">
             このマークは、アルファベットの「D」を模っています。 これは創業当時に、「Drawing（製図）、Design（設計、デザイン）、 Development（開発）」の３つの頭文字をとり、造られました。

@@ -1,5 +1,5 @@
-#index {
-  .m-index-section__copy {
+#top {
+  .m-top-section__copy {
     margin-top: 25px;
     color: $color-white;
 
@@ -25,7 +25,7 @@
   }
 }
 
-.index-hero {
+.top-hero {
   width: 100%;
   height: auto;
   background: url('../img/top/top-hero_bg.jpg') no-repeat center/cover;
@@ -47,7 +47,7 @@
     }
   }
 
-  .index-hero__heading {
+  .top-hero__heading {
     position: absolute;
     top: 10%;
     right: 7%;
@@ -67,7 +67,7 @@
     }
   }
 
-  .index-hero__catchcopy {
+  .top-hero__catchcopy {
     padding-top: 100px;
     color: $color-main;
     font-family: $font-en;
@@ -85,7 +85,7 @@
     }
   }
 
-  .index-hero__lead {
+  .top-hero__lead {
     margin-top: 6%;
     color: $color-main;
     font-size: 3vw;
@@ -105,7 +105,7 @@
     }
   }
 
-  .index-hero__inner {
+  .top-hero__inner {
     padding-bottom: 50px;
 
     @media (--lg) {
@@ -113,45 +113,53 @@
       justify-content: space-between;
       align-items: flex-end;
       padding-bottom: 140px;
+    }
+  }
 
-      .index-hero__btn {
-        width: 350px;
-      }
+  .top-hero__btn {
+    @media (--lg) {
+      width: 350px;  
+    }
+  }
 
-      .m-link {
-        max-width: 400px !important;
-      }
+  .m-link {
+    @media (--lg) {
+      max-width: 400px !important;
+    }
+  }
 
-      .m-link__list {
-        width: 80%;
-        margin: 20px 0 14px auto !important;
+  .m-link__list {
+    @media (--lg) {
+      width: 80%;
+      margin: 20px 0 14px auto !important;  
+    }
 
-        a {
-          font-size: 14px;
-        }
+    a {
+      @media (--lg) {
+        font-size: 14px;
       }
     }
   }
 }
 
-.index-service {
+.top-service {
   @extend %section___padding;
 
-  background-image: url('../img/top/index-service_sp.jpg');
+  background-image: url('../img/top/top-service_sp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   overflow: hidden;
 
   @media (--md) {
-    background-image: url('../img/top/index-service_pc.jpg');
+    background-image: url('../img/top/top-service_pc.jpg');
   }
 
   .l-container {
     position: relative;
   }
 
-  .index-service__inner {
+  .top-service__inner {
     max-width: 470px;
     margin: 0 auto;
 
@@ -160,11 +168,11 @@
     }
   }
 
-  .m-index-section__title {
+  .m-top-section__title {
     color: $color-white;
   }
 
-  .index-service__img {
+  .top-service__img {
     margin-top: 30px;
     width: 80%;
     max-width: 422px;
@@ -183,7 +191,7 @@
   }
 }
 
-.index-company {
+.top-company {
   position: relative;
   overflow: hidden;
 
@@ -195,7 +203,7 @@
     position: relative;
   }
 
-  .index-company__image {
+  .top-company__image {
     position: relative;
     width: 100vw;
     left: -8vw;
@@ -214,7 +222,7 @@
     }
   }
 
-  .index-company__award {
+  .top-company__award {
     position: absolute;
     top: -35px;
     display: flex;
@@ -245,7 +253,7 @@
     }
   }
 
-  .index-company__inner {
+  .top-company__inner {
     position: relative;
     max-width: 520px;
     margin: -5% auto 0;
@@ -262,8 +270,8 @@
     }
   }
 
-  .m-index-section__title,
-  .m-index-section__copy {
+  .m-top-section__title,
+  .m-top-section__copy {
     color: $color-main !important;
   }
 
@@ -272,8 +280,8 @@
   }
 }
 
-.index-information {
-  .index-information__outer {
+.top-information {
+  .top-information__outer {
     @media (--lg) {
       display: flex;
       max-width: 1200px;
@@ -281,7 +289,7 @@
     }
   }
 
-  .index-information__recruit {
+  .top-information__recruit {
     background-color: $color-main;
 
     @media (--lg) {
@@ -289,7 +297,7 @@
     }
   }
 
-  .index-information__csr {
+  .top-information__csr {
     background-color: $color-main-light;
 
     @media (--lg) {
@@ -297,7 +305,7 @@
     }
   }
 
-  .index-information__inner {
+  .top-information__inner {
     width: 86%;
     margin: -5% auto 0;
     padding-bottom: 50px;
@@ -314,7 +322,7 @@
     }
   }
 
-  .index-information__image {
+  .top-information__image {
     font-size: 0;
 
     img {
@@ -326,15 +334,15 @@
     }
   }
 
-  .m-index-section__title {
+  .m-top-section__title {
     color: $color-white;
   }
 }
 
-.index-news {
+.top-news {
   @extend %section___padding;
 
-  .m-index-section__title {
+  .m-top-section__title {
     color: $color-main;
   }
 
@@ -345,7 +353,7 @@
     }
   }
 
-  .index-news-list {
+  .top-news-list {
     margin: 20px auto 0;
 
     @media (--sm) {
@@ -372,7 +380,7 @@
   }
 }
 
-.index-news-list__item {
+.top-news-list__item {
   border-bottom: 1px solid #dcdcdc;
 
   a {

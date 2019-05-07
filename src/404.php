@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 <main id="error">
-  <section class="error-block">
+  <section class="error-notpage">
       <div class="l-container">
-        <div class="error-block__title">404 Not found</div>
-        <div class="error-block__text">大変申し訳ございません。お客さまがお探しのページが見つかりませんでした。</div>
-        <div class="m-btn"><a href="<?php echo home_url(); ?>">Top</a></div>
+        <div class="error-notpage__title">404 Not found</div>
+        <p class="u-m">大変申し訳ありませんが、<br class="u-md_max">該当ページがございません。<br>
+          このページをブックマーク登録されていた方は、お手数ですがブックマークの変更を<br class="u-md_max">お願いいたします。</p>
+        <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>"><span>BACK TO TOP</span></a></div>
       </div>
   </section>
 </main>

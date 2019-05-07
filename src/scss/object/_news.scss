@@ -87,6 +87,7 @@
 }
 
 .single-news__heading {
+  margin-top: 5px;
   color: $color-main;
   font-size: 16px;
   line-height: 1.6;
@@ -111,10 +112,6 @@
       font-size: 14px;
     }
   }
-}
-
-.single-news__heading {
-  margin-top: 5px;
 }
 
 .single-news-category__item {

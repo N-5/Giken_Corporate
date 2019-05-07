@@ -19,9 +19,9 @@ Template Name: contact
      <h2 class="contact-heading">お電話でのお問い合わせ</h2>
    </div>
     <div class="l-container__small">
-      <p class="contact-lead">お電話でお問い合わせのお客様は、下記までお電話をお願いいたします。</p>
+      <p class="u-m">お電話でお問い合わせのお客様は、下記までお電話をお願いいたします。</p>
       <div class="contact-cta">
-        <div class="contact-cta__number"><small>Tel.</small>0761-51-5700</div>
+        <div class="contact-cta__number"><a href=""><small>Tel.</small>0761-51-5700</a></div>
         <div class="contact-cta__time">（受付時間  平日 AM9:00〜PM5:00）</div>
       </div>
    </div>
@@ -29,17 +29,16 @@ Template Name: contact
   
   <section class="contact-form">
     <div class="l-container">
-      <p class="contact-lead">
-        下記のメールフォームに必要事項をご入力いただき、「確認」ボタンをクリックしてください。
-        なお、お問い合わせいただきました内容は、ご希望の項目に関する弊社からのご連絡に利用させていただきます。
-      </p>
+      <h2 class="contact-heading">メールフォームからのお問い合わせ</h2>
     </div>
     <div class="l-container__small">
-      <h2 class="contact-heading">メールフォームからのお問い合わせ</h2>
-      <p class="contact-lead">
-        下記のメールフォームに必要事項をご入力いただき、「確認」ボタンをクリックしてください。
-        なお、お問い合わせいただきました内容は、ご希望の項目に関する弊社からのご連絡に利用させていただきます。
-      </p>
+      <div class="contact-form__text">
+        <p class="u-m">
+          下記のメールフォームに必要事項をご入力いただき、「確認」ボタンをクリックしてください。<br class="u-md">
+          なお、お問い合わせいただきました内容は、ご希望の項目に関する弊社からのご連絡に利用させていただきます。
+        </p>
+      </div>
+      <p class="contact-require">＊印は必須項目です</p>
       <?php while(have_posts()): the_post(); ?>
       <?php the_content(); ?>
       <?php endwhile; ?>

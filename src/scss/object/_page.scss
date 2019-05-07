@@ -120,8 +120,21 @@
   }
 }
 
+#partner {
+  .partner-supply {
+    @extend %section___padding;
+
+    background-color: $color-white;
+
+    .m-section-title {
+      @extend %m-section-title___margin;
+    }
+  }
+}
+
 #movie {
   .movie-films {
+    border-bottom: 3px solid $color-white;
     background-color: $color-grey-light;
   }
 }
@@ -170,11 +183,32 @@
 }
 
 #contact {
+  .contact-call,
+  .contact-form {
+    padding: 40px 0;
+
+    @media (--md) {
+      padding: 50px;
+    }
+
+    @media (--lg) {
+      padding: 60px 0 100px;
+    }
+  }
+
   .contact-call {
     background-color: $color-white;
   }
 
   .contact-form {
+    border-bottom: 3px solid $color-white;
+    background-color: $color-grey-light;
+  }
+
+  .contact-complete {
+    @extend %section___padding;
+
+    border-bottom: 3px solid $color-white;
     background-color: $color-grey-light;
   }
 }
@@ -185,4 +219,8 @@
 
     background-color: $color-grey;
   }
+}
+
+#error {
+  @extend %section___padding;
 }

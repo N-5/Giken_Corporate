@@ -65,14 +65,27 @@
 p {
   &.u-es {
     font-size: 10px;
+
+    @media (--lg) {
+      font-size: 12px;
+    }
   }
 
   &.u-s {
     font-size: 12px;
+
+    @media (--lg) {
+      font-size: 14px;
+    }
   }
 
   &.u-m {
     font-size: 13px;
+    line-height: 1.8;
+
+    @media (--lg) {
+      font-size: 15px;
+    }
   }
 
   &.u-l {

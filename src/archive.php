@@ -23,9 +23,9 @@
 
   <section class="news-archive">
     <div class="l-container__small">
-      <div class="index-news-list">
+      <div class="top-news-list">
        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="index-news-list__item">
+        <article class="top-news-list__item">
           <a href="<?php the_permalink() ?>">
             <div class="detail">
               <time class="time"><?php the_time('Y.m.d') ?></time>
