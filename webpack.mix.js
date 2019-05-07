@@ -54,7 +54,14 @@ mix.options({
       sort: true
     })
   ],
-  clearConsole: true
+  clearConsole: true,
+  autoprefixer: {
+    options: {
+      browsers: [
+        '> 1%, last 8 versions, Firefox ESR, ie > 8',
+      ]
+    }
+  }
 });
 
 if (mix.inProduction()) {
