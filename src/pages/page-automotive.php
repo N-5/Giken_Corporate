@@ -16,11 +16,11 @@ Template Name: automotive
 
   <section class="service-lead">
     <div class="l-container">
-      <h2 class="service-lead__heading">
+      <h2 class="service-lead__heading" data-inview>
         単体装置から<br class="u-sm">ライン全体の<br class="u-sm_max">自動搬送設備まで。<br>
         時代が求めるスペックを<br class="u-sm_max">実現する<br class="u-sm">技術力がここに。
       </h2>
-      <p class="service-lead__text">
+      <p class="service-lead__text u-m" data-inview>
         単体装置からライン全体の自動搬送設備、自動組付設備まで柔軟に対応。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多彩なニーズにお応えしています。また当社からの提案により、装置の高精度化・小型化はもちろん、省力化、製品クオリティの統一化をはかることも可能。技研はお客さまのニーズを的確に捉え、最適なカタチで具現化します。
       </p>
     </div>
@@ -29,14 +29,14 @@ Template Name: automotive
   <section class="service-case">
     <div class="l-container">
       <div class="service-case-list">
-        <div class="service-case-list__item">
+        <div class="service-case-list__item" data-inview>
           <div class="service-case-list__image">
             <div class="service-case-list__name name-right"><span>GANTRY LOADERS</span></div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_1.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
             <h3 class="service-case__heading">ガントリーローダー</h3>
-            <p class="service-case__text">
+            <p class="u-m">
               走行部は、ケーブルベヤレス仕様を採用し、メンテナンスの簡略化を実現。柔軟なローダービームの延長やキャリヤの増設をはじめ、ＮＣ装置による制御、モーター式ハンドによるエアーレス化およびハンドチェンジャーにも対応できます。アームシフト（Ｙ軸）機能による据付け期間の大幅な短縮や、温度補正機能による温度変化による走行停止位置のズレの吸収を可能にしました。
             </p>
             <ul class="service-case__funtion">
@@ -52,19 +52,19 @@ Template Name: automotive
               <dt>最大搬送重量</dt><dd>300kg</dd>
             </dl>
             <div class="service-case__link">
-              <div class="m-link m-link__download"><a href="<?php echo home_url(); ?>/service/automotive/"><span>CATALOG<i><?php get_template_part('lib/icon-donload'); ?></i></span></a></div>
+              <div class="m-link m-link__download"><a href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/gantryloader_e.pdf" target="_blank"><span>CATALOG<i><?php get_template_part('lib/icon-donload'); ?></i></span></a></div>
             </div>
           </div>
         </div>
         
-        <div class="service-case-list__item item-reverse">
+        <div class="service-case-list__item item-reverse" data-inview>
           <div class="service-case-list__image">
             <div class="service-case-list__name name-left"><span>CONVEYOR</span></div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_2.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
             <h3 class="service-case__heading">搬送装置（コンベヤ等）</h3>
-            <p class="service-case__text">各種搬送物に対する工程間自動搬送を実現した装置です。</p>
+            <p class="u-m">各種搬送物に対する工程間自動搬送を実現した装置です。</p>
             <ul class="service-case__funtion">
               <li>パレットアキューム式コンベヤ［特許］</li>
               <li>ローラコンベヤ</li>
@@ -76,14 +76,14 @@ Template Name: automotive
           </div>
         </div>
         
-        <div class="service-case-list__item">
+        <div class="service-case-list__item" data-inview>
           <div class="service-case-list__image">
             <div class="service-case-list__name name-right"><span>ASSEMBLING DEVICE</span></div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_3.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
             <h3 class="service-case__heading">組付け装置</h3>
-            <p class="service-case__text">
+            <p class="u-m">
               エンジン加工ライン内の各種組付け装置です。
             </p>
             <ul class="service-case__funtion">
@@ -95,14 +95,14 @@ Template Name: automotive
           </div>
         </div>
         
-        <div class="service-case-list__item item-reverse">
+        <div class="service-case-list__item item-reverse" data-inview>
           <div class="service-case-list__image">
             <div class="service-case-list__name name-left"><span>MEASUREMENT</span></div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_4.jpg" alt="MEASUREMENT">
           </div>
           <div class="service-case-list__detail">
             <h3 class="service-case__heading">計測・刻印装置</h3>
-            <p class="service-case__text">
+            <p class="u-m">
               各種測定およびマーキングと分類を行う装置です。
             </p>
             <ul class="service-case__funtion">
@@ -117,14 +117,14 @@ Template Name: automotive
           </div>
         </div>
         
-        <div class="service-case-list__item">
+        <div class="service-case-list__item" data-inview>
           <div class="service-case-list__image">
             <div class="service-case-list__name name-right"><span>ROBOT HANDLING SYSTEM</span></div>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_5.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
             <h3 class="service-case__heading">ロボットハンドリングシステム</h3>
-            <p class="service-case__text">
+            <p class="u-m">
               各種ロボットメーカー(ビジョンセンサー含)に対応します。
             </p>
             <ul class="service-case__funtion">

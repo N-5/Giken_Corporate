@@ -25,15 +25,15 @@
           <div class="header-language">
             <div class="header-language-list">
               <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'ja') : echo 'is-active'; endif; ?>">
-                <a href="/">JP</a>
+                <a href="<?php echo home_url(); ?>">JP</a>
               </div>
               <div class="header-language-list__between">／</div>
               <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'en_US') : echo 'is-active'; endif; ?>">
-                <a href="/en/">EN</a>
+                <a href="<?php echo home_url(); ?>/en/">EN</a>
               </div>
               <div class="header-language-list__between">／</div>
               <div class="header-language-list__item <?php $locale = get_locale(); if($locale == 'zh_CN') : echo 'is-active'; endif; ?>">
-                <a href="/zh/">CH</a>
+                <a href="<?php echo home_url(); ?>/ch/">CH</a>
               </div>
             </div>
           </div>

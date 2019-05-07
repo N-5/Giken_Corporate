@@ -6,15 +6,15 @@ Template Name: career
 <?php get_header(); ?>
 
 <main id="career">
-  <h1 class="m-recruit-section__title">
+  <h1 class="m-recruit-section__title" data-inview>
     <span class="jp">経験者採用</span>
     <span class="en">CAREER</span>
   </h1>
 
   <section class="newgrade-work">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">募集職種・仕事内容<span>機械設計<br><small>2、3次元CAD（主に2次元）を使用した自動搬送設備の機械設計</small></span></h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview>募集職種・仕事内容<span>機械設計<br><small>2、3次元CAD（主に2次元）を使用した自動搬送設備の機械設計</small></span></h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>勤務地</dt>
           <dd>本社</dd>
@@ -33,8 +33,8 @@ Template Name: career
 
   <section class="newgrade-work">
     <div class="l-container__small">
-      <h3 class="newgrade__heading"><span>制御設計<br><small>ECAD等を使用した自動搬送設備の電気回路設計、動作ソフト設計、調整業務<br>※国内外の取引先工場へ長期出張有（2週間～3ヶ月程度、国内・北米・中国・インド等）</small></span></h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview><span>制御設計<br><small>ECAD等を使用した自動搬送設備の電気回路設計、動作ソフト設計、調整業務<br>※国内外の取引先工場へ長期出張有（2週間～3ヶ月程度、国内・北米・中国・インド等）</small></span></h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>勤務地</dt>
           <dd>本社</dd>
@@ -53,9 +53,9 @@ Template Name: career
 
   <section class="newgrade-work">
     <div class="l-container__small">
-      <h3 class="newgrade__heading"><span>設備生産<br><small>設計図面に基づいた搬送設備の組立、調整、および現地での据付業務<br>
+      <h3 class="newgrade__heading" data-inview><span>設備生産<br><small>設計図面に基づいた搬送設備の組立、調整、および現地での据付業務<br>
         ※国内外の取引先工場へ長期出張有（2週間～3ヶ月程度、国内・北米・中国・インド等）</small></span></h3>
-      <div class="c-tablelist">
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>勤務地</dt>
           <dd>本社</dd>
@@ -74,8 +74,8 @@ Template Name: career
 
   <section class="newgrade-work">
     <div class="l-container__small">
-      <h3 class="newgrade__heading"><span>営業<br><small>自動車部品の自動搬送装置、アルミ型材押出ライン及び各種産業機械の営業・販売</small></span></h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview><span>営業<br><small>自動車部品の自動搬送装置、アルミ型材押出ライン及び各種産業機械の営業・販売</small></span></h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>勤務地</dt>
           <dd>本社または中部営業所  </dd>
@@ -94,9 +94,9 @@ Template Name: career
 
   <section class="newgrade-process">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">選考プロセス</h3>
-      <div class="newgrade-process__lead">内定までの流れは以下のとおりです。会社訪問・応募は随時受け付けておりますが、まずは一度お問い合わせくださいますようお願い致します。</div>
-      <div class="newgrade-process__figure">
+      <h3 class="newgrade__heading" data-inview>選考プロセス</h3>
+      <div class="newgrade-process__lead" data-inview>内定までの流れは以下のとおりです。会社訪問・応募は随時受け付けておりますが、まずは一度お問い合わせくださいますようお願い致します。</div>
+      <div class="newgrade-process__figure" data-inview>
         <div class="step">㆒次選考<span>書類選考（履歴書・職務経歴書をメールまたは郵送にて送付下さい。）</span><small>※慎重に選考させていただき、7日以内に電話またはメールにて選考結果をご連絡致します。</small></div>
         <div class="step">二次選考<span>面接（部門責任者・人事責任者）、適性試験</span></div>
         <div class="step">最終選考<span>面接（役員）</span><small>※面接はいずれも本社にて実施致します。（営業職のみ中部営業所でも可）</small></div>
@@ -107,8 +107,8 @@ Template Name: career
 
   <section class="newgrade-requirements">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">勤務・待遇</h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview>勤務・待遇</h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>基本給</dt>
           <dd>当社規定による（通勤手当、資格手当等　別途規程により支給）</dd>
@@ -149,7 +149,7 @@ Template Name: career
   </section>
 
   <section class="newgrade-mynavi">
-    <div class="l-container__small">
+    <div class="l-container__small" data-inview>
       <h3 class="newgrade-mynavi__heading">「自らが考え、自ら実行する。」</h3>
       <div class="newgrade-mynavi__lead">
         そうした自発的な意欲を重視し、<br class="u--max-md">
@@ -159,7 +159,7 @@ Template Name: career
       </div>
       <div class="m-link m-link__list"><a href="http://www.giken-jpn.com/company/contact.html"><span>お問い合わせ</span></a></div>
     </div>
-    <div class="newgrade-mynavi-privacy">
+    <div class="newgrade-mynavi-privacy" data-inview>
       <h3 class="heading">個人情報の取り扱いについて</h3>
       <div class="inner">
         <p>

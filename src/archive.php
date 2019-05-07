@@ -9,7 +9,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="page-navigation">
     <div class="l-container">
       <div class="page-navigation-list news-navigation">
@@ -24,34 +24,34 @@
   <section class="news-archive">
     <div class="l-container__small">
       <div class="top-news-list">
-       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="top-news-list__item">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <article class="top-news-list__item" data-inview>
           <a href="<?php the_permalink() ?>">
             <div class="detail">
               <time class="time"><?php the_time('Y.m.d') ?></time>
               <div class="categogy">
                 <?php $custom_post_tag = 'news-category';
-                 $custom_post_tag_terms = wp_get_object_terms($post->ID, $custom_post_tag);
-                 if(!empty($custom_post_tag_terms)){
-                   if(!is_wp_error( $custom_post_tag_terms )){
-                     foreach($custom_post_tag_terms as $term){
-                       $tag_term_link = get_term_link($term->slug, $custom_post_tag);
-                       $tag_term_name = $term->name;
-                       echo $tag_term_name;
-                     }
-                   }
+             $custom_post_tag_terms = wp_get_object_terms($post->ID, $custom_post_tag);
+             if(!empty($custom_post_tag_terms)){
+               if(!is_wp_error( $custom_post_tag_terms )){
+                 foreach($custom_post_tag_terms as $term){
+                   $tag_term_link = get_term_link($term->slug, $custom_post_tag);
+                   $tag_term_name = $term->name;
+                   echo $tag_term_name;
                  }
+               }
+             }
                 ?>
               </div>
             </div>
             <div class="title"><?php the_title() ?></div>
           </a>
         </article>
-       <?php endwhile; ?>
-       <?php endif; ?>
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
 
-      <div class="pagination">
+      <div class="pagination" data-inview>
         <?php global $wp_rewrite;
         $paginate_base = get_pagenum_link(1);
         if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
@@ -75,13 +75,13 @@
       </div>
     </div>
     <div class="l-container">
-      <div class="archive-blog-monthly">
-        <h4 class="archive-blog-heading">ARCHIVE</h4>
-        <ul>
-          <?php wp_get_archives('type=yearly'); ?>
+      <div class="archive-news-yearly" data-inview>
+        <h4 class="archive-news__heading">ARCHIVE</h4>
+        <ul class="archive-news__list">
+          <?php wp_get_archives('type=yearly&post_type=news'); ?>
         </ul>
       </div>
     </div>
   </section>
-  </main>
+</main>
 <?php get_footer(); ?>

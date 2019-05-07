@@ -25,7 +25,7 @@
     <div class="l-container__small">
       <div class="top-news-list">
        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="top-news-list__item">
+        <article class="top-news-list__item" data-inview>
           <a href="<?php the_permalink() ?>">
             <div class="detail">
               <time class="time"><?php the_time('Y.m.d') ?></time>
@@ -51,7 +51,7 @@
        <?php endif; ?>
       </div>
 
-      <div class="pagination">
+      <div class="pagination" data-inview>
         <?php global $wp_rewrite;
         $paginate_base = get_pagenum_link(1);
         if(strpos($paginate_base, '?') || ! $wp_rewrite->using_permalinks()){
@@ -75,9 +75,9 @@
       </div>
     </div>
     <div class="l-container">
-      <div class="archive-news-yearly">
-        <h4 class="archive-blog-heading">ARCHIVE</h4>
-        <ul>
+      <div class="archive-news-yearly" data-inview>
+        <h4 class="archive-news__heading">ARCHIVE</h4>
+        <ul class="archive-news__list">
           <?php wp_get_archives('type=yearly&post_type=news'); ?>
         </ul>
       </div>

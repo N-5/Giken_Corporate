@@ -1,5 +1,5 @@
 <section class="recruit-entry">
-  <div class="recruit-entry__inner">
+  <div class="recruit-entry__inner" data-inview>
     <h3 class="recruit-entry__heading">エントリーはこちらから</h3>
     <div class="recruit-entry__btn">
       <div class="m-link m-link__newgraduate"><a href="<?php echo home_url(); ?>/recruit/newgraduate/"><span>新卒採用</span></a></div>

@@ -3,17 +3,7 @@
 <main id="top">
   <section class="top-hero">
     <div class="l-container">
-      <p class="top-hero__heading">
-        <?php $locale = get_locale();
-          if($locale == 'zh_CN') :
-            echo '中国ページです';
-          elseif($locale == 'en_US') :
-            echo '英語ページです';
-          else :
-            echo '技術で世界の流れをつくる。';
-          endif;
-		?>
-      </p>
+      <p class="top-hero__heading">技術で世界の流れをつくる。</p>
       <div class="top-hero__catchcopy">MAKE<br>THE <br class="u-sm_max">WORLD <br class="u-sm_max">FROW<br>WITH<br>TECHNOLOGY</div>
       <div class="top-hero__inner">
         <p class="top-hero__lead">
@@ -33,9 +23,9 @@
 
   <section class="top-service">
     <div class="l-container">
-      <h2 class="m-top-section__title"><span class="en">SERVICE</span><span class="jp">事業内容</span></h2>
-      <figure class="top-service__img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-service-figure.png" alt="自動車産業、アルミ産業、産業機械事業"></figure>
-      <div class="top-service__inner">
+      <h2 class="m-top-section__title" data-inview><span class="en">SERVICE</span><span class="jp">事業内容</span></h2>
+      <figure class="top-service__img" data-inview><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-service-figure.png" alt="自動車産業、アルミ産業、産業機械事業"></figure>
+      <div class="top-service__inner" data-inview>
         <p class="m-top-section__copy">自動化技術を未来とクロスする、<br>それが私たちの仕事。</p>
         <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お応えしています。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かします。ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お応えしています。装置開発。</p>
         <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/service/"><span>MORE</span></a></div>
@@ -45,17 +35,17 @@
   
   <section class="top-company">
     <div class="l-container__large">
-      <div class="top-company__award">
+      <div class="top-company__award" data-inview>
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-company-award.png" alt="PATENTS and AWARDS"></div>
         <div class="text">日/米/韓の特許を多数取得<br>表彰、感謝状を<br>多数いただいております</div>
       </div>
-      <div class="top-company__image">
+      <div class="top-company__image" data-inview>
         <picture>
           <source media="(max-width:769px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-company-image_sp.jpg">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-company-image_pc.jpg" alt="技研外観写真">
         </picture>
       </div>
-      <div class="top-company__inner">
+      <div class="top-company__inner" data-inview>
         <h2 class="m-top-section__title"><span class="en">COMPANY</span><span class="jp">会社概要</span></h2>
         <p class="m-top-section__copy">ずっと安心して使い続けられる、<br>良質なものを世界へ。</p>
         <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
@@ -64,7 +54,7 @@
     </div>
   </section>
   
-  <section class="top-information">
+  <section class="top-information" data-inview>
     <div class="top-information__outer">
       <div class="top-information__recruit">
         <div class="top-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-recruit__image.jpg" alt="採用情報"></div>
@@ -89,7 +79,7 @@
 
   <section class="top-news">
     <div class="l-container">
-      <h2 class="m-top-section__title"><span class="en">NEWS</span><span class="jp">新着情報</span></h2>
+      <h2 class="m-top-section__title" data-inview><span class="en">NEWS</span><span class="jp">新着情報</span></h2>
       <div class="top-news-list">
         <?php
         $args = array(
@@ -99,7 +89,7 @@
         $the_query = new WP_Query($args); if($the_query->have_posts()):
         ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-        <article class="top-news-list__item">
+        <article class="top-news-list__item" data-inview>
           <a href="<?php the_permalink() ?>">
             <div class="detail">
               <time class="time"><?php the_time('Y.m.d') ?></time>
@@ -126,7 +116,7 @@
         <?php else: ?>
         <p>ニュースが投稿されていません。</p>
         <?php endif; ?>
-        <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/news/"><span>VIEW LIST</span></a></div>
+        <div class="m-link m-link__list" data-inview><a href="<?php echo home_url(); ?>/news/"><span>VIEW LIST</span></a></div>
       </div>
     </div>
   </section>

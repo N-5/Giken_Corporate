@@ -29,10 +29,10 @@ Template Name: company
   
   <section id="a1" class="comapny-profile">
     <div class="l-container">
-      <h2 class="m-section-title">COMPANY PROFILE<span>会社概要</span></h2>
+      <h2 class="m-section-title" data-inview>COMPANY PROFILE<span>会社概要</span></h2>
     </div>
     <div class="l-container__small">
-      <div class="c-tablelist">
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>商号</dt>
           <dd>技研株式会社 （GIKEN CO., LTD.）</dd>
@@ -100,45 +100,45 @@ Template Name: company
 
   <section id="a2" class="company-location">
     <div class="l-container">
-      <h2 class="m-section-title">LOCATION<span>所在地</span></h2>
+      <h2 class="m-section-title" data-inview>LOCATION<span>所在地</span></h2>
     </div>
     <div class="l-container__small">
-      <div class="company-infolist">
+      <div class="company-infolist" data-inview>
         <div class="company-infolist__item">
           <h3 class="m-block-title">本社</h3>
-          <p class="u-m">〒923-1238 <br class="u-sm_max">石川県能美市下清水町3番地2 <br class="u-sm_max"><a href="https://goo.gl/maps/Bfbe8S8M7i5qM3jL6" target="_blank">Google Map</a></p>
+          <p class="u-m">〒923-1238 <br class="u-sm_max">石川県能美市下清水町3番地2 <br class="u-sm_max"><a href="https://goo.gl/maps/6lii8" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.0761-51-5700　FAX.0761-51-5336</p>
         </div>
       </div>
-      <div class="company-infolist">
+      <div class="company-infolist" data-inview>
         <div class="company-infolist__item">
           <h3 class="m-block-title">拠点・営業所</h3>
           <h4 class="company-infolist__heading">中部営業所</h4>
-          <p class="u-m">〒430-0926 静岡県浜松市中区砂山町1091 <br class="u-sm_max">キャトルセゾン6階-H<br class="u-sm_max"><a href="https://goo.gl/maps/6lii8" target="_blank">Google Map</a></p>
+          <p class="u-m">〒430-0926 静岡県浜松市中区砂山町1091 <br class="u-sm_max">キャトルセゾン6階-H <br class="u-sm_max"><a href="https://goo.gl/maps/nsSdcnomUd62" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.053-489-3210　FAX.053-489-3215</p>
           <h4 class="company-infolist__heading">Giken America Corp</h4>
-          <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016<br class="u-sm_max"><a href="https://goo.gl/maps/FF8PK" target="_blank">Google Map</a></p>
+          <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016 <br class="u-sm_max"><a href="https://goo.gl/maps/FF8PK" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.+1-614-783-3477　FAX.+1-614-876-1843</p>
           <h4 class="company-infolist__heading">株式会社Gトレーディング</h4>
-          <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016<a href="https://goo.gl/maps/6UZickaqeM52" target="_blank">Google Map</a></p>
+          <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016 <a href="https://goo.gl/maps/6UZickaqeM52" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.+1-614-783-3477　FAX.+1-614-876-1843</p>
         </div>
       </div>
-      <div class="company-infolist">
+      <div class="company-infolist" data-inview>
         <div class="company-infolist__item">
           <h3 class="m-block-title">工場</h3>
           <div class="company-infolist__inner">
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_1.jpg" alt=""></div>
             <div class="company-infolist__detail">
               <h4 class="company-infolist__heading">第1・2工場（旧第4・5工場）</h4>
-              <p class="u-m">〒923-1238 <br class="u-sm_max">石川県能美市下清水町3番地2<br><a href="">Google Map</a></p>
+              <p class="u-m">〒923-1238 <br class="u-sm_max">石川県能美市下清水町3番地2<br><a href="https://goo.gl/maps/6lii8" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
           <div class="company-infolist__inner">
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_2.jpg" alt=""></div>
             <div class="company-infolist__detail">
               <h4 class="company-infolist__heading">第3・4工場（旧第2・3工場）</h4>
-              <p class="u-m">〒923-1237 <br class="u-sm_max">石川県能美市上清水町タ91<br><a href="">Google Map</a></p>
+              <p class="u-m">〒923-1237 <br class="u-sm_max">石川県能美市上清水町タ91<br><a href="https://goo.gl/maps/Jk89Q" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
         </div>
@@ -148,9 +148,9 @@ Template Name: company
   
   <section id="a3" class="comapny-history">
     <div class="l-container">
-      <h2 class="m-section-title">HISTORY<span>沿革</span></h2>
+      <h2 class="m-section-title" data-inview>HISTORY<span>沿革</span></h2>
     </div>
-    <div class="l-container__small">
+    <div class="l-container__small" data-inview>
       <div class="c-tablelist">
         <dl class="c-tablelist__item">
           <dt>1964.10</dt>
@@ -242,9 +242,9 @@ Template Name: company
   
   <section id="a4" class="company-location">
     <div class="l-container">
-      <h2 class="m-section-title">LICENSE<span>特許</span></h2>
+      <h2 class="m-section-title" data-inview>LICENSE<span>特許</span></h2>
     </div>
-    <div class="l-container__small">
+    <div class="l-container__small" data-inview>
       <h4 class="company-infolist__heading">日・米・韓の特許を<br class="u-sm_max">多数取得しております。</h4>
       <ul class="company-function-list">
         <li class="company-function-list__item">・コンベア装置（第2045319号）</li>
@@ -263,9 +263,9 @@ Template Name: company
   
   <section id="a5" class="company-award">
     <div class="l-container">
-      <h2 class="m-section-title">AWARD<span>受賞歴</span></h2>
+      <h2 class="m-section-title" data-inview>AWARD<span>受賞歴</span></h2>
     </div>
-    <div class="l-container__small">
+    <div class="l-container__small" data-inview>
       <h4 class="company-infolist__heading">表彰、感謝状を<br class="u-sm_max">多数いただいております。 </h4>
       <ul class="company-function-list">
         <li class="company-function-list__item">・中小企業庁長官賞（1989年）</li>

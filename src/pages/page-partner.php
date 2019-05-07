@@ -17,12 +17,12 @@ Template Name: partner
 
   <section class="partner-supply">
     <div class="l-container">
-      <h2 class="m-section-title">SUPPLY LIST<span>納入実績</span></h2>
+      <h2 class="m-section-title" data-inview>SUPPLY LIST<span>納入実績</span></h2>
     </div>
     <div class="l-container__small">
       <div class="partner-supply-block">
         <h2 class="contact-heading">国内</h2>
-        <div class="partner-list partner-list__col3">
+        <div class="partner-list partner-list__col3" data-inview>
           <ul>
             <li class="partner-list__item">アイシン軽金属株式会社</li>
             <li class="partner-list__item">いすゞ自動車株式会社</li>
@@ -73,8 +73,8 @@ Template Name: partner
         </div>
       </div>
       <div class="partner-supply-block">
-        <h2 class="contact-heading">海外</h2>
-        <div class="partner-list partner-list__col2">
+        <h2 class="contact-heading" data-inview>海外</h2>
+        <div class="partner-list partner-list__col2" data-inview>
           <ul>
             <li class="partner-list__item">Honda Automobile Thailand Co., Ltd.［タイ］</li>
             <li class="partner-list__item">Honda de Mexico, S.A. de C.V.［メキシコ］</li>

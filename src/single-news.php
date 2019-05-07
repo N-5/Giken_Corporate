@@ -3,7 +3,7 @@
   <section class="news-single">
     <article>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-      <header>
+      <header data-inview>
         <div class="l-container__small">
           <div class="single-news__function">
             <div class="single-news__time"><time><?php the_date("Y.n.j"); ?></time></div>
@@ -25,7 +25,7 @@
           <h1 class="single-news__heading"><?php the_title() ?></h1>
         </div>
       </header>
-      <div class="postarea">
+      <div class="postarea" data-inview>
         <div class="l-container__small">
           <?php the_content() ?>
         </div>
@@ -33,26 +33,39 @@
       <?php endwhile; ?>
     </article>
     
-    <div class="l-container__small">
-      <div class="archive-blog__function">
-        <div class="archive-blog__pager">
-          <div class="paging">
-            <div class="paging-prev">
-              <?php $next_post = get_next_post();  
-              if (!empty( $next_post )):  
-              echo '<a href="',get_permalink( $next_post->ID ),'"><span class="arrow-left"></span></a>';  
-              endif; ?>
-            </div>
-            <div class="paging-next">
-              <?php $prev_poxt = get_previous_post();  
-              if (!empty( $prev_poxt  )):  
-              echo '<a href="',get_permalink( $prev_poxt->ID ),'"><span class="arrow-right"></span></a>';  
-              endif; ?>
-            </div>
-          </div>
+    <?php
+    $prev_post = get_previous_post();
+    $next_post = get_next_post(); // 次の投稿を取得
+    if( $prev_post || $next_post ): // どちらか一方があれば表示
+    ?>
+    <div class="paging">
+      <div class="l-container">
+        <div class="paging-prev">
+          <?php if( $prev_post ): ?>
+          <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="prev-link">
+            <h5 class="paging-heading">PREV</h5>
+            <p class="paging-text clamp"><?php echo get_the_title( $prev_post->ID ); ?></p>
+          </a>
+          <?php endif; ?>
+        </div>
+        <div class="paging-home">
+          <a href="<?php echo home_url(); ?>/news/">
+            <h5 class="paging-heading">LIST</h5>
+            <p class="paging-text">一覧に戻る</p>
+          </a>
+        </div>
+        <div class="paging-next">
+          <?php if( $next_post ): ?>
+          <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="next-link">
+            <h5 class="paging-heading">NEXT</h5>
+            <p class="paging-text clamp"><?php echo get_the_title( $next_post->ID ); ?></p>
+          </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>
+    <?php endif; ?>
+      
   </section>
 </main>
 

@@ -8,8 +8,8 @@ Template Name: voice
 <main id="voice">
   <section class="voice-top">
     <div class="voice-top__inner">
-      <h1 class="voice-top__heading">REAL VOICE<span>先輩たちの「生」の声</span></h1>
-      <p class="voice-top__text">
+      <h1 class="voice-top__heading" data-inview>REAL VOICE<span>先輩たちの「生」の声</span></h1>
+      <p class="voice-top__text" data-inview>
         技研では、それぞれが個性的で活き活きしています。<br>
         それは、皆が個人の能力を信じて自己成長するために努力し、<br>
         仕事上のスキルの向上や信頼関係の構築を行っているからです。 <br>
@@ -21,7 +21,7 @@ Template Name: voice
   </section>
 
   <section class="voice-interview">
-    <div class="voice-interview-item">
+    <div class="voice-interview-item" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_01.jpg" alt=""></div>
         <div class="detail">
@@ -40,7 +40,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse">
+    <div class="voice-interview-item reverse" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_02.jpg" alt=""></div>
         <div class="detail">
@@ -59,7 +59,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item">
+    <div class="voice-interview-item" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_03.jpg" alt=""></div>
         <div class="detail">
@@ -78,7 +78,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse">
+    <div class="voice-interview-item reverse" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_04.jpg" alt=""></div>
         <div class="detail">
@@ -97,7 +97,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item">
+    <div class="voice-interview-item" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_05.jpg" alt=""></div>
         <div class="detail">
@@ -116,7 +116,7 @@ Template Name: voice
       </div>
     </div>
 
-    <div class="voice-interview-item reverse">
+    <div class="voice-interview-item reverse" data-inview>
       <div class="l-container__large">
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/voice/voice-interview_06.jpg" alt=""></div>
         <div class="detail">

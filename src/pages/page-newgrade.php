@@ -6,15 +6,15 @@ Template Name: newgrade
 <?php get_header(); ?>
 
 <main id="newgrade">
-  <h1 class="m-recruit-section__title">
+  <h1 class="m-recruit-section__title" data-inview>
     <span class="jp">新卒採用</span>
     <span class="en">NEW GRADUATE</span>
   </h1>
 
   <section class="newgrade-work">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">仕事内容<span>総合職</span></h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview>仕事内容<span>総合職</span></h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>機械設計</dt>
           <dd>自動車・アルミ生産ラインの自動搬送装置について、AutoCADを使用し製図技能を駆使しながら、ニーズに沿った設計を行います。顧客企業は、大手メーカーが中心となり、設計・開発の最前線で技術力の提供が期待されます。</dd>
@@ -41,9 +41,9 @@ Template Name: newgrade
 
   <section class="newgrade-process">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">選考プロセス</h3>
-      <div class="newgrade-process__lead">内定までの流れは以下のとおりです。</div>
-      <div class="newgrade-process__figure">
+      <h3 class="newgrade__heading" data-inview>選考プロセス</h3>
+      <div class="newgrade-process__lead" data-inview>内定までの流れは以下のとおりです。</div>
+      <div class="newgrade-process__figure" data-inview>
         <div class="step">リクナビ2020・マイナビ2020へエントリー</div>
         <div class="step">会社説明会・会社訪問</div>
         <div class="step">書類選考<span>履歴書</span></div>
@@ -56,8 +56,8 @@ Template Name: newgrade
 
   <section class="newgrade-requirements">
     <div class="l-container__small">
-      <h3 class="newgrade__heading">募集要項</h3>
-      <div class="c-tablelist">
+      <h3 class="newgrade__heading" data-inview>募集要項</h3>
+      <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>募集職種</dt>
           <dd>総合職（機械設計、制御設計、設備生産、購買、営業のいずれかに配属予定）</dd>
@@ -118,7 +118,7 @@ Template Name: newgrade
   </section>
 
   <section class="newgrade-mynavi">
-    <div class="l-container__small">
+    <div class="l-container__small" data-inview>
       <div class="newgrade-mynavi__lead">
         現在、2020年度新卒者向けの<br class="u-md_max">
         エントリーを<br>
@@ -131,7 +131,7 @@ Template Name: newgrade
         <a href="https://job.rikunabi.com/2020/company/r849681025/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/newgraduate-mynavi__banner2.png" alt="リクナビ2020"></a>
       </div>
     </div>
-    <div class="newgrade-mynavi-privacy">
+    <div class="newgrade-mynavi-privacy" data-inview>
       <h3 class="heading">個人情報の取り扱いについて</h3>
       <div class="inner">
         <p>
