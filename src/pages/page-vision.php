@@ -23,7 +23,7 @@ Template Name: vision
               <span class="jp">技術で、<br class="u-md_max">世界の流れをつくる。</span>
             </h3>
             <p class="vision-hero-goal__text">
-              ダミー自動化技術で、世界中のものづくりに流れをつくる。それは世界を動かして、それは世界を動かして、きっと、世の中にも新しい流れをつくる。私たちの仕事は、「流れ」そのものを生み出すことだ。技研は、世界を動かす流れの源となる。ダミー自動化技術で、
+              自動化技術で、世界中のものづくりに流れをつくる。<br class="u-lg">それは世界を動かして、きっと世の中にも新しい流れをつくる。<br class="u-lg">私たちの仕事は、「流れ」そのものを生み出すことだ。<br class="u-lg">技研は、世界を動かす流れの源になる。
             </p>
             <div class="vision-hero-goal__link">
               <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>

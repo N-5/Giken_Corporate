@@ -11,7 +11,8 @@
         "mixin",
         "content",
         "include",
-				"custom-media"
+				"custom-media",
+        ”for”
       ]
     }],
     "indentation": 2,

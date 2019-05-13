@@ -120,8 +120,8 @@ Template Name: company
           <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016 <br class="u-sm_max"><a href="https://goo.gl/maps/FF8PK" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.+1-614-783-3477　FAX.+1-614-876-1843</p>
           <h4 class="company-infolist__heading">株式会社Gトレーディング</h4>
-          <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016 <a href="https://goo.gl/maps/6UZickaqeM52" target="_blank" class="m-link__target">Google Map</a></p>
-          <p class="u-m phone">TEL.+1-614-783-3477　FAX.+1-614-876-1843</p>
+          <p class="u-m">〒360-0037 埼玉県熊谷市筑波1-175-1 クリスタルビルⅡ-1002 <a href="https://goo.gl/maps/6UZickaqeM52" target="_blank" class="m-link__target">Google Map</a></p>
+          <p class="u-m phone">TEL.048-578-8790　FAX.048-578-8791</p>
         </div>
       </div>
       <div class="company-infolist" data-inview>

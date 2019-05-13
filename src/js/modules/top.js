@@ -13,7 +13,7 @@ const top = async () => {
   await $('[data-animation-hero-move]').addClass('active-animation');
   await sleep(300);
   await $('[data-animation-reveal]').addClass('fade');
-  await sleep(1000);
+  await sleep(200);
   await $('[data-animation-reveal]').addClass('active');
   await $('[data-animation-hero-fade="1"]').addClass('active');
   await sleep(300);

@@ -77,11 +77,8 @@ Template Name: service
           <div class="service-group-list__logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/service-group-logo_2.jpg" alt="G-TRADING"></div>
           <div class="service-group-list__detail">
             <p class="u-m">
-              株式会社GKMは、技研株式会社と株式会社BBS金明の合弁会社です。２社の強みを活かし、工作機械設計･製造･販売を行っています。
+              〒360-0037 埼玉県熊谷市筑波1-175-1 クリスタルビルⅡ-1002 TEL.048-578-8790　FAX.048-578-8791
             </p>
-            <div class="service-group-list__link">
-              <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/grop/" target="_blank"><span>MORE</span></a></div>
-            </div>
           </div>
         </div>
       </div>

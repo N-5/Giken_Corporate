@@ -27,8 +27,10 @@ Template Name: movie
         ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
         <div class="movie-films-list__item">
-          <div class="movie-films-list__thumbnail" id="<?php the_field('movie-id'); ?>">
-            <img src="<?php the_field('movie-thumbnail'); ?>" alt="thumbnail" class="thumbnail">
+          <div class="movie-films-list__thumbnail">
+            <a class="popup-youtube" href="http://www.youtube.com/watch?v=<?php the_field('movie-id'); ?>">
+            <img src="<?php the_field('movie-thumbnail'); ?>" alt="thumbnail">
+            </a>
           </div>
           <div class="movie-films-list__title"><?php the_title() ?></div>
         </div>
@@ -42,14 +44,16 @@ Template Name: movie
   </section>
 </main>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script rel='stylesheet' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 <script>
-  $(function() {
-    $('.movie-films-list__thumbnail').on('click',function(){
-      var movie_thumb = $(this).attr("id");
-      $(this).addClass('is-active');
-      $(this).children('img').hide();
-      $(this).append('<iframe width="492" height="276" src="https://www.youtube.com/embed/' + movie_thumb + '?rel=0&autoplay=1&loop=1&playlist=' + movie_thumb + '" frameborder="0" allowfullscreen></iframe>')
+  jQuery(function (){
+    jQuery('.popup-youtube').magnificPopup({
+      type: 'iframe',
+      removalDelay: 150,
+      preloader: false
     });
   });
 </script>

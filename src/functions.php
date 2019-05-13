@@ -197,23 +197,11 @@ function pagename_class($classes = ''){
 }
 add_filter('body_class', 'pagename_class');
 
-// bogo
-add_filter( 'bogo_localizable_post_types', 'add_bogo_localizable_post_types' );
-function add_bogo_localizable_post_types( $localizable ) {
-  $args = array(
-      'public'   => true,
-      '_builtin' => false
-  );
-  $custom_post_types = get_post_types( $args );
-  return array_merge( $localizable, $custom_post_types );
-}
 
-add_filter( 'bogo_use_flags', 'remove_bogo_lang_flags' );
-function remove_bogo_lang_flags() {
-  return false;
-}
-
-add_filter( 'bogo_language_switcher','replace_bogo_text');
-function replace_bogo_text($output){
-  return str_replace(' (United States)','',$output);
+function is_parent_slug() {
+  global $post;
+  if ($post->post_parent) {
+    $post_data = get_post($post->post_parent);
+    return $post_data->post_name;
+  }
 }

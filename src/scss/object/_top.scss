@@ -42,71 +42,90 @@
 
 .top-hero {
   width: 100%;
+  overflow: hidden;
   height: auto;
-  background: url('../img/top/top-hero_bg.jpg') no-repeat center/cover;
 
   .l-container {
     position: relative;
-    background: url('../img/top/top-hero_world.png') no-repeat center/contain;
-    background-position: 50% 30%;
-    background-size: 230px;
-    transition: background-position .3s;
+    z-index: 1;
+  }
+
+  .top-hero__monument {
+    position: absolute;
+    opacity: 0;
+    top: 16%;
+    right: 10%;
+    width: 66%;
+    z-index: 0;
+    animation: bigger 40s ease forwards;
+    transition: 2s ease all;
+
+    &.active {
+      opacity: 1;
+    }
+
+    @keyframes bigger {
+      0% {
+        transform: scale(.8);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
 
     @media (--sm) {
-      background-size: 420px;
+      top: 24%;
+      right: 14%;
+      width: 56%;
+    }
+
+    @media (--md) {
+      top: 24%;
+      right: 15%;
+      width: 56%;
     }
 
     @media (--lg) {
-      background-size: 510px;
-    }
+      top: 18%;
+      right: 16%;
+      width: 40%;
 
-    &.active {
-      background-position: calc(50% + 10px) calc(50% - 140px);
-
-      @media (--sm) {
-        background-position: calc(50% + 60px) calc(50% - 60px);
-      }
-
-      @media (--lg) {
-        background-position: calc(50% + 140px) calc(50% - 160px);
-      }
-    }
-
-    &.active-animation {
-      @keyframes bound {
+      @keyframes bigger {
         0% {
-          background-position-y: calc(50% - 140px);
+          transform: scale(.9);
         }
 
         100% {
-          background-position-y: calc(50% - 160px);
+          transform: scale(1.2);
         }
       }
+    }
+  }
 
-      animation: bound 3s ease infinite alternate;
+  .top-hero__bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: bg-bigger 40s ease 1 alternate;
 
-      @media (--sm) {
-        @keyframes bound {
-          0% {
-            background-position-y: calc(50% - 60px);
-          }
+    img {
+      width: 100%;
+    }
 
-          100% {
-            background-position-y: calc(50% - 90px);
-          }
-        }
+    @keyframes bg-bigger {
+      0% {
+        transform: scale(1);
       }
 
-      @media (--lg) {
-        @keyframes bound {
-          0% {
-            background-position-y: calc(50% - 160px);
-          }
+      50% {
+        transform: scale(1.1);
+      }
 
-          100% {
-            background-position-y: calc(50% - 190px);
-          }
-        }
+      100% {
+        transform: scale(1);
       }
     }
   }
@@ -120,24 +139,27 @@
     color: $color-main;
     letter-spacing: .6em;
     writing-mode: vertical-rl;
+    z-index: 1;
 
     @media (--sm) {
       font-size: 14px;
     }
 
     @media (--lg) {
-      top: 120px;
+      top: 160px;
       font-size: 16px;
     }
   }
 
   .top-hero__catchcopy {
+    position: relative;
     padding-top: 100px;
     font-family: $font-en;
     font-size: 9vw;
     font-weight: 700;
     line-height: 1.6;
     color: $color-main;
+    z-index: 1;
 
     @media (--md) {
       padding-top: 140px;
@@ -218,7 +240,7 @@
 
   position: relative;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity .24s;
 
   &::before {
     position: absolute;
@@ -229,7 +251,7 @@
     height: 100%;
     background-color: $color-main;
     content: "";
-    transition: transform .2s ease;
+    transition: transform .24s ease;
     transform-origin: left;
   }
 
@@ -246,7 +268,7 @@
 
 [data-animation-hero-fade] {
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity .24s ease;
 
   &.active {
     opacity: 1;
@@ -256,11 +278,13 @@
 .top-service {
   @extend %section___padding;
 
+  position: relative;
   overflow: hidden;
   background-image: url('../img/top/top-service_sp.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  z-index: 1;
 
   @media (--md) {
     background-image: url('../img/top/top-service_pc.jpg');

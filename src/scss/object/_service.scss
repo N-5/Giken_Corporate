@@ -111,6 +111,7 @@
   @media (--lg) {
     display: flex;
     justify-content: space-between;
+    width: 80%;
   }
 
   .u-m {
@@ -151,8 +152,12 @@
   width: 50%;
 
   @media (--md) {
-    width: auto;
-    margin-right: 15px;
+    width: 19%;
+    margin-right: 1.2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

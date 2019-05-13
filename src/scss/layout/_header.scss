@@ -147,6 +147,18 @@
             padding: 15px 0;
           }
 
+          &.jp {
+            @media (--md) {
+              padding: 15px 10px;
+              font-size: 14px;
+            }
+
+            @media (--xl) {
+              padding: 0 20px;
+              font-size: 15px;
+            }
+          }
+
           @media (--lg) {
             display: flex;
             align-items: center;
@@ -300,5 +312,9 @@
 
   &.js-active {
     background: $color-white;
+
+    &.js-open {
+      background: none;
+    }
   }
 }
