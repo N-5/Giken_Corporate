@@ -9,7 +9,7 @@ Template Name: english-automotive
     <div class="page-title__inner">
       <h1 class="page__heading">AUTOMOTIVE</h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/automotive-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/automotive-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -17,11 +17,11 @@ Template Name: english-automotive
   <section class="service-lead">
     <div class="l-container">
       <h2 class="service-lead__heading" data-inview>
-        単体装置から<br class="u-sm">ライン全体の<br class="u-sm_max">自動搬送設備まで。<br>
-        時代が求めるスペックを<br class="u-sm_max">実現する<br class="u-sm">技術力がここに。
+        From stand-alone equipment <br class="u-sm">to entire automated <br class="u-sm_max">production line systems – <br>
+        our expertise meets <br class="u-sm_max">the technological specifications demanded <br class="u-sm">in the world today.
       </h2>
       <p class="service-lead__text u-m" data-inview>
-        単体装置からライン全体の自動搬送設備、自動組付設備まで柔軟に対応。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多彩なニーズにお応えしています。また当社からの提案により、装置の高精度化・小型化はもちろん、省力化、製品クオリティの統一化をはかることも可能。技研はお客さまのニーズを的確に捉え、最適なカタチで具現化します。
+        Our product range covers a wide range of devices for manufacturing systems, from conveyors and machines to entire transfer and assembly systems for production lines. We are able to respond flexibly to various customer needs, due to the wealth of experience and expertise accumulated during our history. We also offer precision refinement and downsizing of devices, as well as labour-saving processes and consistent quality in manufactured products.
       </p>
     </div>
   </section>
@@ -35,21 +35,21 @@ Template Name: english-automotive
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_1.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">ガントリーローダー</h3>
+            <h3 class="service-case__heading">Gantry Loader</h3>
             <p class="u-m">
-              走行部は、ケーブルベヤレス仕様を採用し、メンテナンスの簡略化を実現。柔軟なローダービームの延長やキャリヤの増設をはじめ、ＮＣ装置による制御、モーター式ハンドによるエアーレス化およびハンドチェンジャーにも対応できます。アームシフト（Ｙ軸）機能による据付け期間の大幅な短縮や、温度補正機能による温度変化による走行停止位置のズレの吸収を可能にしました。
+              We offer travel sections without cable carriers, making maintenance work easy. Loader beams can be extended and cable carriers can be added easily, and numerical control systems, motor-driven hands without the need of pneumatic devices, and hand changers are available according to the need. The arm shifting (Y-axis) function has shortened installation time greatly, and the temperature control function prevents displacement in stopping positions due to temperature change.
             </p>
             <ul class="service-case__funtion">
-              <li>ケーブルベヤレスタイプ［特許］</li>
-              <li>スイングハンド式シングルアーム型</li>
-              <li>２ハンド式タンデムアーム型</li>
-              <li>重量搬送用大型ローダー</li>
-              <li>伸縮アーム式ローダー</li>
+              <li>Loader without cable carriers (Patented)</li>
+              <li>Swing-hand single arm loader</li>
+              <li>Two-handed tandem arm loader</li>
+              <li>Large-scale loader for heavy products</li>
+              <li>Slide-arm loader</li>
             </ul>
             <dl class="service-case__spec">
-              <dt>最大動作速度（走行）</dt><dd>276.0m/min</dd>
-              <dt>最大動作速度（昇降）</dt><dd>187.3ｍ/min</dd>
-              <dt>最大搬送重量</dt><dd>300kg</dd>
+              <dt>Max. operation speed (Travel)</dt><dd>276.0m/min</dd>
+              <dt>Max. operation speed (Lift)</dt><dd>187.3ｍ/min</dd>
+              <dt>Max. transfer weight</dt><dd>300kg</dd>
             </dl>
             <div class="service-case__link">
               <div class="m-link m-link__download"><a href="<?php echo get_stylesheet_directory_uri(); ?>/pdf/gantryloader_e.pdf" target="_blank"><span>CATALOG<i><?php get_template_part('lib/icon-donload'); ?></i></span></a></div>
@@ -63,15 +63,16 @@ Template Name: english-automotive
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_2.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">搬送装置（コンベヤ等）</h3>
-            <p class="u-m">各種搬送物に対する工程間自動搬送を実現した装置です。</p>
+            <h3 class="service-case__heading">Transfer Devices(Conveyors, etc.)</h3>
+            <p class="u-m">Devices for automatically transferring products between manufacturing processes.</p>
             <ul class="service-case__funtion">
-              <li>パレットアキューム式コンベヤ［特許］</li>
-              <li>ローラコンベヤ</li>
-              <li>ピッチ送りチェーンコンベヤ（チェーンピッチ可変式あり）</li>
-              <li>移載式ワークストッカー</li>
-              <li>ロータリー式ストッカー</li>
-              <li>水平旋回装置</li>
+              <li>Pallet stacking conveyor (Patented)</li>
+              <li>Roller conveyor</li>
+              <li>Pitch-feed chain conveyor<br> (variable chain pitch)</li>
+              <li>Pick &amp; Place work stocker</li>
+              <li>Rotary stocker</li>
+              <li>Horizontal turning device</li>
+              <li>Turnover device</li>
             </ul>
           </div>
         </div>
@@ -82,15 +83,15 @@ Template Name: english-automotive
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_3.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">組付け装置</h3>
+            <h3 class="service-case__heading">Assembly Machines</h3>
             <p class="u-m">
-              エンジン加工ライン内の各種組付け装置です。
+              Product assembly machines for use in automobile engine manufacturing lines.
             </p>
             <ul class="service-case__funtion">
-              <li>コンロッドキャップ組付け装置</li>
-              <li>ブロックベアリングキャップ組付け装置</li>
-              <li>シーリングボルト組付け装置</li>
-              <li>各部品圧入装置</li>
+              <li>Con-rod cap assembling machine</li>
+              <li>Block bearing cap assembling machine</li>
+              <li>Sealing bolt assembling machine</li>
+              <li>Press-fitting machine</li>
             </ul>
           </div>
         </div>
@@ -101,18 +102,18 @@ Template Name: english-automotive
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_4.jpg" alt="MEASUREMENT">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">計測・刻印装置</h3>
+            <h3 class="service-case__heading">Measuring / Marking Devices</h3>
             <p class="u-m">
-              各種測定およびマーキングと分類を行う装置です。
+              Devices for measuring, marking and categorizing.
             </p>
             <ul class="service-case__funtion">
-              <li>ジャーナル外径計測装置</li>
-              <li>シャフト全長計測装置</li>
-              <li>ハウジング内径計測装置</li>
-              <li>リークテスト装置</li>
-              <li>２Ｄレーザー刻印装置</li>
-              <li>超音波ドット刻印装置</li>
-              <li>各種刻印読取り装置</li>
+              <li>Journal outer-diameter measuring device</li>
+              <li>Shaft length measuring device</li>
+              <li>Housing inner-diameter measuring device</li>
+              <li>Leak tester device</li>
+              <li>2D laser marking device</li>
+              <li>Ultrasonic dot marking device</li>
+              <li>Marking reader device</li>
             </ul>
           </div>
         </div>
@@ -123,16 +124,16 @@ Template Name: english-automotive
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/automotive/survice-case_5.jpg" alt="">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">ロボットハンドリングシステム</h3>
+            <h3 class="service-case__heading">Robot Handling System</h3>
             <p class="u-m">
-              各種ロボットメーカー(ビジョンセンサー含)に対応します。
+              Compatible with various manufacturers' robots (including vision sensors).
             </p>
             <ul class="service-case__funtion">
-              <li>素材投入装置</li>
-              <li>素材バラ取り供給装置</li>
-              <li>ロボット式ストッカー</li>
-              <li>各種パーツ供給システム</li>
-              <li>完成品ストッカー</li>
+              <li>Raw material loading device</li>
+              <li>Material sensing/ pickup device</li>
+              <li>Robotic stocker</li>
+              <li>Parts handling system</li>
+              <li>Finished work stocker</li>
             </ul>
           </div>
         </div>
@@ -142,7 +143,7 @@ Template Name: english-automotive
 
   <section class="c-section-back">
     <div class="c-section-back__inner">
-      <a href="<?php echo home_url(); ?>/service/"><span>BACK</span></a>
+      <a href="<?php echo home_url(); ?>/en/service/"><span>BACK</span></a>
     </div>
   </section>
 </main>

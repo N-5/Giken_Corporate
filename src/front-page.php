@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>">
+  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
 </div>
 
 <main id="top">
@@ -26,7 +26,7 @@
         </p>
         <div class="top-hero__btn" data-animation-hero-fade="3">
           <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/"><span>MORE OUR VISION</span></a></div>
-          <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
+          <div class="m-link m-link__list"><a href="http://www.youtube.com/watch?v=T4nOX00HhqA" class="popup-youtube"><span>CONCEPT MOVIE</span></a></div>
         </div>
       </div>
       <div class="top-hero__monument" data-animation-hero-move><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-hero_world.png" alt="world"></div>

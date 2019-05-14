@@ -10,7 +10,7 @@ Template Name: partner
     <div class="page-title__inner">
       <h1 class="page__heading">PARTNER<span>パートナー</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/partner/partner-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/partner/partner-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -86,7 +86,7 @@ Template Name: partner
             <li class="partner-list__item">Honda Transmission Mfg, Inc.［アメリカ］</li>
           </ul>
           <ul>
-            <li class="partner-list__item">Ｍaruti Suzuki India Limited［インド］</li>
+            <li class="partner-list__item">Maruti Suzuki India Limited［インド］</li>
             <li class="partner-list__item">P&amp;T MACHINERY INTERNATIONAL CO., LTD［中国］</li>
             <li class="partner-list__item">P.T. SUZUKI INDOMOBIL MOTOR PLANT CIKARANG［インドネシア］</li>
             <li class="partner-list__item">SUZUKI MOTOR THAILAND［タイ］</li>

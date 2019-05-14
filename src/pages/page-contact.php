@@ -10,7 +10,7 @@ Template Name: contact
     <div class="page-title__inner">
       <h1 class="page__heading">CONTACT<span>お問い合わせ</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact/contact-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact/contact-lower.jpg" alt="">
       </div>
     </div>
   </section>

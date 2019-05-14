@@ -26,7 +26,7 @@ Template Name: vision
               自動化技術で、世界中のものづくりに流れをつくる。<br class="u-lg">それは世界を動かして、きっと世の中にも新しい流れをつくる。<br class="u-lg">私たちの仕事は、「流れ」そのものを生み出すことだ。<br class="u-lg">技研は、世界を動かす流れの源になる。
             </p>
             <div class="vision-hero-goal__link">
-              <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
+              <div class="m-link m-link__blueborder"><a href="http://www.youtube.com/watch?v=T4nOX00HhqA" class="popup-youtube"><span>CONCEPT MOVIE</span></a></div>
             </div>
           </div>
         </div>
@@ -66,10 +66,10 @@ Template Name: vision
         <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="技研株式会社ロゴ"><span>商標 登録番号 3107527</span></div>
         <div class="vision-logo__comment">
           <p class="vision-logo__text u-m">
-            このマークは、アルファベットの「D」を模っています。 これは創業当時に、「Drawing（製図）、Design（設計、デザイン）、 Development（開発）」の３つの頭文字をとり、造られました。
+            このマークは、アルファベットの「D」を模っています。 これは創業当時に、「Drawing（製図）、Design(設計、デザイン)、 Development(開発)」の３つの頭文字をとり、造られました。
           </p>
           <p class="vision-logo__text u-m">
-            そして現在は、社員一人ひとりが、お客さまに満足いただく製品を造るためにDevotion（献身・一意専心）をもって仕事に打ち込み、Device（工夫・方策）をもって問題を解決し、新しいものを生み出し、Delight（愉快・楽しさ）をもって、明るく仕事に取り組んでいます。
+            そして現在は、社員一人ひとりが、お客さまに満足いただく製品を造るためにDevotion(献身・一意専心)をもって仕事に打ち込み、Device(工夫・方策)をもって問題を解決し、新しいものを生み出し、Delight(愉快・楽しさ)をもって、明るく仕事に取り組んでいます。
           </p>
           <p class="vision-logo__text u-m">
             さらに将来、技研株式会社は、オンリーワンの技術と強固な財務体制でDiamond「ダイヤモンド」のように輝き、環境の変化すらも自らの力に変えるDynamism「ダイナミズム」に満ち溢れる、Dream「夢」のある会社を目指します。

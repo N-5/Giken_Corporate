@@ -16,6 +16,7 @@
     z-index: 9;
 
     @media (--lg) {
+      margin-top: 22px;
       width: 160px;
     }
   }
@@ -36,7 +37,6 @@
       max-width: 1280px;
       padding: 0 20px 0 40px;
       justify-content: space-between;
-      align-items: center;
     }
   }
 
@@ -148,14 +148,17 @@
           }
 
           &.jp {
+            font-size: 14px;
+            padding: 12px 0;
+
             @media (--md) {
               padding: 15px 10px;
-              font-size: 14px;
+              font-size: 13px;
             }
 
             @media (--xl) {
               padding: 0 20px;
-              font-size: 15px;
+              font-size: 14px;
             }
           }
 

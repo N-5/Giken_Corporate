@@ -26,7 +26,7 @@ Template Name: chinese-vision
               ダミー自動化技術で、世界中のものづくりに流れをつくる。それは世界を動かして、それは世界を動かして、きっと、世の中にも新しい流れをつくる。私たちの仕事は、「流れ」そのものを生み出すことだ。技研は、世界を動かす流れの源となる。ダミー自動化技術で、
             </p>
             <div class="vision-hero-goal__link">
-              <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
+              <div class="m-link m-link__blueborder"><a href="http://www.youtube.com/watch?v=T4nOX00HhqA" class="popup-youtube"><span>CONCEPT MOVIE</span></a></div>
             </div>
           </div>
         </div>

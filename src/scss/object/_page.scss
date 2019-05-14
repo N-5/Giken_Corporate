@@ -3,6 +3,10 @@
   @extend %section___margin;
 }
 
+#top {
+  overflow: hidden;
+}
+
 #company {
   .m-section-title {
     @extend %m-section-title___margin;

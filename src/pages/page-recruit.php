@@ -10,7 +10,7 @@ Template Name: recruit
     <div class="page-title__inner">
       <h1 class="page__heading">RECRUIT<span>採用情報</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -79,14 +79,14 @@ Template Name: recruit
           <div class="item">
             <h3 class="heading">新人社員研修</h3>
             <div class="detail">
-              <figure class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__thumb1.jpg" alt=""></figure>
+              <figure class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__thumb1.jpg" alt="新人社員研修"></figure>
               <div class="text">新入社員研修では、社会人としてのマナーを始め、お客様の要求にしっかりと対応できるためのコミュニケーション力の構築などのカリキュラムを用意。部門研修で技研の基礎を学ぶだけでなく、現場体験を実施しています。</div>
             </div>
           </div>
           <div class="item">
             <h3 class="heading">階層別教育</h3>
             <div class="detail">
-              <figure class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__thumb2.jpg" alt=""></figure>
+              <figure class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__thumb2.jpg" alt="階層別教育"></figure>
               <div class="text">中堅社員を対象に、監督者や技術者のスキル向上の研修などを行います。さらに、管理職を対象に部門管理や部下育成、また経営感覚の育成や外部環境の変化に対応できる戦略能力を育成しています。</div>
             </div>
           </div>

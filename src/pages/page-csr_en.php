@@ -10,7 +10,7 @@ Template Name: english-csr
     <div class="page-title__inner">
       <h1 class="page__heading">CSR</h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -52,17 +52,18 @@ Template Name: english-csr
 
   <section class="csr-environment">
     <div class="l-container">
-      <h2 class="m-section-title" data-inview>FOR ENVIRONMENT<span>環境への取り組み</span></h2>
+      <h2 class="m-section-title" data-inview>FOR ENVIRONMENT</h2>
     </div>
     <div class="l-container__small">
       <div class="csr-list">
         <div class="csr-list__item" data-inview>
-          <h3 class="csr-heading">太陽光発電</h3>
+          <h3 class="csr-heading">solar power generation system</h3>
           <div class="csr-list__inner">
-            <div class="csr-list__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-environment_1.jpg" alt="太陽光発電"></div>
+            <div class="csr-list__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-environment_1.jpg" alt="solar power generation system"></div>
             <div class="csr-list__detail">
               <p class="u-m">
-                技研株式会社は、太陽光発電システムを設置しております。 環境に優しいクリーンエネルギーを発電し、CO2排出量を抑えることで、省エネルギー活動の取り組みを行っております。
+                We have installed a solar power generation system in our facility. 
+                By means of solar power generation system, we generate eco-friendly clean energy in order to reduce CO2 emissions as a part of our activities to save energy.
               </p>
             </div>
           </div>

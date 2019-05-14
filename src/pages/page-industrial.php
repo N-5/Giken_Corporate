@@ -9,7 +9,7 @@ Template Name: industrial
     <div class="page-title__inner">
       <h1 class="page__heading">INDUSTRIAL MACHINES<span>産業機械事業</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg" alt="">
       </div>
     </div>
   </section>

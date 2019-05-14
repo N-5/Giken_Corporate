@@ -6,7 +6,7 @@ Template Name: chinese-top
 <?php get_header(); ?>
 
 <div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>">
+  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
 </div>
 
 <main id="top">
@@ -31,7 +31,7 @@ Template Name: chinese-top
         </p>
         <div class="top-hero__btn" data-animation-hero-fade="3">
           <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/cn/vision/"><span>MORE OUR VISION</span></a></div>
-          <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/cn/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
+          <div class="m-link m-link__list"><a href="http://www.youtube.com/watch?v=T4nOX00HhqA" class="popup-youtube"><span>CONCEPT MOVIE</span></a></div>
         </div>
       </div>
       <div class="top-hero__monument" data-animation-hero-move><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-hero_world.png" alt="world"></div>
@@ -77,7 +77,7 @@ Template Name: chinese-top
     </div>
   </section>
 
-  <section class="top-information">
+  <section class="top-information cn">
     <div class="top-information__outer">
       <div class="top-information__recruit">
         <div class="top-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-recruit__image.jpg" alt="採用情報"></div>
@@ -96,50 +96,6 @@ Template Name: chinese-top
           <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
           <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/csr/"><span>MORE</span></a></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="top-news">
-    <div class="l-container">
-      <h2 class="m-top-section__title" data-inview><span class="en">NEWS</span><span class="jp">新着情報</span></h2>
-      <div class="top-news-list">
-        <?php
-        $args = array(
-          'post_type' => 'news',
-          'posts_per_page' => 4
-        );
-        $the_query = new WP_Query($args); if($the_query->have_posts()):
-        ?>
-        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-        <article class="top-news-list__item" data-inview>
-          <a href="<?php the_permalink() ?>">
-            <div class="detail">
-              <time class="time"><?php the_time('Y.m.d') ?></time>
-              <div class="categogy">
-                <?php $custom_post_tag = 'news-category';
-             $custom_post_tag_terms = wp_get_object_terms($post->ID, $custom_post_tag);
-             if(!empty($custom_post_tag_terms)){
-               if(!is_wp_error( $custom_post_tag_terms )){
-                 foreach($custom_post_tag_terms as $term){
-                   $tag_term_link = get_term_link($term->slug, $custom_post_tag);
-                   $tag_term_name = $term->name;
-                   echo $tag_term_name;
-                 }
-               }
-             }
-                ?>
-              </div>
-            </div>
-            <div class="title"><?php the_title() ?></div>
-          </a>
-        </article>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php else: ?>
-        <p>ニュースが投稿されていません。</p>
-        <?php endif; ?>
-        <div class="m-link m-link__list" data-inview><a href="<?php echo home_url(); ?>/news/"><span>VIEW LIST</span></a></div>
       </div>
     </div>
   </section>

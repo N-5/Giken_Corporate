@@ -9,7 +9,7 @@ Template Name: english-industrial
     <div class="page-title__inner">
       <h1 class="page__heading">INDUSTRIAL MACHINES</h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -17,11 +17,11 @@ Template Name: english-industrial
   <section class="service-lead">
     <div class="l-container">
       <h2 class="service-lead__heading" data-inview>
-        使いやすさを最優先に<br class="u-sm_max">設計/開発。<br>
-        そのクオリティーは<br class="u-sm_max">お客様から高い評価を獲得。
+        We put maximum priority on user-friendliness <br>during design and development.<br>
+        The quality of our products <br class="u-sm_max">has been highly evaluated.
       </h2>
       <p class="service-lead__text u-m" data-inview>
-        自動車事業、アルミ事業より新たに派生した新規部門。それぞれの事業に精通した「技研」ならではの、蓄積された技術、ノウハウを活かし、製品の信頼性、コストパフォーマンスはそのままに、あらゆる業務の自動化・省人化をしっかりとサポート。収益向上や生産効率のアップ、業務課題の解決を可能にするとともに、さまざまな「革新」も実現しています。
+        This is our new field of business, separated from the fields of automobiles and aluminum. Based on the technology and know-how accumulated in those two fields, we provide automation and labor-saving in all processes while retaining product quality and cost performance. We are able to improve customers’ profits and production efficiency, and solve their problems for the renovation of their business.
       </p>
     </div>
   </section>
@@ -35,14 +35,14 @@ Template Name: english-industrial
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/survice-case_1.jpg" alt="CUT AND REMOVED">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">残糸切断･除去装置</h3>
+            <h3 class="service-case__heading">Thread Cutting/ Removal Devices</h3>
             <p class="u-m">
-              紙管、ボビン、顎付ボピン、樹脂チューブ等の芯菅に傷をつけずに残糸の除去をすることができます。残糸除去時に芯菅に傷をつけないため芯菅の再利用に対応しています。
+              Devices for cutting and removing threads from paper rolls, bobbins, jaw bobbins and resin tubes without damaging them, for recycling.
             </p>
             <ul class="service-case__funtion">
-              <li>紙管残糸除去装置</li>
-              <li>ボビン残糸除去装置</li>
-              <li>顎付ボピン残糸除去装置</li>
+              <li>Paper roll thread removal device</li>
+              <li>Bobbin thread removal device</li>
+              <li>Jaw bobbin thread removal device</li>
             </ul>
           </div>
         </div>
@@ -53,13 +53,13 @@ Template Name: english-industrial
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/survice-case_2.jpg" alt="CONVEYOR">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">搬送コンベヤ</h3>
-            <p class="u-m">搬送物に合わせた各種コンベヤをオーダーメイドで製作いたします。</p>
+            <h3 class="service-case__heading">Conveyors</h3>
+            <p class="u-m">Custom-made conveyors according to the product.</p>
             <ul class="service-case__funtion">
-              <li>各種ローラーコンベヤ</li>
-              <li>各種ベルトコンベヤ</li>
-              <li>糸かけ対策コンベヤ</li>
-              <li>特殊コンベヤ</li>
+              <li>Roller conveyor</li>
+              <li>Belt conveyor</li>
+              <li>Threading conveyor</li>
+              <li>Special conveyor</li>
             </ul>
           </div>
         </div>
@@ -70,9 +70,9 @@ Template Name: english-industrial
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/survice-case_3.jpg" alt="PALLETIZER">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">製品パレタイジング装置</h3>
+            <h3 class="service-case__heading">Palletizing Devices</h3>
             <p class="u-m">
-              搬送コンベヤや台車からの製品を取出し、段積・パッキングに対応しています。ご要望に応じてシステムアップが行えます。
+              Devices for unloading products from conveyors and carts and stacking and packing them, updating manufacturing systems according to the need.
             </p>
           </div>
         </div>
@@ -83,14 +83,14 @@ Template Name: english-industrial
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/survice-case_4.jpg" alt="TRANSFER APPARATUS">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">移載装置</h3>
+            <h3 class="service-case__heading">Transfer Devices</h3>
             <p class="u-m">
-              搬送重量や速度、ワーク形状などを考慮し、オーダーメイドの移載システムを構築いたします。工場のレイアウトに合わせてローダーやＡＧＶ等を使用した最良の搬送を実現いたします。
+              Custom-made transfer systems utilising loaders and AGVs, that take into account the weight and shape of materials and transfer speeds, enabling optimal transfer for any plant layout.
             </p>
             <ul class="service-case__funtion">
-              <li>リジェクト装置</li>
-              <li>ロール積替え機</li>
-              <li>各種AGV装置</li>
+              <li>Reject device</li>
+              <li>Roll transfer device</li>
+              <li>Automated guided vehicle (AGV)</li>
             </ul>
           </div>
         </div>
@@ -101,11 +101,11 @@ Template Name: english-industrial
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/survice-case_5.jpg" alt="CARBON FIBER">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">炭素繊維関係各種機器</h3>
+            <h3 class="service-case__heading">Carbon Fiber Processing Equipment</h3>
             <ul class="service-case__funtion">
-              <li>炭素繊維切断装置</li>
-              <li>炭素繊維シート積層装置</li>
-              <li>炭素繊維各種検査装置</li>
+              <li>Carbon fiber cutter</li>
+              <li>Carbon fiber sheet stacker</li>
+              <li>Carbon fiber inspection device</li>
             </ul>
           </div>
         </div>
@@ -115,7 +115,7 @@ Template Name: english-industrial
   
   <section class="c-section-back">
     <div class="c-section-back__inner">
-      <a href="<?php echo home_url(); ?>/service/"><span>BACK</span></a>
+      <a href="<?php echo home_url(); ?>/en/service/"><span>BACK</span></a>
     </div>
   </section>
 </main>

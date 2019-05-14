@@ -8,9 +8,9 @@ Template Name: chinese-aluminum
 <main id="aluminum">
   <section class="page-title">
     <div class="page-title__inner">
-      <h1 class="page__heading">ALUMINUM<span>アルミ事業</span></h1>
+      <h1 class="page__heading">ALUMINUM<span>铝材事业</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/aluminum-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/aluminum-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -126,7 +126,7 @@ Template Name: chinese-aluminum
   
   <section class="c-section-back">
     <div class="c-section-back__inner">
-      <a href="<?php echo home_url(); ?>/service/"><span>BACK</span></a>
+      <a href="<?php echo home_url(); ?>/cn/service/"><span>BACK</span></a>
     </div>
   </section>
 </main>

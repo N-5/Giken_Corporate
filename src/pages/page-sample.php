@@ -7,9 +7,9 @@ Template Name: sample
 <main id="sample">
   <section class="page-title">
     <div class="page-title__inner">
-      <h2 class="page__heading">SERVICE<span>事業内容</span></h2>
+      <h2 class="page__heading">SAMPLE<span>サンプル</span></h2>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/service-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/service/service-lower.jpg" alt="sample">
       </div>
     </div>
   </section>

@@ -10,7 +10,7 @@ Template Name: chinese-company
     <div class="page-title__inner">
       <h2 class="page__heading">COMPANY<span>会社紹介</span></h2>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-lower.jpg" alt="">
       </div>
     </div>
   </section>

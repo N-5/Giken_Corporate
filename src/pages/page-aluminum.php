@@ -10,7 +10,7 @@ Template Name: aluminum
     <div class="page-title__inner">
       <h1 class="page__heading">ALUMINUM<span>アルミ事業</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/aluminum-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/aluminum-lower.jpg" alt="">
       </div>
     </div>
   </section>

@@ -157,7 +157,7 @@ Template Name: career
         経験者採用の応募は、随時受付中です。<br class="u--max-md">
         弊社へお問い合わせください。
       </div>
-      <div class="m-link m-link__list"><a href="http://www.giken-jpn.com/company/contact.html"><span>お問い合わせ</span></a></div>
+      <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/contact/"><span>お問い合わせ</span></a></div>
     </div>
     <div class="newgrade-mynavi-privacy" data-inview>
       <h3 class="heading">個人情報の取り扱いについて</h3>

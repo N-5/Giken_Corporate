@@ -72,7 +72,7 @@ Template Name: chinese-service
               株式会社GKMは、技研株式会社と株式会社BBS金明の合弁会社です。２社の強みを活かし、工作機械設計･製造･販売を行っています。
             </p>
             <div class="service-group-list__link">
-              <div class="m-link m-link__blueborder"><a href="http://www.gkm.co.jp/" target="_blank"><span>MORE</span></a></div>
+              <div class="m-link m-link__blueborder"><a href="http://www.gkm.co.jp/en/" target="_blank"><span>MORE</span></a></div>
             </div>
           </div>
         </div>

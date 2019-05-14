@@ -16,6 +16,12 @@
       }
     }
   }
+
+  &.en {
+    * {
+      font-family: $font-en;
+    }
+  }
 }
 
 .home,

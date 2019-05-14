@@ -123,7 +123,7 @@ function implement_custom_posts($value='') {
   $movie = (object) array(
     "slug" => "movie",
     "name" => "ムービー",
-    "has_archive" => true,
+    "has_archive" => false,
   );
   $contents_array = [
     $news,
@@ -200,8 +200,21 @@ add_filter('body_class', 'pagename_class');
 
 function is_parent_slug() {
   global $post;
-  if ($post->post_parent) {
+  if ( is_page() && $post->post_parent > 0 ) {
     $post_data = get_post($post->post_parent);
     return $post_data->post_name;
   }
+}
+
+function is_tree( $pid ) {
+  global $post;
+  if ( is_page( $pid ) )
+    return true;
+  $anc = get_post_ancestors( $post->ID );
+  foreach ( $anc as $ancestor ) {
+    if( is_page() && $ancestor == $pid ) {
+      return true;
+    }
+  }
+  return false;
 }

@@ -65,6 +65,13 @@
       @media (--lg) {
         font-size: 15px;
       }
+
+      ul {
+        li {
+          text-indent: -1em;
+          margin-left: 1em;
+        }
+      }
     }
   }
 }
@@ -371,16 +378,7 @@
       transform: translate(0, -50%);
 
       @media (--md) {
-        top: 55%;
         font-size: 60px;
-      }
-
-      @media (--lg) {
-        top: 180px;
-      }
-
-      @media (--xl) {
-        top: 220px;
       }
 
       span {
@@ -469,6 +467,12 @@
     }
   }
 
+  &.en {
+    a {
+      font-weight: bold;
+    }
+  }
+
   &.news-navigation {
     width: 150%;
 
@@ -533,6 +537,14 @@
     a {
       margin-right: 0;
     }
+  }
+}
+
+.mfp-iframe-holder .mfp-content {
+  width: 90%;
+
+  @media (--sm) {
+    width: 80%;
   }
 }
 

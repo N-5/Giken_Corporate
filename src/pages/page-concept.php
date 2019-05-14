@@ -10,14 +10,14 @@ Template Name: movie
     <div class="page-title__inner">
       <h1 class="page__heading">MOVIE<span>ムービー</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/movie/movie-lower.jpg" alt="">
       </div>
     </div>
   </section>
   
   <section class="movie-films">
     <div class="l-container">
-      <div class="movie-films-list">
+      <div class="movie-films-list" data-inview>
         <?php
         $args = array(
           'post_type' => 'movie',
@@ -43,18 +43,4 @@ Template Name: movie
     </div>
   </section>
 </main>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script rel='stylesheet' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-<script>
-  jQuery(function (){
-    jQuery('.popup-youtube').magnificPopup({
-      type: 'iframe',
-      removalDelay: 150,
-      preloader: false
-    });
-  });
-</script>
 <?php get_footer(); ?>

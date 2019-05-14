@@ -10,7 +10,7 @@ Template Name: english-partner
     <div class="page-title__inner">
       <h1 class="page__heading">PARTNER</h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/partner/partner-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/partner/partner-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -21,77 +21,78 @@ Template Name: english-partner
     </div>
     <div class="l-container__small">
       <div class="partner-supply-block">
-        <h2 class="contact-heading">国内</h2>
+        <h2 class="contact-heading">Domestic</h2>
         <div class="partner-list partner-list__col3" data-inview>
           <ul>
-            <li class="partner-list__item">アイシン軽金属株式会社</li>
-            <li class="partner-list__item">いすゞ自動車株式会社</li>
-            <li class="partner-list__item">エンシュウ株式会社</li>
-            <li class="partner-list__item">開明伸銅株式会社</li>
-            <li class="partner-list__item">加藤軽金属工業株式会社</li>
-            <li class="partner-list__item">株式会社神埼高級工機製作所</li>
-            <li class="partner-list__item">菊池工業株式会社</li>
-            <li class="partner-list__item">栗山アルミ株式会社</li>
-            <li class="partner-list__item">コマツNTC 株式会社</li>
-            <li class="partner-list__item">サンエツ金属株式会社</li>
-            <li class="partner-list__item">三協立山株式会社</li>
-            <li class="partner-list__item">昭和電工株式会社</li>
-            <li class="partner-list__item">株式会社スギノマシン</li>
-            <li class="partner-list__item">スズキ株式会社</li>
+            <li class="partner-list__item">AISIN KEIKINZOKU CO., Ltd.</li>
+            <li class="partner-list__item">ENSHU Limited</li>
+            <li class="partner-list__item">Fuji Heavy Industries Ltd.</li>
+            <li class="partner-list__item">FUJI MACHINERY CO.LTD.</li>
+            <li class="partner-list__item">HAMANA PARTS INDUSTRY CO., LTD.</li>
+            <li class="partner-list__item">Hitachi Construction Machinery Co., Ltd.</li>
+            <li class="partner-list__item">Honda Engineering Co., Ltd.</li>
+            <li class="partner-list__item">HONDA METAL INDUSTRIES, LTD.</li>
+            <li class="partner-list__item">Honda Motor Co., Ltd.</li>
+            <li class="partner-list__item">Howa Machinery, Ltd.</li>
+            <li class="partner-list__item">Isuzu Motors Limited</li>
+            <li class="partner-list__item">Kaimei Shindo CO., LTD.</li>
+            <li class="partner-list__item">Kanzaki Kokyukoki Mfg. Co., Ltd.</li>
+            <li class="partner-list__item">Kato Light Metal Industry</li>
+            <li class="partner-list__item">KIKUCHI KOGYO CO., LTD.</li>
           </ul>
           <ul>
-            <li class="partner-list__item">株式会社スズキ部品製造 浜松工場</li>
-            <li class="partner-list__item">立花金属工業株式会社</li>
-            <li class="partner-list__item">帝商産業株式会社</li>
-            <li class="partner-list__item">東洋実業株式会社</li>
-            <li class="partner-list__item">東レ株式会社</li>
-            <li class="partner-list__item">東レエンジニアリング株式会社</li>
-            <li class="partner-list__item">東レモノフィラメント株式会社</li>
-            <li class="partner-list__item">トヨタ自動車株式会社</li>
-            <li class="partner-list__item">株式会社豊田自動織機</li>
-            <li class="partner-list__item">中川製紙株式会社</li>
-            <li class="partner-list__item">日軽形材株式会社</li>
-            <li class="partner-list__item">浜名部品工業株式会社</li>
-            <li class="partner-list__item">日立建機株式会社</li>
-            <li class="partner-list__item">富士機械株式会社</li>
+            <li class="partner-list__item">Komatsu NTC Ltd.</li>
+            <li class="partner-list__item">KURIYAMA ALUMINUM CO., Ltd.</li>
+            <li class="partner-list__item">LIXIL Corporation</li>
+            <li class="partner-list__item">Mazda Motor Corporation</li>
+            <li class="partner-list__item">MITANI SINDO COMPANY, LIMITED</li>
+            <li class="partner-list__item">Mitsubishi Aluminum Co., Ltd.</li>
+            <li class="partner-list__item">Mitsubishi Motors Corporation</li>
+            <li class="partner-list__item">Nakagawa Paper Co., Ltd.</li>
+            <li class="partner-list__item">NIKKEI EXTRUSIONS COMPANY., LTD.</li>
+            <li class="partner-list__item">SAN-ETSU METALS CO., Ltd.</li>
+            <li class="partner-list__item">Sankyo Tateyama, Inc.</li>
+            <li class="partner-list__item">Showa Denko K.K.</li>
+            <li class="partner-list__item">SUGINO MACHINE LIMITED</li>
+            <li class="partner-list__item">Suzuki Auto Parts Mfg. Co., Ltd.,</li>
+            <li class="partner-list__item">Hamamatsu Plant</li>
           </ul>
           <ul>
-            <li class="partner-list__item">富士重工業株式会社</li>
-            <li class="partner-list__item">古河スカイ株式会社</li>
-            <li class="partner-list__item">豊和工業株式会社</li>
-            <li class="partner-list__item">ホンダエンジニアリング株式会社</li>
-            <li class="partner-list__item">本田技研工業株式会社</li>
-            <li class="partner-list__item">本多金属工業株式会社</li>
-            <li class="partner-list__item">マツダ株式会社</li>
-            <li class="partner-list__item">三谷伸銅株式会社</li>
-            <li class="partner-list__item">三菱アルミニウム株式会社</li>
-            <li class="partner-list__item">三菱自動車工業株式会社</li>
-            <li class="partner-list__item">株式会社山田製作所</li>
-            <li class="partner-list__item">安田金属工業株式会社</li>
-            <li class="partner-list__item">株式会社LIXIL</li>
+            <li class="partner-list__item">SUZUKI MOTOR CORPORATION</li>
+            <li class="partner-list__item">TACHIBANA METAL MFG CO., Ltd.</li>
+            <li class="partner-list__item">TEISHO SANGYO CO., LTD.</li>
+            <li class="partner-list__item">Toray Engineering Co., Ltd.</li>
+            <li class="partner-list__item">TORAY INDUSTRIES, INC.</li>
+            <li class="partner-list__item">TORAY MONOFILAMENT CO., LTD.</li>
+            <li class="partner-list__item">Toyo Jitsugyo Co., Ltd.</li>
+            <li class="partner-list__item">TOYOTA INDUSTRIES CORPORATION</li>
+            <li class="partner-list__item">Toyota Motor Corporation</li>
+            <li class="partner-list__item">UACJ Extrusion Shiga Corporation (former Furukawa-Sky Aluminum)</li>
+            <li class="partner-list__item">YAMADA MANUFACTURING CO.,LTD.</li>
+            <li class="partner-list__item">Yasuda Co.,Ltd.</li>
           </ul>
         </div>
       </div>
       <div class="partner-supply-block">
-        <h2 class="contact-heading" data-inview>海外</h2>
+        <h2 class="contact-heading" data-inview>Overseas</h2>
         <div class="partner-list partner-list__col2" data-inview>
           <ul>
-            <li class="partner-list__item">Honda Automobile Thailand Co., Ltd.［タイ］</li>
-            <li class="partner-list__item">Honda de Mexico, S.A. de C.V.［メキシコ］</li>
-            <li class="partner-list__item">Honda Manufacturing of Alabama, LLC［アメリカ］</li>
-            <li class="partner-list__item">Honda of America Mfg., Inc.［アメリカ］</li>
-            <li class="partner-list__item">Honda Of Canada Manufacturing［カナダ］</li>
-            <li class="partner-list__item">Honda of the U.K. Manufacturing Ltd.［イギリス］</li>
-            <li class="partner-list__item">Honda Precision Parts of Georgia, LLC［アメリカ］</li>
-            <li class="partner-list__item">Honda Transmission Mfg, Inc.［アメリカ］</li>
+            <li class="partner-list__item">Honda Automobile Thailand Co., Ltd.</li>
+            <li class="partner-list__item">Honda Auto Parts Manufacturing Co., Ltd.</li>
+            <li class="partner-list__item">Honda de Mexico, S.A. de C.V.</li>
+            <li class="partner-list__item">Honda Manufacturing of Alabama, LLC</li>
+            <li class="partner-list__item">Honda of America Mfg., Inc.</li>
+            <li class="partner-list__item">Honda Of Canada Manufacturing</li>
+            <li class="partner-list__item">Honda of the U.K. Manufacturing Ltd.</li>
           </ul>
           <ul>
-            <li class="partner-list__item">Ｍaruti Suzuki India Limited［インド］</li>
-            <li class="partner-list__item">P&amp;T MACHINERY INTERNATIONAL CO., LTD［中国］</li>
-            <li class="partner-list__item">P.T. SUZUKI INDOMOBIL MOTOR PLANT CIKARANG［インドネシア］</li>
-            <li class="partner-list__item">SUZUKI MOTOR THAILAND［タイ］</li>
-            <li class="partner-list__item">Yamada North America, Inc.［アメリカ］</li>
-            <li class="partner-list__item">本田汽車零部件製造有限公司［中国］</li>
+            <li class="partner-list__item">Honda Precision Parts of Georgia, LLC</li>
+            <li class="partner-list__item">Honda Transmission Mfg, Inc.</li>
+            <li class="partner-list__item">Maruti Suzuki India Limited</li>
+            <li class="partner-list__item">P&amp;T MACHINERY INTERNATIONAL CO., LTD</li>
+            <li class="partner-list__item">P.T. SUZUKI INDOMOBIL MOTOR PLANT CIKARANG</li>
+            <li class="partner-list__item">SUZUKI MOTOR THAILAND</li>
+            <li class="partner-list__item">Yamada North America, Inc.</li>
           </ul>
         </div>
       </div>

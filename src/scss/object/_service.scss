@@ -1,6 +1,7 @@
 .service-information {
   display: block;
   background-color: $color-grey-light;
+  overflow: hidden;
 
   .information-list__item {
     padding: 40px 0;

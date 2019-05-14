@@ -42,8 +42,8 @@
 
 .top-hero {
   width: 100%;
-  overflow: hidden;
-  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   .l-container {
     position: relative;
@@ -109,7 +109,10 @@
     top: 0;
     left: 0;
     z-index: 0;
-    animation: bg-bigger 40s ease 1 alternate;
+
+    @media (--sm) {
+      animation: bg-bigger 60s ease 1 alternate;
+    }
 
     img {
       width: 100%;
@@ -121,7 +124,7 @@
       }
 
       50% {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       100% {
@@ -195,6 +198,10 @@
   .top-hero__inner {
     padding-bottom: 50px;
 
+    @media (--md) {
+      padding-bottom: 80px;
+    }
+
     @media (--lg) {
       display: flex;
       padding-bottom: 140px;
@@ -216,6 +223,8 @@
   }
 
   .m-link__list {
+    margin: 20px 0 0 !important;
+
     @media (--lg) {
       width: 80%;
       margin: 20px 0 14px auto !important;
@@ -416,6 +425,13 @@
 }
 
 .top-information {
+  &.en,
+  &.cn {
+    @media (--lg) {
+      padding-bottom: 100px;
+    }
+  }
+
   .top-information__outer {
     @media (--lg) {
       display: flex;

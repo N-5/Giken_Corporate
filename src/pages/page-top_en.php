@@ -6,13 +6,12 @@ Template Name: english-top
 <?php get_header(); ?>
 
 <div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo_caption.svg" alt="<?php bloginfo('name'); ?>">
+  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
 </div>
 
 <main id="top">
   <section class="top-hero">
     <div class="l-container">
-      <p class="top-hero__heading" data-animation-hero-fade="1">技術で世界の流れをつくる。</p>
       <div class="top-hero__catchcopy">
         <span class="top-hero__reveal" data-animation-reveal>MAKE</span><br>
         <span class="top-hero__reveal" data-animation-reveal>THE</span><br class="u-sm_max">
@@ -31,7 +30,7 @@ Template Name: english-top
         </p>
         <div class="top-hero__btn" data-animation-hero-fade="3">
           <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/en/vision/"><span>MORE OUR VISION</span></a></div>
-          <div class="m-link m-link__list"><a href="<?php echo home_url(); ?>/en/vision/movie/"><span>CONCEPT MOVIE</span></a></div>
+          <div class="m-link m-link__list"><a href="http://www.youtube.com/watch?v=T4nOX00HhqA" class="popup-youtube"><span>CONCEPT MOVIE</span></a></div>
         </div>
       </div>
       <div class="top-hero__monument" data-animation-hero-move><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-hero_world.png" alt="world"></div>
@@ -77,7 +76,7 @@ Template Name: english-top
     </div>
   </section>
 
-  <section class="top-information">
+  <section class="top-information en">
     <div class="top-information__outer">
       <div class="top-information__recruit">
         <div class="top-information__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-recruit__image.jpg" alt="RECRUIT"></div>

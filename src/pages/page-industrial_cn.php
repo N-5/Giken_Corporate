@@ -9,7 +9,7 @@ Template Name: chinese-industrial
     <div class="page-title__inner">
       <h1 class="page__heading">INDUSTRIAL MACHINES<span>産業機械事業</span></h1>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/industrial/industrial-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -115,7 +115,7 @@ Template Name: chinese-industrial
   
   <section class="c-section-back">
     <div class="c-section-back__inner">
-      <a href="<?php echo home_url(); ?>/service/"><span>BACK</span></a>
+      <a href="<?php echo home_url(); ?>/cn/service/"><span>BACK</span></a>
     </div>
   </section>
 </main>

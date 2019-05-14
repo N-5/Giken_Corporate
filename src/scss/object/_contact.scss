@@ -272,11 +272,24 @@ input[type="submit"] {
   .contact-form__send {
     display: none;
   }
+
+  .newgrade-mynavi-privacy {
+    margin-top: 30px;
+  }
 }
 
 .mw_wp_form_confirm {
   .contact-form__privacy,
-  .contact-form__confirm {
+  .contact-form__confirm,
+  .newgrade-mynavi-privacy {
     display: none;
+  }
+
+  .contact-form__btnarea {
+    margin-top: 30px;
+
+    @media (--md) {
+      margin-top: 50px;
+    }
   }
 }

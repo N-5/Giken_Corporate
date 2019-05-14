@@ -102,15 +102,17 @@
     }
 
     &:hover {
-      border: 1px solid $color-white;
+      @media (--md) {
+        border: 1px solid $color-white;
 
-      a {
-        &::after {
-          border-color: $color-white !important;
-        }
+        a {
+          &::after {
+            border-color: $color-white !important;
+          }
 
-        span {
-          color: $color-white;
+          span {
+            color: $color-white;
+          }
         }
       }
     }

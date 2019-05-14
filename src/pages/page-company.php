@@ -10,7 +10,7 @@ Template Name: company
     <div class="page-title__inner">
       <h2 class="page__heading">COMPANY<span>会社紹介</span></h2>
       <div class="page__backimage">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-lower.jpg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-lower.jpg" alt="">
       </div>
     </div>
   </section>
@@ -35,7 +35,7 @@ Template Name: company
       <div class="c-tablelist" data-inview>
         <dl class="c-tablelist__item">
           <dt>商号</dt>
-          <dd>技研株式会社 （GIKEN CO., LTD.）</dd>
+          <dd>技研株式会社(GIKEN CO., LTD.)</dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>業種</dt>
@@ -47,11 +47,11 @@ Template Name: company
         </dl>
         <dl class="c-tablelist__item">
           <dt>創業</dt>
-          <dd>1964年 10月 （個人企業）</dd>
+          <dd>1964年 10月(個人企業)</dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>設立</dt>
-          <dd>1970年 9月 （法人企業に改組）</dd>
+          <dd>1970年 9月(法人企業に改組)</dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>代表</dt>
@@ -75,7 +75,13 @@ Template Name: company
         </dl>
         <dl class="c-tablelist__item">
           <dt>経営基本方針</dt>
-          <dd>１．より良い製品を提供することで社会に貢献する。 <br>１．技術力の向上を図り、業界でリーダーの地位を確立する。 <br>１．魅力ある組織で社員の資質向上を図る。</dd>
+          <dd>
+            <ul>
+              <li>１．より良い製品を提供することで社会に貢献する。</li>
+              <li>１．技術力の向上を図り、業界でリーダーの地位を確立する。</li>
+              <li>１．魅力ある組織で社員の資質向上を図る。</li>
+            </ul>
+          </dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>社訓</dt>
@@ -130,14 +136,14 @@ Template Name: company
           <div class="company-infolist__inner">
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_1.jpg" alt=""></div>
             <div class="company-infolist__detail">
-              <h4 class="company-infolist__heading">第1・2工場（旧第4・5工場）</h4>
+              <h4 class="company-infolist__heading">第1・2工場(旧第4・5工場)</h4>
               <p class="u-m">〒923-1238 <br class="u-sm_max">石川県能美市下清水町3番地2<br><a href="https://goo.gl/maps/6lii8" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
           <div class="company-infolist__inner">
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_2.jpg" alt=""></div>
             <div class="company-infolist__detail">
-              <h4 class="company-infolist__heading">第3・4工場（旧第2・3工場）</h4>
+              <h4 class="company-infolist__heading">第3・4工場(旧第2・3工場)</h4>
               <p class="u-m">〒923-1237 <br class="u-sm_max">石川県能美市上清水町タ91<br><a href="https://goo.gl/maps/Jk89Q" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
@@ -162,7 +168,7 @@ Template Name: company
         </dl>
         <dl class="c-tablelist__item">
           <dt>1972.10</dt>
-          <dd>資本金500万円に増資し、従来の設計業務に製造販売（エンジニアリング）業務を併設し、アルミニウム形材押出機の関連設備及び自動車部品の自動搬送装置に部門を専業化する。</dd>
+          <dd>資本金500万円に増資し、従来の設計業務に製造販売(エンジニアリング)業務を併設し、アルミニウム形材押出機の関連設備及び自動車部品の自動搬送装置に部門を専業化する。</dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>1982.09</dt>
@@ -230,7 +236,7 @@ Template Name: company
         </dl>
         <dl class="c-tablelist__item">
           <dt>2015.07</dt>
-          <dd>太陽光発電設備（500KW）が完成する。</dd>
+          <dd>太陽光発電設備(500KW)が完成する。</dd>
         </dl>
         <dl class="c-tablelist__item">
           <dt>2016.06</dt>
@@ -247,16 +253,16 @@ Template Name: company
     <div class="l-container__small" data-inview>
       <h4 class="company-infolist__heading">日・米・韓の特許を<br class="u-sm_max">多数取得しております。</h4>
       <ul class="company-function-list">
-        <li class="company-function-list__item">・コンベア装置（第2045319号）</li>
-        <li class="company-function-list__item">・コンベアの搬送物切離し装置（第2073303号）</li>
-        <li class="company-function-list__item">・形材の分離搬送装置（第2626941号）</li>
-        <li class="company-function-list__item">・プラー装置のクランプヘッド（第3220775号）</li>
-        <li class="company-function-list__item">・ロボットの駆動制御方法と、その装置（米国 6,816,754）</li>
-        <li class="company-function-list__item">・押出形材のプラテンカッター装置（第3677608号）</li>
-        <li class="company-function-list__item">・プラー装置のクランプヘッド制御装置（第3817700号）</li>
-        <li class="company-function-list__item">・ロボットの駆動制御方法と、その装置（第4081747号）</li>
-        <li class="company-function-list__item">・ダイスの分離装置（第4239182号）</li>
-        <li class="company-function-list__item">・紙管の内径修正ヘッドと、それを使用する紙管の内径修正装置（第4460969号）</li>
+        <li class="company-function-list__item">・コンベア装置(第2045319号)</li>
+        <li class="company-function-list__item">・コンベアの搬送物切離し装置(第2073303号)</li>
+        <li class="company-function-list__item">・形材の分離搬送装置(第2626941号)</li>
+        <li class="company-function-list__item">・プラー装置のクランプヘッド(第3220775号)</li>
+        <li class="company-function-list__item">・ロボットの駆動制御方法と、その装置(米国 6,816,754)</li>
+        <li class="company-function-list__item">・押出形材のプラテンカッター装置(第3677608号)</li>
+        <li class="company-function-list__item">・プラー装置のクランプヘッド制御装置(第3817700号)</li>
+        <li class="company-function-list__item">・ロボットの駆動制御方法と、その装置(第4081747号)</li>
+        <li class="company-function-list__item">・ダイスの分離装置(第4239182号)</li>
+        <li class="company-function-list__item">・紙管の内径修正ヘッドと、それを使用する紙管の内径修正装置(第4460969号)</li>
       </ul>
     </div>
   </section>
@@ -268,10 +274,10 @@ Template Name: company
     <div class="l-container__small" data-inview>
       <h4 class="company-infolist__heading">表彰、感謝状を<br class="u-sm_max">多数いただいております。 </h4>
       <ul class="company-function-list">
-        <li class="company-function-list__item">・中小企業庁長官賞（1989年）</li>
-        <li class="company-function-list__item">・北國銀行産業振興賞（2004年）</li>
-        <li class="company-function-list__item">・平成20年度中部地方発明表彰 中小企業庁長官奨励賞（2009年）</li>
-        <li class="company-function-list__item">・HONDA Performance Excellence Award（2016年）</li>
+        <li class="company-function-list__item">・中小企業庁長官賞(1989年)</li>
+        <li class="company-function-list__item">・北國銀行産業振興賞(2004年)</li>
+        <li class="company-function-list__item">・平成20年度中部地方発明表彰 中小企業庁長官奨励賞(2009年)</li>
+        <li class="company-function-list__item">・HONDA Performance Excellence Award(2016年)</li>
       </ul>
     </div>
   </section>
