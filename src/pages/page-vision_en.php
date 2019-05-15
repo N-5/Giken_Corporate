@@ -40,7 +40,7 @@ Template Name: english-vision
     </div>
     <div class="l-container__small" data-inview>
       <div class="vision-message__inner">
-        <div class="vision-message__president"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-president.jpg" alt="向 一雄"></div>
+        <div class="vision-message__president"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-president.jpg" alt="Kazuo Mukai, President"></div>
         <div class="vision-message__comment">
           <p class="vision-message__text u-m">
             Since its foundation, GIKEN has aimed to produce quality products so our customers can use them with peace of mind. We are confident that we have made great progress, proven by our customers' satisfaction with our products, which are manufactured while considering their perspective. 
@@ -63,7 +63,7 @@ Template Name: english-vision
     </div>
     <div class="l-container__small">
       <div class="vision-logo__inner" data-inview>
-        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="技研株式会社ロゴ"><span>Trademark No.3107527</span></div>
+        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="GIKEN LOGO"><span>Trademark No.3107527</span></div>
         <div class="vision-logo__comment">
           <p class="vision-logo__text u-m">
             The logo represents the alphabet letter “D”. It was chosen as it symbolised the following three words when the company was founded:
@@ -81,7 +81,7 @@ Template Name: english-vision
       <div class="vision-logo__flow" data-inview>
         <picture>
           <source media="(max-width:500px)" srcset="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_en_sp.jpg">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_en_pc.jpg" alt="創業当時から未来">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_en_pc.jpg" alt="FUTURE FROM THE FIRST">
         </picture>
       </div>
     </div>

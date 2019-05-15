@@ -438,6 +438,10 @@
 
   .l-container {
     overflow-y: scroll;
+
+    @media (--md) {
+      overflow-y: auto;
+    }
   }
 
   .l-container,
@@ -453,6 +457,7 @@
 
   @media (--md) {
     justify-content: flex-start;
+    overflow-x: auto;
   }
 
   &.company-navigation {
@@ -511,6 +516,7 @@
       height: 100%;
       font-size: 15px;
       padding: 0 28px;
+      border-radius: 0;
       background: $color-main;
 
       &::after {
@@ -536,6 +542,12 @@
   &:last-child {
     a {
       margin-right: 0;
+    }
+  }
+
+  &.is-active {
+    a {
+      background: $color-main-light;
     }
   }
 }
@@ -597,6 +609,10 @@
         background-color: rgba(10, 0, 255, 0.8);
       }
     }
+  }
+
+  strong {
+    font-weight: bold;
   }
 
   img {

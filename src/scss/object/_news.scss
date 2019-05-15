@@ -197,5 +197,12 @@
         font-size: 17px;
       }
     }
+
+    &.current-year {
+      a {
+        background: $color-main;
+        color: $color-white;
+      }
+    }
   }
 }

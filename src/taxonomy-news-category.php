@@ -14,9 +14,9 @@
     <div class="l-container">
       <div class="page-navigation-list news-navigation">
         <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/"><span>ALL</span></a></div>
-        <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/news-category/event/"><span>EVENT</span></a></div>
-        <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/news-category/topics/"><span>TOPICS</span></a></div>
-        <div class="page-navigation-list__item"><a href="<?php echo home_url(); ?>/news/news-category/recruit/"><span>RECRUIT</span></a></div>
+        <div class="page-navigation-list__item <?php if ( is_object_in_term($post->ID, 'news-category','event') ): ?>is-active<?php endif; ?>"><a href="<?php echo home_url(); ?>/news-category/event/"><span>EVENT</span></a></div>
+        <div class="page-navigation-list__item <?php if ( is_object_in_term($post->ID, 'news-category','topics') ): ?>is-active<?php endif; ?>"><a href="<?php echo home_url(); ?>/news-category/topics/"><span>NEWS</span></a></div>
+        <div class="page-navigation-list__item <?php if ( is_object_in_term($post->ID, 'news-category','recruit') ): ?>is-active<?php endif; ?>"><a href="<?php echo home_url(); ?>/news-category/recruit/"><span>RECRUIT</span></a></div>
       </div>
     </div>
   </section>

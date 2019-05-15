@@ -25,6 +25,15 @@ function disable_emoji()
 }
 add_action('init', 'disable_emoji');
 
+//if IE
+function is_IE() {
+  $ua = mb_strtolower( $_SERVER['HTTP_USER_AGENT'] );  //すべて小文字にしてユーザーエージェントを取得
+  if ( strpos( $ua,'msie' ) !== false || strpos( $ua, 'trident' ) !== false ) {
+    return true;
+  }
+  return false;
+}
+
 // include CSS, JS
 if (!is_admin()) {
   function register_style()
@@ -54,6 +63,17 @@ if (!is_admin()) {
   add_action('wp_print_styles', 'add_stylesheet');
   add_action('wp_print_scripts', 'add_script');
 }
+
+//archive year
+function my_archives_link($link_html){
+  global $post;
+  if(preg_match_all('@<a .*>([0-9]+)</a>@i', $link_html, $matches))
+    if(get_query_var('year') == $matches[1][0])
+      $link_html = preg_replace('@<li>@i', '<li class="current-year">', $link_html);
+
+  return ''.$link_html;
+}
+add_filter('get_archives_link', 'my_archives_link');
 
 // Hide useless admin menu
 function remove_admin_menu() {

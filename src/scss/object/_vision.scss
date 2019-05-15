@@ -391,6 +391,12 @@
 
     @media (--md) {
       width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (--lg) {
+      height: 118px;
     }
   }
 }

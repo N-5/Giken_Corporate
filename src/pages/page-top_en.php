@@ -5,10 +5,6 @@ Template Name: english-top
 ?>
 <?php get_header(); ?>
 
-<div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
-</div>
-
 <main id="top">
   <section class="top-hero">
     <div class="l-container">
@@ -46,7 +42,7 @@ Template Name: english-top
   <section class="top-service">
     <div class="l-container">
       <h2 class="m-top-section__title" data-inview><span class="en">SERVICE</span></h2>
-      <figure class="top-service__img" data-inview><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/en/top/top-service-figure.png" alt="Auto Mmotive,Aluminum Processing, Industrial Machinery"></figure>
+      <figure class="top-service__img" data-inview><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-service-figure_en.png" alt="Auto Mmotive,Aluminum Processing, Industrial Machinery"></figure>
       <div class="top-service__inner" data-inview>
         <p class="m-top-section__copy">自動化技術を未来とクロスする、<br>それが私たちの仕事。</p>
         <p class="u-m">Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy Dummy </p>

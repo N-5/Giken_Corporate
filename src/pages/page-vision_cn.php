@@ -36,22 +36,22 @@ Template Name: chinese-vision
 
   <section class="vision-message">
     <div class="l-container">
-      <h2 class="m-section-title" data-inview>PRESIDENT MESSAGE<span>代表挨拶</span></h2>
+      <h2 class="m-section-title" data-inview>PRESIDENT MESSAGE<span>总裁致辞</span></h2>
     </div>
     <div class="l-container__small" data-inview>
       <div class="vision-message__inner">
-        <div class="vision-message__president"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-president.jpg" alt="向 一雄"></div>
+        <div class="vision-message__president"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/vision/vision-president.jpg" alt="Kazuo Mukai, President"></div>
         <div class="vision-message__comment">
           <p class="vision-message__text u-m">
-            技研株式会社は、創業当時から、お客様がずっと安心して使い続けられる良質なものづくりを目指し、今日まで歩んでまいりました。現在の技研に成長することができたのも、お客様の立場で考え、生み出された製品をお客様に満足いただけた証と自負しております。
+            技研株式会社自创业以来，始终以生产客户能够一直放心使用的优质产品为目标。技研能够取得今天的发展，也恰恰证明了我们站在客户角度思考而创造出来的产品获得了客户满意，我们为此感到自豪。 
           </p>
           <p class="vision-message__text u-m">
-            日々刻々と変動する社会の中で、グローバル事情を研ぎ澄まされた感性で読み取り、フレキシブルに対応が必須でした。このような時代の変化に応えられたのは、これまで培ってきた豊富で高いクオリティを備えた開発経験によるものです。
+            在这个时时刻刻都在变化的社会中，我们必须以敏锐的感性认清世界形势并灵活应对。之所以能够应对这种时代变迁，正是由于经过多年积累了丰富且高质量的开发经验。 
           </p>
           <p class="vision-message__text u-m">
-            技研の経営理念は「一歩先んじた技術で社会に貢献する」です。これからも、主力の自動車部品の自動搬送装置とアルミ型材押出ライン及び各種産業機械の設計・製造を極めることはもちろん、お客様がいま求められている技術、お客様の次代につながる新しい技術を取り入れ、あらゆる業種の生産ラインの自動化と省人化の実現を通じ、社会の発展に貢献できるよう、わたしたち技研は挑戦し続けます。
+            技研的经营理念是“以领先一步的技术为社会作贡献”。今后，我们仍然要在主力产品汽车零部件的自动搬运装置和铝型材挤压生产线及各种产业机械的设计、制造方面做到精益求精，同时引进客户现在所追求的技术和关系到客户未来的新技术，通过实现所有行业生产线的自动化和省人化，从而为社会发展作贡献，我们技研将不懈挑战。
           </p>
-          <p class="vision-message__name u-m">代表取締役  向 一雄</p>
+          <p class="vision-message__name u-m">代表取缔役 向 一雄</p>
         </div>
       </div>
     </div>
@@ -59,27 +59,27 @@ Template Name: chinese-vision
 
   <section class="vision-logo">
     <div class="l-container">
-      <h2 class="m-section-title" data-inview>ORIGIN OF OUR LOGO<span>ロゴの由来</span></h2>
+      <h2 class="m-section-title" data-inview>ORIGIN OF OUR LOGO<span>商标的由来</span></h2>
     </div>
     <div class="l-container__small">
       <div class="vision-logo__inner" data-inview>
-        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="技研株式会社ロゴ"><span>商標 登録番号 3107527</span></div>
+        <div class="vision-logo_mark"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo-mark.svg" alt="技研株式会社ロゴ"><span>商标注册编号 3107527</span></div>
         <div class="vision-logo__comment">
           <p class="vision-logo__text u-m">
-            このマークは、アルファベットの「D」を模っています。 これは創業当時に、「Drawing（製図）、Design（設計、デザイン）、 Development（開発）」の３つの頭文字をとり、造られました。
+            该标志是模仿字母“D”设计而成的。这是创业之初，取下列三个单词的首字母创造的：<span>Development （开发）, Drawing （制图）, Design （技术设计、创意设计）</span>
           </p>
           <p class="vision-logo__text u-m">
-            そして現在は、社員一人ひとりが、お客さまに満足いただく製品を造るためにDevotion（献身・一意専心）をもって仕事に打ち込み、Device（工夫・方策）をもって問題を解決し、新しいものを生み出し、Delight（愉快・楽しさ）をもって、明るく仕事に取り組んでいます。
+            现在，每位员工都在为了制造客户满意的产品：带着 <span>Devotion</span>（奉献精神、专心致志）投身于工作；带着 <span>Devices</span>（设法、策略）解决问题，锐意创新；带着 <span>Delight</span>（欢愉、快乐），积极努力工作。
           </p>
           <p class="vision-logo__text u-m">
-            さらに将来、技研株式会社は、オンリーワンの技術と強固な財務体制でDiamond「ダイヤモンド」のように輝き、環境の変化すらも自らの力に変えるDynamism「ダイナミズム」に満ち溢れる、Dream「夢」のある会社を目指します。
+            将来，技研株式会社的目标是将成为:<span>Diamond</span>: 以独一无二的技术和稳固的财务体制，象“钻石”一样熠熠生辉的、<span>Dynamism</span>: 连环境的变化也能化为自身动力，充满“活力”的、<span>Dream</span>: 拥有“梦想”的公司。
           </p>
         </div>
       </div>
       <div class="vision-logo__flow" data-inview>
         <picture>
           <source media="(max-width:500px)" srcset="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_sp.jpg">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_pc.jpg" alt="創業当時から未来">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/vision/vision-figure_pc.jpg" alt="FUTURE FROM THE FIRST">
         </picture>
       </div>
     </div>

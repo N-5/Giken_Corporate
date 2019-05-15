@@ -1,5 +1,7 @@
 .loading {
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
   display: flex;
   width: 100vw;
@@ -7,6 +9,7 @@
   background: url('../img/top/top-hero_bg.jpg') no-repeat center / cover;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 
 .loading__logo {
@@ -276,7 +279,7 @@
 }
 
 [data-animation-hero-fade] {
-  opacity: 0;
+  opacity: 1;
   transition: opacity .24s ease;
 
   &.active {

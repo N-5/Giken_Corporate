@@ -22,7 +22,7 @@ Template Name: english-contact
     <div class="l-container__small" data-inview>
       <p class="u-m">お電話でお問い合わせのお客様は、下記までお電話をお願いいたします。</p>
       <div class="contact-cta">
-        <div class="contact-cta__number"><a href="tel:0761515700"><small>Tel.</small>0761-51-5700</a></div>
+        <div class="contact-cta__number"><a href="tel:+81761515700"><small>Tel.</small>+81-761-51-5700</a></div>
         <div class="contact-cta__time">（受付時間  平日 AM9:00〜PM5:00）</div>
       </div>
    </div>

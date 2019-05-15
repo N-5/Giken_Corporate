@@ -117,7 +117,7 @@ Template Name: english-company
           <p class="u-m">6147 Red Winesap Way, Dublin, Ohio 43016 <br class="u-sm_max"><a href="https://goo.gl/maps/FF8PK" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.+1-614-783-3477 FAX.+1-614-876-1843</p>
           <h4 class="company-infolist__heading">G TRADING CO., LTD.</h4>
-          <p class="u-m">1002 Crystal bldg Ⅱ,1-175-1 Tsukuba, Naka-ku, Kumagaya-city, <br>Saitama 360-0037 <a href="https://goo.gl/maps/6UZickaqeM52" target="_blank" class="m-link__target">Google Map</a></p>
+          <p class="u-m">1002 Crystal bldg Ⅱ,1-175-1 Tsukuba, Naka-ku, Kumagaya-city, Saitama 360-0037 <a href="https://goo.gl/maps/6UZickaqeM52" target="_blank" class="m-link__target">Google Map</a></p>
           <p class="u-m phone">TEL.+81-48-578-8790　FAX.+81-48-578-8791</p>
         </div>
       </div>
@@ -128,14 +128,14 @@ Template Name: english-company
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_1.jpg" alt=""></div>
             <div class="company-infolist__detail">
               <h4 class="company-infolist__heading">No.1/ No.2 Plants<br>(former No.4 and No.5 plants)</h4>
-              <p class="u-m">〒923-1238 <br class="u-sm_max">3-2 Shimoshimizu-machi,<br>Nomi, Ishikawa 923-1238<br><a href="https://goo.gl/maps/6lii8" target="_blank" class="m-link__target">Google Map</a></p>
+              <p class="u-m">3-2 Shimoshimizu-machi,<br>Nomi, Ishikawa 923-1238 <a href="https://goo.gl/maps/6lii8" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
           <div class="company-infolist__inner">
             <div class="company-infolist__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/company/company-industory_2.jpg" alt=""></div>
             <div class="company-infolist__detail">
               <h4 class="company-infolist__heading">No.3/ No.4 Plants <br>(Former No.2 and 3 plants)</h4>
-              <p class="u-m">〒923-1237 <br class="u-sm_max">Ta 91, Kamishimizu-machi,<br>Nomi, Ishikawa 923-1237<br><a href="https://goo.gl/maps/Jk89Q" target="_blank" class="m-link__target">Google Map</a></p>
+              <p class="u-m">Ta 91, Kamishimizu-machi,<br>Nomi, Ishikawa 923-1237 <a href="https://goo.gl/maps/Jk89Q" target="_blank" class="m-link__target">Google Map</a></p>
             </div>
           </div>
         </div>

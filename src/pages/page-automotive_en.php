@@ -48,7 +48,7 @@ Template Name: english-automotive
             </ul>
             <dl class="service-case__spec">
               <dt>Max. operation speed (Travel)</dt><dd>276.0m/min</dd>
-              <dt>Max. operation speed (Lift)</dt><dd>187.3ｍ/min</dd>
+              <dt>Max. operation speed (Lift)</dt><dd>187.3m/min</dd>
               <dt>Max. transfer weight</dt><dd>300kg</dd>
             </dl>
             <div class="service-case__link">

@@ -8,7 +8,7 @@ Template Name: chinese-csr
 <main id="csr">
   <section class="page-title">
     <div class="page-title__inner">
-      <h1 class="page__heading">CSR<span>社会貢献活動</span></h1>
+      <h1 class="page__heading">CSR<span>环保活动</span></h1>
       <div class="page__backimage">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-lower.jpg" alt="">
       </div>
@@ -52,17 +52,18 @@ Template Name: chinese-csr
 
   <section class="csr-environment">
     <div class="l-container">
-      <h2 class="m-section-title" data-inview>FOR ENVIRONMENT<span>環境への取り組み</span></h2>
+      <h2 class="m-section-title" data-inview>FOR ENVIRONMENT<span>环保活动</span></h2>
     </div>
     <div class="l-container__small">
       <div class="csr-list">
         <div class="csr-list__item" data-inview>
-          <h3 class="csr-heading">太陽光発電</h3>
+          <h3 class="csr-heading">太阳能</h3>
           <div class="csr-list__inner">
             <div class="csr-list__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/csr/csr-environment_1.jpg" alt="太陽光発電"></div>
             <div class="csr-list__detail">
               <p class="u-m">
-                技研株式会社は、太陽光発電システムを設置しております。 環境に優しいクリーンエネルギーを発電し、CO2排出量を抑えることで、省エネルギー活動の取り組みを行っております。
+                在本公司，我们已经建立了一个太阳能发电系统。 
+                倡导利用清洁能源，减少二氧化碳的排放， 积极推进环保节能活动。 
               </p>
             </div>
           </div>

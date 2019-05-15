@@ -7,11 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<?php if ( is_IE() ) : ?>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
+  <?php get_template_part('lib/ie'); ?>
+<?php endif; ?>
 <?php get_template_part('lib/favicons'); ?>
 <?php wp_head() ?>
 </head>
   <body <?php body_class( $class ); ?> <?php $locale = get_post_meta( $post_id, '_locale', true ); ?>>
-    <div class="l-wrapper <?php if(is_tree(89)): ?><?php echo ('en') ?><?php elseif(is_tree(90)): ?><?php echo ('zh') ?><?php else: ?><?php echo ('jp') ?><?php endif; ?>">
+    <div class="l-wrapper <?php if(is_tree(89)): ?><?php echo ('en') ?><?php elseif(is_tree(90)): ?><?php echo ('cn') ?><?php else: ?><?php echo ('jp') ?><?php endif; ?>">
       <header id="header" class="header <?php if(!is_page(array('jp', 'en', 'cn'))) : ?>header-bg<?php endif; ?>">
         <div class="header-inner">
             <?php if ( is_home() || is_front_page() ) : ?>

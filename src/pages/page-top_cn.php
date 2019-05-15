@@ -5,10 +5,6 @@ Template Name: chinese-top
 ?>
 <?php get_header(); ?>
 
-<div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
-</div>
-
 <main id="top">
   <section class="top-hero">
     <div class="l-container">
@@ -47,11 +43,11 @@ Template Name: chinese-top
   <section class="top-service">
     <div class="l-container">
       <h2 class="m-top-section__title" data-inview><span class="en">SERVICE</span><span class="jp">事業内容</span></h2>
-      <figure class="top-service__img" data-inview><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-service-figure.png" alt="自動車産業、アルミ産業、産業機械事業"></figure>
+      <figure class="top-service__img" data-inview><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-service-figure_cn.png" alt="自動車産業、アルミ産業、産業機械事業"></figure>
       <div class="top-service__inner" data-inview>
         <p class="m-top-section__copy">自動化技術を未来とクロスする、<br>それが私たちの仕事。</p>
         <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お応えしています。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かします。ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お応えしています。装置開発。</p>
-        <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/service/"><span>MORE</span></a></div>
+        <div class="m-link m-link__border"><a href="<?php echo home_url(); ?>/cn/service/"><span>MORE</span></a></div>
       </div>
     </div>
   </section>
@@ -60,7 +56,7 @@ Template Name: chinese-top
     <div class="l-container__large">
       <div class="top-company__award" data-inview>
         <div class="image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/top/top-company-award.png" alt="PATENTS and AWARDS"></div>
-        <div class="text">日/米/韓の特許を多数取得<br>表彰、感謝状を<br>多数いただいております</div>
+        <div class="text">取得多项日本、美国、<br>韩国的专利。<br>获得多项表彰、感谢信。</div>
       </div>
       <div class="top-company__image" data-inview>
         <picture>
@@ -69,10 +65,10 @@ Template Name: chinese-top
         </picture>
       </div>
       <div class="top-company__inner" data-inview>
-        <h2 class="m-top-section__title"><span class="en">COMPANY</span><span class="jp">会社概要</span></h2>
+        <h2 class="m-top-section__title"><span class="en">COMPANY</span><span class="jp">公司概要</span></h2>
         <p class="m-top-section__copy">ずっと安心して使い続けられる、<br>良質なものを世界へ。</p>
         <p class="u-m">ダミー。装置開発やライン開発で培ってきた数多くの経験および各種のノウハウを活かし、お客さまの多お応えしています。</p>
-        <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/company/"><span>MORE</span></a></div>
+        <div class="m-link m-link__blueborder"><a href="<?php echo home_url(); ?>/cn/company/"><span>MORE</span></a></div>
       </div>
     </div>
   </section>

@@ -48,7 +48,7 @@ Template Name: automotive
             </ul>
             <dl class="service-case__spec">
               <dt>最大動作速度（走行）</dt><dd>276.0m/min</dd>
-              <dt>最大動作速度（昇降）</dt><dd>187.3ｍ/min</dd>
+              <dt>最大動作速度（昇降）</dt><dd>187.3m/min</dd>
               <dt>最大搬送重量</dt><dd>300kg</dd>
             </dl>
             <div class="service-case__link">

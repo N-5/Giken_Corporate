@@ -18,11 +18,11 @@ Template Name: chinese-aluminum
   <section class="service-lead">
     <div class="l-container">
       <h2 class="service-lead__heading" data-inview>
-        市場のニーズに即応。<br>
-        ローコスト、<br class="u-sm_max">短納期を可能にする<br>確かな開発力。
+        随时满足市场需求。<br>
+        拥有可实现低成本、<br class="u-sm_max">短交货期的较强的开发能力。
       </h2>
       <p class="service-lead__text u-m" data-inview>
-        さまざまな業務課題の解決や、技術革新ニーズに対応するための新規設備および既設設備の設計・製作・据付を実施。また、各種単体装置についても数多くの実績を有しています。特に、アルミニウム形材用後面設備ならびにその関連装置については、ノウハウや開発事例も豊富であり、お客さまの各種ご要望に対し、きめ細かに、そしてローコスト、短納期でお応えすることが可能です。
+        为了解决各种业务课题，满足技术革新需求，实施新增设备及现有设备的设计、制作和安装。并且在各种单体装置方面也拥有许多实际业绩。特别在铝型材用后部设备及其相关装置方面，拥有丰富的专有技术和开发事例，可实现细致、低成本、短交期满足客户的各种要求。
       </p>
     </div>
   </section>
@@ -36,16 +36,16 @@ Template Name: chinese-aluminum
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/survice-case_1.jpg" alt="REAR EQUIPMENT">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">後面設備</h3>
+            <h3 class="service-case__heading">后部设备</h3>
             <p class="u-m">
-              豊富な実績をもとに押出形材に応じた後面設備のライン作りの設計から組立まで行います。
+              以丰富的实际业绩为基础，进行符合挤压型材后部设备的生产线建设的设计及组装。
             </p>
             <ul class="service-case__funtion">
-              <li>プラテンカッター装置</li>
-              <li>各種後面テーブル</li>
-              <li>ストレッチャー装置（各種爪形状に対応可）</li>
-              <li>移載・定寸ストッパー装置</li>
-              <li>スプレー式水冷装置</li>
+              <li>台板切割装置</li>
+              <li>各种后部工作台</li>
+              <li>拉伸装置（可应对各种爪形）</li>
+              <li>移载/定尺限位装置</li>
+              <li>喷雾式水冷装置</li>
             </ul>
           </div>
         </div>
@@ -56,13 +56,13 @@ Template Name: chinese-aluminum
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/survice-case_2.jpg" alt="PULLER">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">プラー装置</h3>
-            <p class="u-m">サーボ駆動によるワイヤーロープ牽引方式を採用し、国内では、最速の後退速度を誇ります。</p>
+            <h3 class="service-case__heading">拉马装置</h3>
+            <p class="u-m">采用伺服驱动的钢丝绳牵引方式，在国内后退速度最快。</p>
             <ul class="service-case__funtion">
-              <li>後退最大速度 ４００m/min（国内最速）</li>
-              <li>張力 0.1kN～1.24kN</li>
-              <li>ダブルプラー装置［特許］</li>
-              <li>自走式シングルプラー装置</li>
+              <li>后退最大速度 400m/min（日本国内最快）</li>
+              <li>张力0.1kN ～ 1.24kN</li>
+              <li>双拉马装置［专利］</li>
+              <li>自行式单拉马装置</li>
             </ul>
           </div>
         </div>
@@ -73,13 +73,13 @@ Template Name: chinese-aluminum
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/survice-case_3.jpg" alt="PARTS PILING EQUIPMENT">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">自動積込装置</h3>
+            <h3 class="service-case__heading">自动码垛装置</h3>
             <p class="u-m">
-              定寸長さに切り揃えられた形材をラックに積み替える単純な動作だからこそ、速く、確実に、トラブル無く、積み込むことができる技研の自動積込装置です。
+              将按照规定尺寸切割整齐的型材倒垛到料架上的单纯动作，只有技研的自动码垛装置方能实现快速、准确、无故障地堆码。
             </p>
             <ul class="service-case__funtion">
-              <li>普通積み、段積み</li>
-              <li>搬送荷重　MAX200kg</li>
+              <li>普通堆码、分层堆码</li>
+              <li>搬运载重　MAX 200kg</li>
             </ul>
           </div>
         </div>
@@ -90,14 +90,14 @@ Template Name: chinese-aluminum
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/survice-case_4.jpg" alt="CONVEYOR">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">搬送コンベヤ</h3>
+            <h3 class="service-case__heading">搬运输送机</h3>
             <p class="u-m">
-              搬送ラインに合わせた各種コンベヤの製作と、お客様のニーズに合わせた搬送システムの構築を行っております。
+              进行符合搬运生产线的各种输送机的制造、及满足客户需求的搬运系统的构建。
             </p>
             <ul class="service-case__funtion">
-              <li>ラック搬送コンベヤ</li>
-              <li>ラック段積装置</li>
-              <li>ラック移載搬送装置</li>
+              <li>货架搬运输送机</li>
+              <li>货架堆码装置</li>
+              <li>货架移载搬运装置</li>
             </ul>
           </div>
         </div>
@@ -108,15 +108,15 @@ Template Name: chinese-aluminum
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/aluminum/survice-case_5.jpg" alt="BILLET CUTTING">
           </div>
           <div class="service-case-list__detail">
-            <h3 class="service-case__heading">長尺ビレット切断ライン</h3>
+            <h3 class="service-case__heading">长条毛坯切割生产线</h3>
             <p class="u-m">
-              多品種小ロットにおいても、無駄のないビレットの管理を行い、途中まで切断した長尺ビレットも無駄なくストッカーに戻すことができます。
+              即使品种多批量小，也能进行无浪费的坯料管理，即使是切割到中途的长条毛坯，也能退回至储料器，从而避免浪费。
             </p>
             <ul class="service-case__funtion">
-              <li>多段数型　ビレットストッカー</li>
-              <li>ビレット供給装置（多段数対応）</li>
-              <li>ビレットプッシャー装置</li>
-              <li>ビレットブラシ装置</li>
+              <li>多层数型 毛坯储料器</li>
+              <li>毛坯供料装置(支持多层数)</li>
+              <li>毛坯推料装置</li>
+              <li>毛坯刷子装置</li>
             </ul>
           </div>
         </div>

@@ -350,13 +350,14 @@
     }
 
     @media (--md) {
-      margin-right: 60px;
+      margin-right: 5%;
+      width: 45%;
     }
   }
 
   .recruit-support__top-detail {
     @media (--md) {
-      width: 100%;
+      width: 50%;
       margin-top: -4%;
     }
 

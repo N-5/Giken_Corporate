@@ -3,9 +3,9 @@ import $ from 'jquery';
 const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 
 const top = async () => {
-  await sleep(1000);
+  await sleep(500);
   await $('[data-animation-hero-fade="0"]').addClass('active');
-  await sleep(1000);
+  await sleep(500);
   await $('[data-loading]').fadeOut(200);
   await sleep(200);
   await $('[data-animation-hero-move]').addClass('active');

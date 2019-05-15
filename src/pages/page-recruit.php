@@ -64,7 +64,7 @@ Template Name: recruit
   <section class="recruit-support">
     <div class="recruit-support__inner">
       <div class="recruit-support__top" data-inview>
-        <figure class="recruit-support__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__img.jpg" alt=""></figure>
+        <div class="recruit-support__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/recruit/recruit-support__img.jpg" alt=""></div>
         <div class="recruit-support__top-detail">
           <h2 class="m-section-title">SUPPORT SYSTEM<span>人材育成</span></h2>
           <h3 class="heading">世界で活躍する<br class="u--max-md">プロフェッショナルへ。</h3>

@@ -1,4 +1,4 @@
-<footer>
+<footer class="<?php if(is_tree(89)): ?><?php echo ('en') ?><?php elseif(is_tree(90)): ?><?php echo ('cn') ?><?php else: ?><?php echo ('jp') ?><?php endif; ?>">
   <div class="l-container">
       <div class="company">
         <div class="company-logo">
@@ -9,7 +9,7 @@
           <?php else: ?>
           <a href="<?php echo home_url(); ?>">
           <?php endif; ?>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>"></a>
         </div>
         <div class="company-about">
           <?php if(is_tree(89)): ?>
@@ -30,7 +30,7 @@
               <?php if(is_tree(89)): ?>
               <a href="<?php echo home_url(); ?>/en/service/automotive">AUTOMOTIVE</a>
               <?php elseif(is_tree(90)): ?>
-              <a href="<?php echo home_url(); ?>/cn/service/automotive">AUTOMOTIVE</a>
+              <a href="<?php echo home_url(); ?>/cn/service/automotive">汽车事业</a>
               <?php else: ?>
               <a href="<?php echo home_url(); ?>/service/automotive">自動車産業</a>
               <?php endif; ?>
@@ -39,7 +39,7 @@
               <?php if(is_tree(89)): ?>
               <a href="<?php echo home_url(); ?>/en/service/aluminum">ALUMINUM</a>
               <?php elseif(is_tree(90)): ?>
-              <a href="<?php echo home_url(); ?>/cn/service/aluminum">ALUMINUM</a>
+              <a href="<?php echo home_url(); ?>/cn/service/aluminum">铝材事业</a>
               <?php else: ?>
               <a href="<?php echo home_url(); ?>/service/aluminum">アルミ事業</a>
               <?php endif; ?>
@@ -48,7 +48,7 @@
               <?php if(is_tree(89)): ?>
               <a href="<?php echo home_url(); ?>/en/service/industrial/">INDUSTRIAL MACHINES</a>
               <?php elseif(is_tree(90)): ?>
-              <a href="<?php echo home_url(); ?>/cn/service/industrial/">INDUSTRIAL MACHINES</a>
+              <a href="<?php echo home_url(); ?>/cn/service/industrial/">产业机械事业</a>
               <?php else: ?>
               <a href="<?php echo home_url(); ?>/service/industrial/">産業機械事業</a>
               <?php endif; ?>
@@ -57,7 +57,7 @@
               <?php if(is_tree(89)): ?>
               <a href="<?php echo home_url(); ?>/en/service/partner/">PARTNER</a>
               <?php elseif(is_tree(90)): ?>
-              <a href="<?php echo home_url(); ?>/cn/service/partner/">PARTNER</a>
+              <a href="<?php echo home_url(); ?>/cn/service/partner/">销售业绩</a>
               <?php else: ?>
               <a href="<?php echo home_url(); ?>/service/partner/">パートナー</a>
               <?php endif; ?>
@@ -85,7 +85,7 @@
             <?php elseif(is_tree(90)): ?>
             <a href="<?php echo home_url(); ?>/cn/company/">COMPANY</a>
             <?php else: ?>
-            <a href="<?php echo home_url(); ?>/company/">会社紹介</a>
+            <a href="<?php echo home_url(); ?>/company/">COMPANY</a>
             <?php endif; ?>
           </h3>
         </div>
