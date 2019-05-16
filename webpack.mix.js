@@ -73,12 +73,6 @@ if (mix.inProduction()) {
       })
     ]
   });
-} else {
-  mix
-    .sourceMaps()
-    .webpackConfig({
-      devtool: 'inline-source-map'
-    });
 }
 
 mix.disableNotifications();
