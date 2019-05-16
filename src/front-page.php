@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<div class="loading" data-loading>
-  <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
-</div>
-
 <main id="top">
   <section class="top-hero">
     <div class="l-container">
