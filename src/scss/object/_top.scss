@@ -1,21 +1,3 @@
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  background: url('../img/top/top-hero_bg.jpg') no-repeat center / cover;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-}
-
-.loading__logo {
-  width: 200px;
-}
-
 #top {
   .m-top-section__copy {
     margin-top: 25px;
@@ -279,7 +261,7 @@
 }
 
 [data-animation-hero-fade] {
-  opacity: 1;
+  opacity: 0;
   transition: opacity .24s ease;
 
   &.active {

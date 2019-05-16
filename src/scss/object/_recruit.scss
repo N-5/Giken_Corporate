@@ -11,7 +11,7 @@
     padding: 154px 0;
   }
 
-  &__inner {
+  .recruit-lead__inner {
     max-width: 1040px;
     width: 90%;
     margin: 0 auto;
@@ -22,7 +22,7 @@
     }
   }
 
-  &__heading {
+  .recruit-lead__heading {
     font-weight: normal;
     font-size: 30px;
     letter-spacing: .41em;
@@ -34,7 +34,7 @@
     }
   }
 
-  &__text {
+  .recruit-lead__text {
     margin-top: 20px;
     line-height: 2;
     color: $color-main;
@@ -613,7 +613,7 @@
 }
 
 .newgrade-section {
-  &__inner {
+  .newgrade-section__inner {
     padding: 0 5%;
     max-width: 870px;
     margin: 0 auto;
@@ -635,7 +635,7 @@
 }
 
 .newgrade-process {
-  &__lead {
+  .newgrade-process__lead {
     margin-bottom: 10px;
 
     @media (--md) {
@@ -648,7 +648,7 @@
     }
   }
 
-  &__figure {
+  .newgrade-process__figure {
     padding: 8% 5%;
     background: $color-grey-light;
 
@@ -1011,7 +1011,7 @@
           margin-top: 4px;
         }
 
-        &-number {
+        .belong-number {
           font-family: $font-en;
           font-size: 36px;
           line-height: .7;
@@ -1021,7 +1021,7 @@
           }
         }
 
-        &-place {
+        .belong-place {
           margin-left: 10px;
           line-height: 1;
 
@@ -1040,7 +1040,7 @@
           margin-top: 14px;
         }
 
-        &-jp {
+        .name-jp {
           font-size: 16px;
 
           @media (--lg) {
@@ -1048,7 +1048,7 @@
           }
         }
 
-        &-en {
+        .name-en {
           font-size: 10px;
           font-family: $font-en;
 
@@ -1067,7 +1067,7 @@
         }
       }
 
-      &-heading {
+      .detail-heading {
         margin-top: 20px;
         font-weight: normal;
         color: $color-main;
@@ -1082,7 +1082,7 @@
         }
       }
 
-      &-text {
+      .detail-text {
         margin-top: 10px;
         font-size: 13px;
         line-height: 2;
