@@ -12,6 +12,16 @@
   <?php get_template_part('lib/ie'); ?>
 <?php endif; ?>
 <?php get_template_part('lib/favicons'); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60072726-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <?php wp_head() ?>
 </head>
   <body <?php body_class( $class ); ?> <?php $locale = get_post_meta( $post_id, '_locale', true ); ?>>
@@ -129,3 +139,7 @@
             <div class="header-humberger" data-menu-hamburger><span></span><span></span><span></span></div>
           </div>
         </header>
+
+        <div class="loading" data-loading>
+          <img class="loading__logo" data-animation-hero-fade="0" src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/logo.svg" alt="<?php bloginfo('name'); ?>">
+        </div>
